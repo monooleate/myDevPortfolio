@@ -1,32 +1,25 @@
 
 /* import resumeFile from "../documents/resume.pdf"; */
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { educationDetails, experienceDetails, skills } from '../config/personalConfig';
 
 const Resume = () => {
 
   return (
-    <section
-      id="resume"
-      className="text-uni-text text-xl"
-    >
-      <div>
-
+    <section id="resume" className="text-uni-text text-xl">
         <div className="text-center text-4xl py-5">
             Resume
         </div>
-
-        <div className="flex flex-wrap sm:flex-nowrap p-5">
+        <div className="flex flex-wrap sm:flex-nowrap p-5 gap-5">
           {/* My Education */}
-          <div className="mx-5 md:w-1/2  ">
+          <div className="mx-5 md:w-1/2">
             <h2 className="text-2xl font-bold mb-8">
               My Education
             </h2>
             {educationDetails.length > 0 &&
               educationDetails.map((value, index) => (
-                <div
-                  key={index}
-                  className="rounded ml-5 relative border-s border-gray-200"
-                >
+                <div key={index} className="rounded ml-5 relative border-s border-gray-200">
                   <p className="bg-uni-palette text-base w-24 my-3 ml-6 rounded-md">
                     <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-uni-fill dark:bg-blue-900">
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-blue-800" viewBox="0 0 512 512"><title>Book</title>
@@ -49,17 +42,14 @@ const Resume = () => {
               ))}
           </div>
           {/* My Experience */}
-          <div className="md:w-1/2">
+          <div className="mx-5 md:w-1/2">
             <h2
               className="text-2xl font-bold mb-8">
               My Experience
             </h2>
             {experienceDetails.length > 0 &&
               experienceDetails.map((value, index) => (
-                <div
-                  key={index}
-                  className="rounded ml-5 relative border-s border-gray-200"
-                >
+                <div key={index} className="rounded ml-5 relative border-s border-gray-200">
                   <p className="bg-uni-palette text-base w-24 my-3 ml-6 rounded-md">
                     <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-uni-fill dark:bg-blue-900">
                       <svg className="w-3 h-3 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -82,10 +72,10 @@ const Resume = () => {
           </div>
         </div>
         {/* My Skills */}
-        <h2 className="text-2xl font-bold mb-8">
+        <h2 className="text-2xl font-bold py-8">
           My Competencies
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-12">
           {skills.length > 0 &&
             skills.map((skill, index) => (
               <div key={index} className="">
@@ -102,16 +92,18 @@ const Resume = () => {
               </div>
             ))}
         </div>
-        <div className="h-40 pt-20">
-              <a
-                  href={'#first'}
-                  download
-                  className="text-uni-textIntro bg-uni-palette rounded-3xl py-3 px-1"
-                  >
-                  Download CV
-              </a>
-          </div>
-      </div>
+        <div className="h-32 pt-2">
+          <a
+            href={'#first'}
+            download
+            className="flex justify-center items-center gap-2 text-uni-textIntro bg-uni-palette rounded-md mt-8 w-36 text-base h-12 mx-auto"
+            >
+            Download CV
+            <svg className='w-6 h-6 cursor-pointer'>
+                <FontAwesomeIcon icon={faFileArrowDown} />
+            </svg>
+          </a>
+        </div>
     </section>
   );
 };

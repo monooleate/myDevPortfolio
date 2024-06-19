@@ -3,7 +3,7 @@ import React, { useEffect, useState, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faFileArrowDown, faCertificate } from '@fortawesome/free-solid-svg-icons';
 import { lineParticles, introBackgroundConfig, appliedConfig, IntroSecDetails } from "../config/dataConfig";
 import { loadFull } from "tsparticles";
 
@@ -57,22 +57,29 @@ function Intro({ openModal }){
                         <p className="text-2xl text-uni-textIntro">
                             {IntroSecDetails.heading2}
                         </p>
-                        <div className="flex gap-5 mx-auto">
+                        <div className="flex gap-8 mx-auto">
                             <a
                                 href={'#first'}
                                 download
-                                className="text-uni-textIntro bg-uni-palette rounded-md mt-7 w-40 py-1 mx-auto"
+                                className="flex justify-center items-center gap-2 text-uni-textIntro bg-uni-palette rounded-md mt-7 w-36 mx-auto"
                                 >
                                 {IntroSecDetails.btnText}
+                                <svg className='w-6 h-6 cursor-pointer'>
+                                    <FontAwesomeIcon icon={faFileArrowDown} />
+                                </svg>
                             </a>
+
                             <div className="flex items-center justify-center">
-                                <button
-                                type="button"
+                                <a
+                                
                                 onClick={openModal}
-                                className="rounded-md text-uni-textIntro mt-7 px-4 py-2 text-sm font-medium  hover:bg-uni-palette focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
+                                className="flex justify-center gap-2 rounded-md text-uni-textIntro bg-uni-palette mt-7 px-4 py-2 w-36 cursor-pointer hover:bg-uni-palette focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
                                 >
                                 Certificates
-                                </button>
+                                <svg className='w-6 h-6 cursor-pointer'>
+                                    <FontAwesomeIcon icon={faCertificate} />
+                                </svg>
+                                </a>
                             </div>
                         </div>
                         <a

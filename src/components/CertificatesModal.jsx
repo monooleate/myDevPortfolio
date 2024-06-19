@@ -1,5 +1,6 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+import { Fragment } from 'react'
+import { skills } from '../config/personalConfig';
 
 export default function MyModal({ isOpen, closeModal, openModal }) {
 
@@ -29,8 +30,8 @@ export default function MyModal({ isOpen, closeModal, openModal }) {
             <div className="fixed inset-0 bg-black/25" />
           </Transition.Child>
 
-          <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex min-h-full items-center justify-center p-4 text-center">
+          <div className="fixed top-16 inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center bg-gray-200">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -39,19 +40,50 @@ export default function MyModal({ isOpen, closeModal, openModal }) {
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
-              >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-gray-200 p-6 text-left align-middle shadow-xl transition-all">
+              > 
+
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-uni-text"
                   >
                     Certificates
                   </Dialog.Title>
-                  <div className="mt-2">
-                    <p className="text-sm text-uni-text">
-                      Your payment has been successfully submitted. We’ve sent
-                      you an email with all of the details of your order.
-                    </p>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-12 ">
+                    {skills.length > 0 &&
+                      skills.map((skill, index) => (
+                        <div key={index} className="">
+                          <p
+                            className="font-bold text-uni-text text-start mb-2 text-base"
+                          >
+                            {skill.name}{" "}
+                            <span className="text-uni-text float-end">{skill.percent}%</span>
+                          </p>
+
+                          <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                            <div className="bg-uni-palette h-2.5 rounded-full" style={{ width: skill.percent + "%" }}></div>
+                          </div>
+                        </div>
+                      ))}
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-12 ">
+                    {skills.length > 0 &&
+                      skills.map((skill, index) => (
+                        <div key={index} className="">
+                          <p
+                            className="font-bold text-uni-text text-start mb-2 text-base"
+                          >
+                            {skill.name}{" "}
+                            <span className="text-uni-text float-end">{skill.percent}%</span>
+                          </p>
+
+                          <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                            <div className="bg-uni-palette h-2.5 rounded-full" style={{ width: skill.percent + "%" }}></div>
+                          </div>
+                        </div>
+                      ))}
                   </div>
 
                   <div className="mt-4">

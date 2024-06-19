@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import './App.css'
+import AboutMe from './components/AboutMe'
 import CertificatesModal from './components/CertificatesModal'
 import Footer from './components/Footer'
 import Header from './components/header/Header'
@@ -56,7 +57,9 @@ function App() {
             <Intro openModal={openModal}/>
             <section id='content' className='h-[5000px] bg-uni-fill text-uni-text text-9xl left-[-5px]
             xl:relative xl:inline-block xl:float-left xl:min-w-[400px] xl:max-w-[1200px] xl:min-h-[250px] xl:h-[75vh] xl:max-h-[580px] xl:mt-[1%] xl:overflow-y-auto xl: overflow-x-hidden'>
+              <AboutMe />
               <Resume />
+              
               <section id='first-element' className='bg-uni-odd border-3'>
                 
               <p className=' text-third'>Hello Janos!</p> Hello Janosss! Hello Janos! Hello Janos!

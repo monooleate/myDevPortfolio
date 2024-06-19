@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Base is light */
+    --color-text: 0 0 0;
+    --color-text-intro: 242 242 242;
+    --color-fill: 255 255 255;
+    --color-palette: 255 193 7; /* yellow */
+    --color-main-background: 255 255 255;
+    --color-text-border: 238 238 238;
+    --color-odd: 248 249 250;
+    --color-even: 0 0 0;
+
+
+
+    .theme-dark {
+      --color-text: 242 242 242;
+      --color-text-intro: 242 242 242;
+      --color-fill: 15 23 42;
+      --color-palette: 255 193 7; /* yellow */
+      --color-main-background: 30 41 59;
+      --color-text-border: 0 0 0;
+      --color-odd: 43 48 53;
+      --color-even: 0 0 0;
+      /* --color-fill-inverse:  */
+
+    }
+ 
+    .palette-yellow {
+      --color-palette: 255 193 7;
+    }
+
+    .palette-green {
+      --color-palette: 50 205 50;
+
+    }
+  }
+
+/*   :root[primary-theme='dark'] {
+    --color-bg: black;
+  }
+
+  :root[primary-theme='yellow'] {
+    --color-bg: 255 193 7;
+  } */
+}
+
+
+
+

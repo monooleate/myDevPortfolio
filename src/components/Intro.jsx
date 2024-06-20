@@ -83,7 +83,7 @@ function Intro({ openModal }){
                             </div>
                         </div>
                         <a
-                            href='#second'
+                            href='#aboutme'
                             className='relative text-uni-palette mx-auto top-8 xl:hidden'
                             >
                             <svg className='animate-bounce w-6 h-6 cursor-pointer'>

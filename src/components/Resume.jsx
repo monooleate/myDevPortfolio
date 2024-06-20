@@ -75,7 +75,7 @@ const Resume = () => {
         <h2 className="text-2xl font-bold py-8">
           My Competencies
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-14">
           {skills.length > 0 &&
             skills.map((skill, index) => (
               <div key={index} className="">

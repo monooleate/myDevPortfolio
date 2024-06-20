@@ -9,10 +9,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faListAlt, faHandsHoldingCircle, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const navigation = [
-  { name: 'About', href: '#first', current: false, icon: faUser},
-  { name: 'Resume', href: '#second', current: false, icon: faListAlt},
-  { name: 'Projects', href: '#', current: false, icon: faHandsHoldingCircle},
-  { name: 'Contact', href: '#', current: false, icon: faPaperPlane},
+  { name: 'About', href: '#aboutme', current: false, icon: faUser},
+  { name: 'Resume', href: '#resume', current: false, icon: faListAlt},
+  { name: 'Projects', href: '#portfolio', current: false, icon: faHandsHoldingCircle},
+  { name: 'Contact', href: '#contact', current: false, icon: faPaperPlane},
 ]
 
 function classNames(...classes) {

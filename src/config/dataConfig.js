@@ -72,7 +72,7 @@ export const socialIcons = [
 
   export const lineParticles = {
     fullScreen: {enable: false,},
-    background: {color: {value: "#111418",},},
+    background: {color: {value: "#111418",}, },
     fpsLimit: 120,
     interactivity:    {events: {onClick: {enable: true, mode: "push",}, onHover: {enable: true, mode: "repulse",},},
                       modes: {push: {quantity: 3,},repulse: {distance: 50, duration: 0.4,},},},

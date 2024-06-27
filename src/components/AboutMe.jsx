@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import animation from "../../public/coding.json";
+import animation from "../../src/assets/coding.json";
 
 const AboutMe = () => {
 
@@ -10,10 +10,10 @@ const AboutMe = () => {
             </div>
             <div className="flex flex-wrap p-2 gap-5">
                 <div className="mx-5 md:w-3/5">
-                Hello! I’m Janos Meszaros.
+                Hello! I’m Janos Meszaros,
                     <Lottie className="mx-auto h-40 w-40" animationData={animation} />
-                
-Web designer from USA, California. I have rich experience in web site design and building, also I am good at wordpress. I love to talk with you about our unique.
+                    a chemical engineer turned full-stack developer with a passion for solving complex problems through innovative coding solutions. 
+                    {/* With a solid foundation in engineering principles and a keen analytical mind, I bring a unique perspective to the field of software development. */}
                 </div>
                 <div className="my-5 mx-auto sm:my-auto md:w-1/4">
                     

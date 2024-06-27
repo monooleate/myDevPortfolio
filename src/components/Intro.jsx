@@ -26,21 +26,21 @@ function Intro({ openModal }){
       );
     
     return(
-        <section id='section-intro' className='bg-uni-fill h-[60vh] min-h-[400px] xl:min-w-[400px] xl:w-[20vh] xl:max-w-[500px] xl:min-h-[400px] xl:h-[80vh] xl:max-h-[600px] xl:float-left'>
+        <section id='section-intro' className='rounded-xl bg-uni-fill h-[60vh] min-h-[400px] xl:min-w-[400px] xl:w-[20vh] xl:max-w-[500px] xl:min-h-[400px] xl:h-[80vh] xl:max-h-[600px] xl:float-left '>
             <div id='hero-wrap' className="relative w-full h-full">
                 {appliedConfig.appliedIntro === introBackgroundConfig.particles &&
                 init && ( appliedConfig.particlesOn ?
                     <Particles
                     id='tsparticles'
-                    className='absolute w-full h-full z-0'
+                    className='absolute w-full h-full '
                     options={options}
                     />
                     :
-                    <div className='absolute w-full h-full bg-uni-bg z-0'>
+                    <div className='absolute w-full h-full bg-uni-bg'>
                     </div>
                 )}
 
-                <div id='hero-content' className="relative z-10 h-full">
+                <div id='hero-content' className="relative h-full">
                     <div className="flex flex-col h-full justify-center content-center ">
                         <p className='text-uni-textIntro font-bold text-4xl'>
                             {IntroSecDetails.heading1}

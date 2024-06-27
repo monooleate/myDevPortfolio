@@ -1,0 +1,124 @@
+
+
+.inputs{
+  display: flex;
+  
+}
+
+.rownr{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 0px;
+  width: 120px;
+}
+
+input {
+  text-align: center;
+}
+
+p.error {
+  margin: 0px; 
+  font-size: 12px;
+}
+
+.columnnr{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 0px;
+  width: 120px;
+}
+
+.slidecontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 0px;
+}
+
+.maze-grid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 84vh;
+}
+
+.maze{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border: 2px solid black;
+}
+
+.buttons-maze{
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.maze-button{
+  background-color: blue;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.maze-button:active {
+  background-color: red;
+}
+
+.cell{
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  padding: 0px;
+}
+
+.cell.wall {
+  background-color: black;
+}
+
+.cell.path {
+  background-color: white;
+}
+
+.cell.start {
+  background-color: green;
+}
+
+.cell.end {
+  background-color: red;
+}
+
+.cell.visited-bfs{
+  background-color: pink;
+}
+
+.cell.visited-dfs{
+  background-color: yellow;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  flex-wrap: nowrap;
+}
+
+
+
+
+
+
+

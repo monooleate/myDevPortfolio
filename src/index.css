@@ -13,6 +13,27 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 5px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
     /* Base is light */
     --color-text: 0 0 0;
     --color-text-intro: 242 242 242;
@@ -25,11 +46,11 @@
 
 
 
-    .theme-dark {
+    .dark {
       --color-text: 242 242 242;
       --color-text-intro: 242 242 242;
       --color-fill: 15 23 42;
-      --color-palette: 120 204 109;
+      --color-palette: 120 204 109; /* green */
       --color-main-background: 30 41 59;
       --color-text-border: 0 0 0;
       --color-odd: 43 48 53;

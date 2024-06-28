@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './MazeGrid.css';
+import About from './About';
 
 export default function MazeGrid() {
 
@@ -156,6 +157,7 @@ export default function MazeGrid() {
 
   return (
     <main>
+      <About />
       <div className='maze-grid'>
         <div className='inputs'>
           <div className='rownr'>

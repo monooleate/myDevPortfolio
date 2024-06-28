@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
 import { useEffect, useState } from 'react';
-import { appliedConfig } from "../config/dataConfig";
+import { appliedConfig } from "../../config/dataConfig";
 
-import Header_Project from './header/Header_Project'
-import Footer from './Footer'
+import Header from './HeaderForLayout'
+import Footer from './FooterForLayout'
 
 export default function Layout_Project(){
     //isDark Adjustment
@@ -32,14 +32,13 @@ export default function Layout_Project(){
 
     return (
         <>
-            <Header_Project appliedDark={appliedDark} adjustAppliedDark={adjustAppliedDark} />
-            <div className="relative top-16 h-full min-h-[88vh]">
+            <Header appliedDark={appliedDark} adjustAppliedDark={adjustAppliedDark} />
+            <div className="relative top-16 h-full min-h-[88vh] bg-gray-50 dark:bg-slate-800">
                 <Outlet />
             </div> 
             <div className="bottom-0 mt-16 w-full">
                 <Footer />
             </div>
-  
         </>
     )
 }

@@ -90,7 +90,7 @@ p.error {
 }
 
 .cell.path {
-  background-color: white;
+  background-color: rgb(235, 235, 235);
 }
 
 .cell.start {

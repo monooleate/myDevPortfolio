@@ -1,19 +1,18 @@
 import { useEffect, useState } from 'react';
+import { appliedConfig } from "./config/dataConfig.js";
 
-import './App.css'
-import AboutMe from './components/AboutMe'
-import CertificatesModal from './components/CertificatesModal'
+import './MyDevPortfolio.css'
+import AboutMe from './components/AboutMe.jsx'
+import CertificatesModal from './components/CertificatesModal.jsx'
 import ContactMe from './components/ContactMe.jsx'
-import Footer from './components/Footer'
-import Header from './components/header/Header'
-import HireMe from './components/HireMe'
-import Intro from './components/Intro'
-import Portfolio from './components/Portfolio'
-import PreLoader from './components/Preloader'
-import Resume from './components/Resume'
-import ScrollToTop from './components/ScrollToTop'
-
-import { appliedConfig } from "./config/dataConfig";
+import Footer from './components/Footer.jsx'
+import Header from './components/Header.jsx'
+import HireMe from './components/HireMe.jsx'
+import Intro from './components/Intro.jsx'
+import Portfolio from './components/Portfolio.jsx'
+import PreLoader from './components/Preloader.jsx'
+import Resume from './components/Resume.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
 
 function App() {
 

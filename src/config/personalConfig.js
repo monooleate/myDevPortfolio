@@ -43,26 +43,27 @@ export const educationDetails = [
   export const skills = [
     {
       name: "Web Design",
-      percent: 65,
-    },
-    {
-      name: "HTML/CSS",
-      percent: 95,
+      percent: 80,
     },
     {
       name: "JavaScript",
-      percent: 80,
+      percent: 85,
     },
     {
       name: "React JS",
       percent: 70,
     },
     {
-      name: "Angular Js",
-      percent: 60,
+      name: "Tailwind CSS",
+      percent: 75,
     },
     {
-      name: "Bootstrap",
-      percent: 99,
+      name: "VBA",
+      percent: 85,
     },
   ];
+
+  export const hireMeText = {
+      description: `With a robust engineering background, I bring a unique perspective to solving problems. Let's work together to bring your projects to life with precision and creativity.`,
+  }
+  

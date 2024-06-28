@@ -25,7 +25,7 @@ function Header({ appliedDark, adjustAppliedDark }) {
             </a>
 
             <Toggle
-                className='pb-2 top-[30%] m-auto md:mt-8 md:top-auto md:mb-12 xl:my-auto'
+                className='pb-2 mt-5 m-auto md:mt-8 md:top-auto md:mb-12 xl:my-auto'
                 checked={appliedDark}
                 onChange={adjustAppliedDark}
                 icons={{ unchecked: "🌙", checked: "🔆" }}

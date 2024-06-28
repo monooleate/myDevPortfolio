@@ -1,14 +1,14 @@
 const ContactMe = () => {
     return(
         <section id='contact' className="bg-uni-odd text-uni-text pt-5">
-            <div className="py-8 px-4 mx-auto w-[70%]">
+            <div className="py-8 mx-auto w-[70%]">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-uni-text">
                     Contact Me
                 </h2>
                 <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 text-xl">
                     Are you interested in what you see? Let me know.
                 </p>
-                <form action="#" className="space-y-3">
+                <form name="contact" className="space-y-3" netlify>
                     <div>
                         <label htmlFor="email" className="block mb-2 text-sm font-medium text-uni-text">
                             Your email

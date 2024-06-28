@@ -7,7 +7,7 @@ export default function Portfolio(){
         <section id="portfolio" className="relative py-12 bg-gray-50 dark:bg-slate-800" >
             <div className="container m-auto px-8">
                 <div className="grid grid-cols-1 pb-8 text-center">
-                    <h3 className="mb-6 text-4xl dark:text-gray-300 md:leading-normal leading-normal font-semibold">Hobby Projects</h3>
+                    <h3 className="mb-6 text-4xl dark:text-gray-300 md:leading-normal leading-normal font-semibold">Hobby Portfolio</h3>
 
                     <p className="text-slate-400 max-w-xl mx-auto text-base">Engineer by training, developer by passion: learning through projects.</p>
                     

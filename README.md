@@ -21,6 +21,7 @@ Welcome to my fully responsive developer portfolio site! This site is designed t
 5. [Education](#education)
 6. [Certifications](#certifications)
 7. [Contact](#contact)
+8. [Technologies Used](#technologies-used)
 
 ## About Me
 
@@ -81,6 +82,14 @@ Finally, I will provide my contact information and links to my professional prof
 - GitHub profile
 - Personal blog or website (if applicable)
 
+## Technologies Used
+
+This portfolio site is built using the following technologies:
+
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Vite**: A build tool that provides a faster and leaner development experience for modern web projects.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -92,4 +101,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - References
 
 Thank you for visiting my portfolio site! Stay tuned as I continue to update and enhance it with my latest projects and achievements.
-

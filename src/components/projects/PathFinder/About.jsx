@@ -16,7 +16,7 @@ export default function About(){
 
     return(
         <>
-      <div className="flex items-center justify-center my-5">
+      <div className="flex items-center justify-center py-5">
         <button
           type="button"
           onClick={openModal}

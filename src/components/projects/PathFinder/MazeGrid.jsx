@@ -10,7 +10,7 @@ export default function MazeGrid() {
   const [errMessageRow, setErrMessageRow] = useState();
   const [errMessageColumn, setErrMessageColumn] = useState();
   const [timeoutIds, setTimeOutIds] = useState([]);
-  const [speed, setSpeed] = useState(200);
+  const [speed, setSpeed] = useState(25);
   
   const adjustRowNr = (value) => {
     if(!(value.target.validity.valueMissing && value.target.validity.badInput)){
@@ -178,7 +178,7 @@ export default function MazeGrid() {
             <button className='maze-button' onClick={adjustMaze}>Refresh Maze</button>
             <button className='maze-button' onClick={()=>bfs([1,0], rowNr, columnNr)}>Breadth-First Search</button>
             <button className='maze-button' onClick={()=>dfs([1,0], rowNr, columnNr)}>Depth-First Search</button>
-
+          </div>
           </div>
           <div className='maze'>
             {maze.map((row, rowIndex)=>(
@@ -192,7 +192,7 @@ export default function MazeGrid() {
             )}  
           </div>
 
-        </div>
+        
       </div>
     </main>
   )

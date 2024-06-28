@@ -43,9 +43,9 @@ function Intro({ openModal }){
 
                 <div id='hero-content' className="relative h-full">
                     <div className="flex flex-col h-full justify-center content-center ">
-                        <p className='text-uni-textIntro font-bold text-4xl'>
+                        <h1 className='text-uni-textIntro font-bold text-4xl'>
                             {IntroSecDetails.heading1}
-                        </p>
+                        </h1>
                         <h2 className="text-uni-textIntro font-bold mb-2 text-3xl xl:text-4xl py-10">
                             <Typewriter
                             options={{

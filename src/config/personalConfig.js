@@ -97,6 +97,6 @@ export const certificates = [
   {
   training: 'JavaScript: The Advanced Concepts',
   completion: '28.06.2024',
-  location: '/public/certificates/advancedJavascript.jpg',
+  location: '/certificates/advancedJavascript.jpg',
   },
 ]

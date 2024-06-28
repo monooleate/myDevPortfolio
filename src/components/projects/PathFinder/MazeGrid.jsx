@@ -4,8 +4,8 @@ import About from './About';
 
 export default function MazeGrid() {
 
-  const [rowNr, setRowNr] = useState(20);
-  const [columnNr, setColumnNr] = useState(20);
+  const [rowNr, setRowNr] = useState(10);
+  const [columnNr, setColumnNr] = useState(10);
   const [maze, setMaze] = useState(()=>generateMaze(rowNr,columnNr));
   const [errMessageRow, setErrMessageRow] = useState();
   const [errMessageColumn, setErrMessageColumn] = useState();

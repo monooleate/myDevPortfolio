@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Header from './components/header/Header'
 import HireMe from './components/HireMe'
 import Intro from './components/Intro'
+import Portfolio from './components/Portfolio'
 import PreLoader from './components/Preloader'
 import Resume from './components/Resume'
 import ScrollToTop from './components/ScrollToTop'
@@ -76,6 +77,7 @@ function App() {
               <AboutMe />
               <Resume />
               <HireMe />
+              <Portfolio />
               <ContactMe />
               <Footer />
               <CertificatesModal isOpen={isOpen} closeModal={closeModal} openModal={openModal} />

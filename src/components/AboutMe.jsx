@@ -7,11 +7,11 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 const AboutMe = () => {
 
     return (
-        <section id="aboutme" className="text-uni-text text-xl bg-uni-odd pb-5">
-            <div className="text-center text-4xl py-5">
+        <section id="aboutme" className="text-uni-text text-xl bg-uni-odd pt-5">
+            <div className="text-center text-4xl tracking-tight font-extrabold pt-10 pb-8">
                 About Me
             </div>
-            <div className="flex flex-wrap p-2 gap-5">
+            <div className="flex flex-wrap pb-10 gap-5">
                 <div className="mx-5 md:w-3/5">
                     Hello! I’m 
                     <b className=" font-bold"> Janos Meszaros</b>,

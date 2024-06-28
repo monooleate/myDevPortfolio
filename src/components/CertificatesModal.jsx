@@ -1,6 +1,6 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
-import { skills } from '../config/personalConfig';
+import { certificates } from '../config/personalConfig';
 
 export default function MyModal({ isOpen, closeModal, openModal }) {
 
@@ -42,45 +42,29 @@ export default function MyModal({ isOpen, closeModal, openModal }) {
                 leaveTo="opacity-0 scale-95"
               > 
 
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-gray-200 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl  transform overflow-hidden rounded-2xl bg-gray-200 p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg font-medium leading-6 text-uni-text"
+                    className="text-lg font-medium leading-6 text-uni-text pb-5"
                   >
                     Certificates
                   </Dialog.Title>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-12 ">
-                    {skills.length > 0 &&
-                      skills.map((skill, index) => (
-                        <div key={index} className="">
-                          <p
-                            className="font-bold text-uni-text text-start mb-2 text-base"
-                          >
-                            {skill.name}{" "}
-                            <span className="text-uni-text float-end">{skill.percent}%</span>
+                  <div className="flex flex-col gap-5 mx-12 ">
+                    {certificates.length > 0 &&
+                      certificates.map((certificate, index) => (
+                        <div key={index} className="flex flex-col">
+                          <p className="font-semibold text-uni-text text-start mb-2 text-base">
+                            Course: {certificate.training}
                           </p>
+                          <p className="float-left text-uni-text">Date: {certificate.completion}</p>
 
-                          <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                            <div className="bg-uni-palette h-2.5 rounded-full" style={{ width: skill.percent + "%" }}></div>
-                          </div>
-                        </div>
-                      ))}
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-12 ">
-                    {skills.length > 0 &&
-                      skills.map((skill, index) => (
-                        <div key={index} className="">
-                          <p
-                            className="font-bold text-uni-text text-start mb-2 text-base"
-                          >
-                            {skill.name}{" "}
-                            <span className="text-uni-text float-end">{skill.percent}%</span>
-                          </p>
-
-                          <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                            <div className="bg-uni-palette h-2.5 rounded-full" style={{ width: skill.percent + "%" }}></div>
+                          <div className="w-full h-full bg-gray-200 rounded-full dark:bg-gray-700">
+                            <img 
+                              className="mx-auto rounded-lg shadow-xl dark:shadow-gray-800" 
+                              src={certificate.location}
+                              alt={certificate.training}
+                            />  
                           </div>
                         </div>
                       ))}

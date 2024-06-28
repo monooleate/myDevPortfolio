@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faFileArrowDown, faCertificate } from '@fortawesome/free-solid-svg-icons';
 import { lineParticles, introBackgroundConfig, appliedConfig, } from "../config/dataConfig";
-import { IntroSecDetails } from "../config/personalConfig"
+import { introSecDetails } from "../config/personalConfig"
 import { loadFull } from "tsparticles";
 
 function Intro({ openModal }){
@@ -44,26 +44,26 @@ function Intro({ openModal }){
                 <div id='hero-content' className="relative h-full">
                     <div className="flex flex-col h-full justify-center content-center ">
                         <h1 className='text-uni-textIntro font-bold text-4xl'>
-                            {IntroSecDetails.heading1}
+                            {introSecDetails.heading1}
                         </h1>
                         <h2 className="text-uni-textIntro font-bold mb-2 text-3xl xl:text-4xl py-10">
                             <Typewriter
                             options={{
-                                strings: IntroSecDetails.typeWritterHeadings,
+                                strings: introSecDetails.typeWritterHeadings,
                                 autoStart: true,
                                 loop: true,
                             }}
                             />
                         </h2>
                         <p className="text-2xl text-uni-textIntro">
-                            {IntroSecDetails.heading2}
+                            {introSecDetails.heading2}
                         </p>
                         <div className="flex gap-8 mx-auto">
                             <a
                                 /* href='' */
                                 className="flex justify-center items-center gap-2 text-uni-textIntro bg-uni-palette rounded-md mt-7 w-36 mx-auto"
                                 >
-                                {IntroSecDetails.btnText}
+                                {introSecDetails.btnText}
                                 <svg className='w-6 h-6 cursor-pointer'>
                                     <FontAwesomeIcon icon={faFileArrowDown} />
                                 </svg>

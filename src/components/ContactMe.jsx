@@ -44,12 +44,12 @@ const ContactMe = () => {
     };
 
     return(
-        <section id='contact' className="bg-uni-odd text-uni-text pt-5">
-            <div className="py-8 mx-auto w-[70%]">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-uni-text">
+        <section id='contact' className="text-uni-text pt-3">
+            <div className="py-10 mx-auto w-[70%]">
+                <h2 className="pb-4 text-4xl tracking-tight font-extrabold text-center text-uni-text">
                     Contact Me
                 </h2>
-                <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 text-xl">
+                <p className="pb-8 lg:pb-16 font-light text-center text-gray-500 text-xl">
                     Are you interested in what you see? Let me know.
                 </p>
                 <form ref={form} onSubmit={sendEmail} id="contactMe" className="space-y-3 text-black">
@@ -81,7 +81,7 @@ const ContactMe = () => {
                           role="status"
                           aria-hidden="true"
                         ></span>
-                        Sending......
+                        Sending....
                       </div>
                     ) : (
                       <div>

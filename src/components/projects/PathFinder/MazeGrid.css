@@ -49,11 +49,12 @@ p.error {
   justify-content: center;
   padding: 2px;
   border: 2px solid black;
+  margin-bottom: 20px;
 }
 
 .buttons-maze{
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .buttons{

@@ -4,11 +4,11 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function Portfolio(){
     return(
-        <section id="portfolio" className="relative py-12 bg-gray-50 dark:bg-slate-800" >
-            <div className="container m-auto px-8">
+        <section id="portfolio" className="relative lg:px-5 pt-5 pb-8 bg-gray-50 dark:bg-slate-800" >
+            <div className="container m-auto pt-10 ">
                 <div className="grid grid-cols-1 pb-8 text-center">
-                    <h3 className="mb-6 text-4xl dark:text-gray-300 md:leading-normal leading-normal font-semibold">Hobby Portfolio</h3>
-
+                    <h3 className="pb-4 text-4xl tracking-tight font-extrabold dark:text-gray-300 md:leading-normal leading-normal">Hobby Portfolio</h3>
+                     
                     <p className="text-slate-400 max-w-xl mx-auto text-base">Engineer by training, developer by passion: learning through projects.</p>
                     
                 </div>

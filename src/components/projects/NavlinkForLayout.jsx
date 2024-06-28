@@ -64,7 +64,7 @@ import {
                   <a
                       key={item.name}
                       href={item.href}
-                      className='bg-uni-fill text-uni-text hover:text-uni-palette block rounded-md px-auto w-16 text-lg'
+                      className='bg-uni-fill text-uni-text hover:text-uni-palette block rounded-md p-1 px-2 text-lg'
                   >
                       {item.name}
                   </a>

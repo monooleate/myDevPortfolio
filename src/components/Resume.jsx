@@ -7,11 +7,11 @@ import { educationDetails, experienceDetails, skills } from '../config/personalC
 const Resume = () => {
 
   return (
-    <section id="resume" className="text-uni-text text-xl">
-        <div className="text-center text-4xl py-5">
+    <section id="resume" className="pt-5 text-uni-text text-xl">
+        <div className="text-center text-4xl tracking-tight font-extrabold pt-10 pb-8">
             Resume
         </div>
-        <div className="flex flex-wrap sm:flex-nowrap p-5 gap-5">
+        <div className="flex flex-wrap sm:flex-nowrap gap-5">
           {/* My Education */}
           <div className="mx-5 md:w-1/2">
             <h2 className="text-2xl font-bold mb-8">

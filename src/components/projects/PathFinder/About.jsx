@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
-import { skills } from '../../../config/personalConfig';
 
 export default function About(){
     //OpenModal

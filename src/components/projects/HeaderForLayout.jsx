@@ -11,7 +11,7 @@ export default function HeaderForLayout({ appliedDark, adjustAppliedDark }) {
                    
             <a
                 key='Janos'
-                href='#'
+                href='/'
                 className='bg-secondary top-[10%] text-uni-text hover:bg-uni-palette rounded-md font-medium text-lg '
             >   
                 Janos <br/>

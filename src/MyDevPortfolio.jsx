@@ -14,7 +14,7 @@ import PreLoader from './components/Preloader.jsx'
 import Resume from './components/Resume.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 
-function App() {
+export default function MyDevPortfolio() {
 
   //isDark Adjustment
   const [appliedDark, setAppliedDark] = useState(appliedConfig.isDarkTheme);
@@ -89,5 +89,3 @@ function App() {
     </>
   )
 }
-
-export default App

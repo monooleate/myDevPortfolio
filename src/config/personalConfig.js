@@ -9,34 +9,40 @@ export const educationDetails = [
       yearRange: "2015 - 2016",
       title: "Engineering Economist",
       place: "University of Budapest",
-      desc: "Base my finance knowledge.",
+      desc: `Base my finance knowledge. Finance and Accounting Specialization Thesis: “Sensibility analysis of unit utilization changing on EBITDA”`,
     },
     {
       yearRange: "2007 - 2012",
       title: "MSc in Chemical Engineering",
-      place: "Harvard University",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      place: "University of Veszprém",
+      desc: "Petroleum and Petrochemical Technology Specialization",
     },
   ];
 
   export const experienceDetails = [
     {
-      yearRange: "2007 - 2012",
-      title: "Jr. UI UX Designer",
-      place: "Themeforest",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2024 - ",
+      title: "Freelancing",
+      place: "Various",
+      desc: "Web and Software development",
     },
     {
-      yearRange: "2014 - 2016",
-      title: "Jr. Product Designer",
-      place: "Dribbble",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2020 - 2023",
+      title: "Plant manager",
+      place: "Various",
+      desc: "Managed chemical plants with focus on optimization and safe operations.",
     },
     {
-      yearRange: "2017 - 2019",
-      title: "Product Designer",
-      place: "Adobe",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2015 - 2020",
+      title: "Technologist",
+      place: "MOL",
+      desc: "Technology coordination of 10 plants. Providing project management to implement, coordinate and supervise strategic projects.",
+    },
+    {
+      yearRange: "2013 - 2015",
+      title: "Lean Expert",
+      place: "MOL",
+      desc: "„Change agent” role and leaded teams at two refineries and at one petrochemical site.",
     },
   ];
 
@@ -61,9 +67,29 @@ export const educationDetails = [
       name: "VBA",
       percent: 85,
     },
+    {
+      name: "MS Automate",
+      percent: 80,
+    },
   ];
 
   export const hireMeText = {
       description: `With a robust engineering background, I bring a unique perspective to solving problems. Let's work together to bring your projects to life with precision and creativity.`,
   }
+
+  export const aboutMeText = {
+      description: ` a chemical engineer turned full-stack and software developer with a passion for solving complex problems through innovative coding solutions.`
+      /* With a solid foundation in engineering principles and a keen analytical mind, I bring a unique perspective to the field of software development. */
+  }
+
+  export const IntroSecDetails = {
+    heading1: "WELCOME TO MY WORLD",
+    typeWritterHeadings: [
+        "I'm Janos",
+        "I'm an Engineer",
+        "and a Developer too",
+    ],
+    heading2: "located in Budapest, Hungary.",
+    btnText: "Download CV",
+};
   

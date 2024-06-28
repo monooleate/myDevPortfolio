@@ -1,28 +1,10 @@
-export const headerConfig = {
-    Default: "Default Header",
-    Classic: "Classic Header",
-    BottomHeader: "Bottom Header",
-    MenuPushOpenSideHeader: "Menu Push Open Side Header",
-    OverlayMenu: "Overlay Menu",
-    SideHeader: "Side Header",
-};
-  
+ 
 export const introBackgroundConfig = {
     particles: "particles",
     image: "image",
     video: "video",
 };
 
-export const IntroSecDetails = {
-    heading1: "WELCOME TO MY WORLD",
-    typeWritterHeadings: [
-        "I'm Janos",
-        "I'm an Engineer",
-        "and a Programer too",
-    ],
-    heading2: "based in Budapest, Hungary.",
-    btnText: "Download CV",
-};
 
 export const socialIcons = [
     {
@@ -75,7 +57,7 @@ export const socialIcons = [
     background: {color: {value: "#111418",}, },
     fpsLimit: 120,
     interactivity:    {events: {onClick: {enable: true, mode: "push",}, onHover: {enable: true, mode: "repulse",},},
-                      modes: {push: {quantity: 3,},repulse: {distance: 50, duration: 0.4,},},},
+                      modes: {push: {quantity: 2,},repulse: {distance: 50, duration: 0.4,},},},
     particles:        {color: {value: "#ffffff",},
                       links: {color: "#ffffff",distance: 150,enable: true,opacity: 0.4,width: 1,},
                       move: {direction: "none",enable: true, outModes: {default: "bounce",}, random: false, speed: 3, straight: false,},

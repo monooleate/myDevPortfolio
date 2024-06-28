@@ -4,7 +4,8 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faFileArrowDown, faCertificate } from '@fortawesome/free-solid-svg-icons';
-import { lineParticles, introBackgroundConfig, appliedConfig, IntroSecDetails } from "../config/dataConfig";
+import { lineParticles, introBackgroundConfig, appliedConfig, } from "../config/dataConfig";
+import { IntroSecDetails } from "../config/personalConfig"
 import { loadFull } from "tsparticles";
 
 function Intro({ openModal }){
@@ -59,8 +60,7 @@ function Intro({ openModal }){
                         </p>
                         <div className="flex gap-8 mx-auto">
                             <a
-                                href={'#first'}
-                                download
+                                /* href='' */
                                 className="flex justify-center items-center gap-2 text-uni-textIntro bg-uni-palette rounded-md mt-7 w-36 mx-auto"
                                 >
                                 {IntroSecDetails.btnText}

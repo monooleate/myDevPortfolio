@@ -1,5 +1,6 @@
 import Lottie from "lottie-react";
 import animation from "../../src/assets/coding.json";
+import { aboutMeText } from "../config/personalConfig";
 
 const AboutMe = () => {
 
@@ -10,10 +11,10 @@ const AboutMe = () => {
             </div>
             <div className="flex flex-wrap p-2 gap-5">
                 <div className="mx-5 md:w-3/5">
-                Hello! I’m Janos Meszaros,
+                    Hello! I’m 
+                    <b className=" font-bold"> Janos Meszaros</b>,
                     <Lottie className="mx-auto h-40 w-40" animationData={animation} />
-                    a chemical engineer turned full-stack developer with a passion for solving complex problems through innovative coding solutions. 
-                    {/* With a solid foundation in engineering principles and a keen analytical mind, I bring a unique perspective to the field of software development. */}
+                    {aboutMeText.description}
                 </div>
                 <div className="my-5 mx-auto sm:my-auto md:w-1/4">
                     
@@ -26,10 +27,10 @@ const AboutMe = () => {
                             <dt className="mb-1 text-gray-500 dark:text-gray-400">Residence</dt>
                             <dd className="font-semibold">Hungarian</dd>
                         </div>
-                        <div className="flex flex-col pt-3">
-                            <dt className="mb-1 text-gray-500 dark:text-gray-400">Phone number</dt>
-                            <dd className=" font-semibold">+00 123 456 789</dd>
-                        </div>
+                        {/* <div className="flex flex-col pt-3">
+                            <dt className="mb-1 text-gray-500 dark:text-gray-400">Email</dt>
+                            <dd className=" font-semibold"></dd>
+                        </div> */}
                     </dl>
 
                     

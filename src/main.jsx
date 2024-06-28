@@ -8,10 +8,8 @@ import ErrorPage from './components/ErrorPage';
 import LayoutForProjects from './components/projects/LayoutForProjects.jsx'
 import MazeGrid from './components/projects/PathFinder/MazeGrid'
 import Portfolio from './components/Portfolio'
-
-
-
 import './index.css'
+
 
 const router = createBrowserRouter([
   {
@@ -38,6 +36,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage/>
   },
 ]);
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -61,7 +61,7 @@ function Intro({ openModal }){
                         <div className="flex gap-8 mx-auto text-uni-text">
                             <a
                                 /* href='' */
-                                className="flex justify-center items-center gap-2 text-uni-textIntro bg-uni-palette rounded-md mt-7 w-36 mx-auto"
+                                className="flex justify-center items-center gap-2 bg-uni-palette rounded-md mt-7 w-36 mx-auto"
                                 >
                                 {introSecDetails.btnText}
                                 <svg className='w-6 h-6 cursor-pointer'>
@@ -73,7 +73,7 @@ function Intro({ openModal }){
                                 <a
                                 
                                 onClick={openModal}
-                                className="flex justify-center gap-2 rounded-md text-uni-textIntro bg-uni-palette mt-7 px-4 py-2 w-36 cursor-pointer hover:bg-uni-palette focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
+                                className="flex justify-center gap-2 rounded-md bg-uni-palette mt-7 px-4 py-2 w-36 cursor-pointer hover:bg-uni-palette focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
                                 >
                                 Certificates
                                 <svg className='w-6 h-6 cursor-pointer'>

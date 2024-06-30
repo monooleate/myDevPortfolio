@@ -58,7 +58,7 @@ function Intro({ openModal }){
                         <p className="text-2xl text-uni-textIntro">
                             {introSecDetails.heading2}
                         </p>
-                        <div className="flex gap-8 mx-auto">
+                        <div className="flex gap-8 mx-auto text-uni-text">
                             <a
                                 /* href='' */
                                 className="flex justify-center items-center gap-2 text-uni-textIntro bg-uni-palette rounded-md mt-7 w-36 mx-auto"

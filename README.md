@@ -1,27 +1,64 @@
 # Developer Portfolio Site
 
 Welcome to my fully responsive developer portfolio site! This site is designed to showcase my skills, projects, and experience as a web developer and software engineer. 
+The repository template is my live and used personal portfolio site.  
 You can use it as template for similar purpose. 
 Please contribute to make it better!
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/59b51dc8-93af-4dd1-bab9-828ca55c95fa/deploy-status)](https://app.netlify.com/sites/jmeszaros/deploys)
 
+This portfolio site is built using the following technologies:
+Site genereated by **Vite**,
+uses **React** library,
+designed by **Tailwind CSS**,
+deployed by **Netlify**.
+
 ## Table of Contents
 
-1. [Configuration] (#configuration)
+1. [Configuration](#configuration)
 2. [About Me](#about-me)
-4. [Skills](#skills)
-5. [Projects](#projects)
-6. [Experience](#experience)
-7. [Education](#education)
-8. [Certifications](#certifications)
-9. [Contact](#contact)
-10. [Technologies Used](#technologies-used)
+3. [Education](#education)
+4. [Experience](#experience)
+5. [Skills](#skills)
+6. [Projects](#projects)
+7. [Certifications](#certifications)
+8. [Contact](#contact)
+
+## Configuration
+
+1. For configuration of personal information you should modify the objects in personalConfig.js file.
+   - Education: educationDetails
+   - Experience: experienceDetails
+   - Competencies: skills
+   - Self-advertising: hireMeText
+   - About-me Summary: aboutMeText
+   - TypeWriter configuration: introSecDetails
+   - Acquired certificates: certificates
+   
+3. For site configuration us the dataConfig.js file.
+   - You can modify the lineParticles option which has effect on the 'Intro' component.
 
 ## About Me
 
 In this section, I will introduce myself and provide a brief background about my journey from a chemical engineer to a full-stack developer. I will highlight my passion for coding, problem-solving abilities, and my unique perspective in tackling technical challenges.
 
+## Education
+
+In this section, I will list my educational background, including:
+
+- Degree(s) obtained
+- Institution(s) attended
+- Graduation year(s)
+
+## Experience
+
+Here, I will provide an overview of my professional experience. This will include:
+
+- Job Title
+- Company Name
+- Duration
+- Responsibilities and achievements
+  
 ## Skills
 
 Here, I will list the various technical skills I have acquired over the years. This will include:
@@ -29,7 +66,7 @@ Here, I will list the various technical skills I have acquired over the years. T
 - Front-end development: HTML, CSS, JavaScript, React
 - Back-end development: Node.js, Express.js, MongoDB, SQL
 - Microsoft Technologies: VBA, Office Script, Power Automate
-- Tools and Platforms: Git, GitHub, Docker, Jenkins
+- Tools and Platforms: Git, GitHub
 - Others: Agile methodologies, problem-solving, analytical skills
 
 ## Projects
@@ -42,23 +79,6 @@ This section will showcase the projects I have worked on. Each project will incl
 - Link to the live project or repository
 - Screenshots or demo (if available)
 
-## Experience
-
-Here, I will provide an overview of my professional experience. This will include:
-
-- Job Title
-- Company Name
-- Duration
-- Responsibilities and achievements
-
-## Education
-
-In this section, I will list my educational background, including:
-
-- Degree(s) obtained
-- Institution(s) attended
-- Graduation year(s)
-
 ## Certifications
 
 Here, I will list any relevant certifications I have earned, such as:
@@ -70,24 +90,7 @@ Here, I will list any relevant certifications I have earned, such as:
 
 ## Contact
 
-Finally, I will provide my contact information and links to my professional profiles, such as:
-
-- Email address
-- LinkedIn profile
-- GitHub profile
-- Personal blog or website (if applicable)
-
-## Technologies Used
-
-This portfolio site is built using the following technologies:
-
-- **React**: A JavaScript library for building user interfaces.
-- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
-- **Vite**: A build tool that provides a faster and leaner development experience for modern web projects.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+I provide my contact form to get in touch. 
 
 ## Acknowledgments
 

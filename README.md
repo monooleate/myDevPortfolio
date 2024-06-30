@@ -1,17 +1,22 @@
 # Developer Portfolio Site
 
-Welcome to my fully responsive developer portfolio site! This site is designed to showcase my skills, projects, and experience as a web developer and software engineer. Below you'll find a brief overview of the sections included in the site. I will complete these sections manually as I continue to develop and refine my portfolio.
+Welcome to my fully responsive developer portfolio site! This site is designed to showcase my skills, projects, and experience as a web developer and software engineer. 
+You can use it as template for similar purpose. 
+Please contribute to make it better!
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/59b51dc8-93af-4dd1-bab9-828ca55c95fa/deploy-status)](https://app.netlify.com/sites/jmeszaros/deploys)
 
 ## Table of Contents
 
-1. [About Me](#about-me)
-2. [Skills](#skills)
-3. [Projects](#projects)
-4. [Experience](#experience)
-5. [Education](#education)
-6. [Certifications](#certifications)
-7. [Contact](#contact)
-8. [Technologies Used](#technologies-used)
+1. [Configuration] (#configuration)
+2. [About Me](#about-me)
+4. [Skills](#skills)
+5. [Projects](#projects)
+6. [Experience](#experience)
+7. [Education](#education)
+8. [Certifications](#certifications)
+9. [Contact](#contact)
+10. [Technologies Used](#technologies-used)
 
 ## About Me
 

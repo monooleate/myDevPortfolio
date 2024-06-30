@@ -63,6 +63,7 @@ import {
                   {navigation.map((item) => (
                   <a
                       key={item.name}
+                      aria-label={item.name}
                       href={item.href}
                       className='bg-uni-fill text-uni-text hover:text-uni-palette block rounded-md p-1 px-2 text-lg'
                   >

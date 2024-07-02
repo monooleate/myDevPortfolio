@@ -26,7 +26,8 @@ deployed by **Netlify**.
 
 ## Configuration
 
-1. For configuration of personal information you should modify the objects in personalConfig.js file.
+Personalisation
+: For configuration of personal information you should modify the objects in personalConfig.js file.
    - Education: educationDetails
    - Experience: experienceDetails
    - Competencies: skills
@@ -34,9 +35,13 @@ deployed by **Netlify**.
    - About-me Summary: aboutMeText
    - TypeWriter configuration: introSecDetails
    - Acquired certificates: certificates
-   
-3. For site configuration us the dataConfig.js file.
+
+Lookout
+:For site configuration us the dataConfig.js file.
    - You can modify the lineParticles option which has effect on the 'Intro' component.
+:Tailwind
+   - There are color variables for different themes. Those variables can be changed to make the color set better. The basic modes are: **light** and **dark**.
+   - I don't use Tailwind's ':dark' feature instead I used variables which changes with themes. So the **dark** is a theme. With this method you can define various themes without touching the Tailwind classes.  
 
 ## About Me
 
@@ -87,6 +92,8 @@ Here, I will list any relevant certifications I have earned, such as:
 - Online Courses (Coursera, Udemy, etc.)
 - Microsoft Certifications
 - Any other relevant certifications
+
+In the base template the certificate is a modal which jump up when click on a button in the Intro section.
 
 ## Contact
 

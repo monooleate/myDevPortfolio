@@ -7,9 +7,9 @@ export default {
   ],
   theme: {
     extend: {
-/*       screens: {
-        'xl': '1120px'
-      } */
+      screens: {
+        'xl': '1180px'
+      },
       colors: {
         uni: {
           text: 'rgb(var(--color-text) / <alpha-value>)',
@@ -21,7 +21,7 @@ export default {
           odd: 'rgb(var(--color-odd) / <alpha-value>)', 
           even: 'rgb(var(--color-even) / <alpha-value>)',
         }
-      }
+      },
     }
   },
   plugins: [],

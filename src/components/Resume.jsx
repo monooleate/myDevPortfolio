@@ -7,7 +7,7 @@ import { educationDetails, experienceDetails, skills } from '../config/personalC
 const Resume = () => {
 
   return (
-    <section id="resume" className="pt-5 text-uni-text text-xl">
+    <section id="resume" className="pt-5 text-uni-text text-xl mx-4">
         <div className="text-center text-4xl tracking-tight font-extrabold pt-10 pb-8">
             Resume
         </div>
@@ -96,7 +96,7 @@ const Resume = () => {
           <a
             href={'#first'}
             download
-            className="flex justify-center items-center gap-2 text-uni-textIntro bg-uni-palette rounded-md mt-8 w-36 text-base h-12 mx-auto"
+            className="flex justify-center items-center gap-2 text-uni-text bg-uni-palette rounded-md mt-8 w-36 text-base h-12 mx-auto"
             >
             Download CV
             <svg className='w-6 h-6 cursor-pointer'>

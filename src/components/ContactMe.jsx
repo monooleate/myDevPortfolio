@@ -74,7 +74,7 @@ const ContactMe = () => {
                         <textarea name="message" id="message_body" rows="6" className="block p-2.5 w-full text-sm bg-gray-200  rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 " placeholder="Let me know your thoughts...">
                         </textarea>
                     </div>
-                    <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-uni-text rounded-lg bg-uni-fill sm:w-fit hover:bg-uni-palette focus:ring-4 focus:outline-none focus:ring-primary-300">
+                    <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-uni-text rounded-lg bg-uni-palette sm:w-fit hover:bg-uni-palette focus:ring-4 focus:outline-none focus:ring-primary-300">
                     {sendingMail ? (
                       <div>
                         <span

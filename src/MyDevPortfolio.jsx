@@ -65,9 +65,9 @@ export default function MyDevPortfolio() {
   return (
     <>
       {isLoading && <PreLoader></PreLoader>}
-      <div id='void' className='bg-gradient-to-t from-uni-bg to-uni-palette/70'>
+      <div id='void' className='bg-gradient-to-tl from-uni-bg to-uni-palette/90'> 
         {/* <div id='frame' className='fixed h-full w-full border-gray-200 border-solid border-[15px] border-t-0 md:border-t-[15px] z-0'/> */}
-        <div id='main-wrapper' className=' m-auto max-w-[700px] md:flex md:gap-2 md:max-w-[1100px] md:min-w-[500px] xl:h-[100vh] xl:m-auto xl:min-h-[600px]' >
+        <div id='main-wrapper' className=' m-auto max-w-[700px] md:flex md:gap-2 md:max-w-[1250px] md:min-w-[500px] xl:h-[100vh] xl:m-auto xl:min-h-[600px]' >
           <Header appliedDark={appliedDark} adjustAppliedDark={adjustAppliedDark} />
           <main id='main' className='mt-16 md:mt-0 md:pt-5 xl:my-auto xl:flex xl:pt-0'>
             <Intro openModal={openModal}/>

@@ -42,7 +42,7 @@ export default function MyModal({ isOpen, closeModal, openModal }) {
                 leaveTo="opacity-0 scale-95"
               > 
 
-                <Dialog.Panel className="w-full max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl  transform overflow-hidden rounded-2xl bg-gray-200 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-[85%] lg:max-w-[70%] transform overflow-hidden rounded-2xl bg-gray-200 p-5 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-uni-text pb-5"
@@ -50,7 +50,7 @@ export default function MyModal({ isOpen, closeModal, openModal }) {
                     Certificates
                   </Dialog.Title>
 
-                  <div className="flex flex-col gap-5 mx-12 ">
+                  <div className="flex flex-col gap-5 mx-5 ">
                     {certificates.length > 0 &&
                       certificates.map((certificate, index) => (
                         <div key={index} className="flex flex-col">

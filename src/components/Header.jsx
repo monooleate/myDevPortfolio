@@ -23,15 +23,16 @@ function Header({ appliedDark, adjustAppliedDark }) {
                 Janos <br/>
                 <FontAwesomeIcon icon={faThumbsUp} />
             </a>
-
-            <Toggle
-                className='pb-2 mt-5 m-auto md:mt-8 md:top-auto md:mb-12 xl:my-auto'
-                checked={appliedDark}
-                onChange={adjustAppliedDark}
-                id='isDark'
-                icons={{ unchecked: "🌙", checked: "🔆" }}
-            />
-            
+            <label htmlFor='isDark'>
+                
+                <Toggle
+                    className='pb-2 mt-5 m-auto md:mt-8 md:top-auto md:mb-12 xl:my-auto'
+                    checked={appliedDark}
+                    onChange={adjustAppliedDark}
+                    id='isDark'
+                    icons={{ unchecked: "🌙", checked: "🔆" }}
+                />
+            </label>
             <Navlink />
             
         </header>

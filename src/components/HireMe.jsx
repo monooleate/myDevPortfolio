@@ -12,7 +12,7 @@ export default function HireMe(){
                     <p className="text-uni-textIntro max-w-xl mx-auto text-[15px]">{hireMeText.description}</p>
                 
                     <div className="relative mt-8">
-                        <a href="#contact" className="px-2 py-1 bg-uni-palette hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-xl text-white rounded-md">Hire Me</a>
+                        <a href="#contact" className="px-2 py-1 bg-uni-palette hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-xl text-uni-text rounded-md">Hire Me</a>
                     </div>
                 </div>
             </div>

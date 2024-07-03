@@ -85,9 +85,9 @@ export const aboutMeText = {
 export const introSecDetails = {
   heading1: "WELCOME TO MY WORLD",
   typeWritterHeadings: [
-      "I'm Janos",
-      "I'm an Engineer",
-      "and a Developer too",
+      "Software Engineer",
+      "Web Developer",
+      "Chemical Engineer",
   ],
   heading2: "located in Budapest, Hungary.",
   btnText: "Download CV",

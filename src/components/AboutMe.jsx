@@ -14,7 +14,7 @@ const AboutMe = () => {
             <div className="flex flex-wrap pb-10 gap-5">
                 <div className="mx-5 md:w-3/5">
                     Hello! I’m 
-                    <b className=" font-bold"> Janos Meszaros</b>,
+                    <b className="font-bold"> Janos Meszaros</b>,
                     <Lottie className="mx-auto h-40 w-40" animationData={animation} />
                     {aboutMeText.description}
                 </div>

@@ -4,7 +4,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function Portfolio(){
     return(
-        <section id="portfolio" className="relative lg:px-5 pt-5 pb-8 bg-gray-50 dark:bg-slate-800" >
+        <section id="portfolio" className="relative lg:px-5 pt-5 pb-8 bg-uni-odd" >
             <div className="container m-auto pt-10 ">
                 <div className="grid grid-cols-1 pb-8 text-center">
                     <h3 className="pb-4 text-4xl tracking-tight font-extrabold dark:text-gray-300 md:leading-normal leading-normal">Hobby Portfolio</h3>

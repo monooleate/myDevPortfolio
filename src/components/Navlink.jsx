@@ -59,6 +59,7 @@ function Navlink() {
                 {navigation.map((item) => (
                 <a
                     key={item.name}
+                    aria-label={item.name}
                     href={item.href}
                     className='bg-uni-fill text-uni-text hover:text-uni-palette block rounded-md py-2 px-auto w-16 text-lg'
                 >
@@ -73,6 +74,7 @@ function Navlink() {
                 {navigation.map((item) => (
                 <a
                     key={item.name}
+                    aria-label={item.name}
                     href={item.href}
                     className='bg-uni-fill text-uni-text hover:bg-uni-palette block rounded-md py-3 font-medium text-xl'
                 >

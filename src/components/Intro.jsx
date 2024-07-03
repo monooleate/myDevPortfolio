@@ -27,7 +27,7 @@ function Intro({ openModal }){
       );
     
     return(
-        <section id='section-intro' className='rounded-xl bg-uni-fill h-[60vh] min-h-[400px] xl:min-w-[400px] xl:w-[20vh] xl:max-w-[500px] xl:min-h-[400px] xl:h-[80vh] xl:max-h-[600px] xl:float-left '>
+        <section id='section-intro' className='rounded-xl bg-uni-fill h-[80vh] md:h-[60vh] min-h-[400px] xl:min-w-[400px] xl:w-[20vh] xl:max-w-[500px] xl:min-h-[400px] xl:h-[80vh] xl:max-h-[600px] xl:float-left '>
             <div id='hero-wrap' className="relative w-full h-full">
                 {appliedConfig.appliedIntro === introBackgroundConfig.particles &&
                 init && ( appliedConfig.particlesOn ?
@@ -58,10 +58,10 @@ function Intro({ openModal }){
                         <p className="text-2xl text-uni-textIntro">
                             {introSecDetails.heading2}
                         </p>
-                        <div className="flex gap-8 mx-auto">
+                        <div className="flex gap-8 mx-auto text-uni-text">
                             <a
                                 /* href='' */
-                                className="flex justify-center items-center gap-2 text-uni-textIntro bg-uni-palette rounded-md mt-7 w-36 mx-auto"
+                                className="flex justify-center items-center gap-2 bg-uni-palette rounded-md mt-7 w-36 mx-auto"
                                 >
                                 {introSecDetails.btnText}
                                 <svg className='w-6 h-6 cursor-pointer'>
@@ -73,7 +73,7 @@ function Intro({ openModal }){
                                 <a
                                 
                                 onClick={openModal}
-                                className="flex justify-center gap-2 rounded-md text-uni-textIntro bg-uni-palette mt-7 px-4 py-2 w-36 cursor-pointer hover:bg-uni-palette focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
+                                className="flex justify-center gap-2 rounded-md bg-uni-palette mt-7 px-4 py-2 w-36 cursor-pointer hover:bg-uni-palette focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
                                 >
                                 Certificates
                                 <svg className='w-6 h-6 cursor-pointer'>

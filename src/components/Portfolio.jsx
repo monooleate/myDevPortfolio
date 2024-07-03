@@ -9,7 +9,7 @@ export default function Portfolio(){
                 <div className="grid grid-cols-1 pb-8 text-center">
                     <h3 className="pb-4 text-4xl tracking-tight font-extrabold dark:text-gray-300 md:leading-normal leading-normal">Hobby Portfolio</h3>
                      
-                    <p className="text-slate-400 max-w-xl mx-auto text-base">Engineer by training, developer by passion: learning through projects.</p>
+                    <p className="text-uni-text max-w-xl mx-auto text-base">Engineer by training, developer by passion: learning through projects.</p>
                     
                 </div>
 
@@ -20,8 +20,13 @@ export default function Portfolio(){
 
                         <div className="mt-7 text-left">
                             <p className="title h5 text-2xl font-medium dark:text-gray-300 hover:text-amber-500">myDevPortfolio</p>
+                            {/* new window svg */}
+                            <svg className='inline-block mt-2 ml-2 w-4 h-4 cursor-pointer' viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" mirror-in-rtl="true">
+                                <path fill="#494c4e" d="M12.1.6a.944.944 0 0 0 .2 1.04l1.352 1.353L10.28 6.37a.956.956 0 0 0 1.35 1.35l3.382-3.38 1.352 1.352a.944.944 0 0 0 1.04.2.958.958 0 0 0 .596-.875V.96a.964.964 0 0 0-.96-.96h-4.057a.958.958 0 0 0-.883.6z"/>
+                                <path fill="#494c4e" d="M14 11v5a2.006 2.006 0 0 1-2 2H2a2.006 2.006 0 0 1-2-2V6a2.006 2.006 0 0 1 2-2h5a1 1 0 0 1 0 2H2v10h10v-5a1 1 0 0 1 2 0z"/>
+                            </svg>
                             <p className="text-slate-400 mt-3 text-[15px]">Streamline your visibility online with my customizable devPortfolio template.</p>
-                            <svg className='inline-block mt-2 ml-2 w-7 h-7 cursor-pointer'><FontAwesomeIcon icon={faGithub} /></svg>
+                            <svg className=' mt-2 ml-2 w-7 h-7 cursor-pointer'><FontAwesomeIcon icon={faGithub} /></svg>
                             <p className="mt-5 hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Check it <svg className='inline-block ml-2 w-5 h-5 cursor-pointer'><FontAwesomeIcon icon={faArrowRight} /></svg></p>
                             <svg className='inline-block mt-2 ml-2 w-7 h-7 cursor-pointer' xmlns="http://www.w3.org/2000/svg" viewBox="-11.5 -10.23174 23 20.46348"><circle cx="0" cy="0" r="2.05" fill="#61dafb"/><g stroke="#61dafb" strokeWidth="1" fill="none"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg>
 

@@ -25,9 +25,7 @@ function Navlink() {
                     <DisclosureButton className="rounded-md mx-2 lg:mx-8 text-uni-text hover:bg-uni-palette focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-
                         <FontAwesomeIcon icon={faX} className="block h-6 w-6" aria-hidden="true" />
-
                     ) : (
                         <FontAwesomeIcon icon={faBars} className="block h-6 w-6" aria-hidden="true"/>
                     )}

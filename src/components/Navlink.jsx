@@ -1,8 +1,7 @@
 
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faListAlt, faHandsHoldingCircle, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faListAlt, faHandsHoldingCircle, faPaperPlane, faX, faBars } from '@fortawesome/free-solid-svg-icons';
 
 const navigation = [
   { name: 'About', href: '#aboutme', current: false, icon: faUser},
@@ -26,9 +25,11 @@ function Navlink() {
                     <DisclosureButton className="rounded-md mx-2 lg:mx-8 text-uni-text hover:bg-uni-palette focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-                        <XMarkIcon className="block h-8 w-8" aria-hidden="true" />
+
+                        <FontAwesomeIcon icon={faX} className="block h-6 w-6" aria-hidden="true" />
+
                     ) : (
-                        <Bars3Icon className="block h-8 w-8" aria-hidden="true" />
+                        <FontAwesomeIcon icon={faBars} className="block h-6 w-6" aria-hidden="true"/>
                     )}
                     </DisclosureButton>
                 </div>

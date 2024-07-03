@@ -49,7 +49,7 @@ const ContactMe = () => {
                 <h2 className="pb-4 text-4xl tracking-tight font-extrabold text-center text-uni-text">
                     Contact Me
                 </h2>
-                <p className="pb-8 lg:pb-16 font-light text-center text-gray-500 text-xl">
+                <p className="pb-8 lg:pb-16 font-light text-center text-uni-text text-xl">
                     Are you interested in what you see? Let me know.
                 </p>
                 <form ref={form} onSubmit={sendEmail} id="contactMe" className="space-y-3 text-black">

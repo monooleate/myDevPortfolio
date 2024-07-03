@@ -73,7 +73,7 @@ function Intro({ openModal }){
                                 <a
                                 
                                 onClick={openModal}
-                                className="flex justify-center gap-2 rounded-md bg-uni-palette mt-7 px-4 py-2 w-36 cursor-pointer hover:bg-uni-palette focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
+                                className="text-uni-text flex justify-center gap-2 rounded-md bg-uni-palette mt-7 px-4 py-2 w-36 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
                                 >
                                 Certificates
                                 <svg className='w-6 h-6 cursor-pointer'>

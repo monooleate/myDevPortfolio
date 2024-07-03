@@ -27,7 +27,7 @@ export default function Intro({ openModal }){
       );
     
     return(
-        <section id='section-intro' className='rounded-xl bg-uni-fill h-[85vh] min-h-[400px]
+        <section id='section-intro' className='rounded-xl bg-uni-fill h-[90vh] min-h-[400px]
         xl:min-w-[400px] xl:w-[20vh] xl:max-w-[500px] xl:min-h-[400px] xl:h-[80vh] xl:max-h-[600px] xl:float-left '>
             <div id='hero-wrap' className="relative w-full h-full">
                 {appliedConfig.appliedIntro === introBackgroundConfig.particles &&
@@ -63,7 +63,7 @@ export default function Intro({ openModal }){
 {/*                         <p className="text-2xl text-uni-textIntro">
                             {introSecDetails.heading2}
                         </p> */}
-                        <div className="flex gap-8 mx-auto pb-5 text-uni-text">
+                        <div className="flex gap-8 mx-auto pb-4 text-uni-text">
                             <a
                                 /* href='' */
                                 className="flex justify-center items-center gap-2 bg-uni-palette rounded-md w-36 mx-auto"
@@ -76,9 +76,8 @@ export default function Intro({ openModal }){
 
                             <div className="flex items-center justify-center">
                                 <a
-                                
                                 onClick={openModal}
-                                className="text-uni-text flex justify-center gap-2 rounded-md bg-uni-palette  px-4 py-2 w-36 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
+                                className="text-uni-text flex justify-center gap-2 rounded-md bg-uni-palette px-4 py-2 w-36 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
                                 >
                                 Certificates
                                 <svg className='w-6 h-6 cursor-pointer'>
@@ -87,7 +86,7 @@ export default function Intro({ openModal }){
                                 </a>
                             </div>
                         </div>
-                        <a href='#aboutme' className=' text-uni-palette mx-auto xl:hidden'>
+                        <a href='#aboutme' className='pb-6 text-uni-palette mx-auto xl:hidden'>
                             <svg className='animate-bounce w-6 h-6 cursor-pointer'>
                                 <FontAwesomeIcon icon={faChevronDown} />
                             </svg>

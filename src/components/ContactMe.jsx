@@ -57,7 +57,7 @@ const ContactMe = () => {
                         <label htmlFor="email" className="block mb-2 text-sm font-medium text-uni-text">
                             Your email
                         </label>
-                        <input type="email" id="email_address" name="user_email" className="shadow-sm bg-gray-200 border border-gray-300 text-sm text-left rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 " placeholder="janos@meszaros.com" required>
+                        <input type="email" id="email" name="user_email" className="shadow-sm bg-gray-200 border border-gray-300 text-sm text-left rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 " placeholder="janos@meszaros.com" required>
                         </input>
                     </div>
                     <div>
@@ -71,7 +71,7 @@ const ContactMe = () => {
                         <label htmlFor="message" className="block mb-2 text-sm font-medium text-uni-text ">
                             Your message
                         </label>
-                        <textarea name="message" id="message_body" rows="6" className="block p-2.5 w-full text-sm bg-gray-200  rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 " placeholder="Let me know your thoughts...">
+                        <textarea name="message" id="message" rows="6" className="block p-2.5 w-full text-sm bg-gray-200  rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 " placeholder="Let me know your thoughts...">
                         </textarea>
                     </div>
                     <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-uni-text rounded-lg bg-uni-palette sm:w-fit hover:bg-uni-palette focus:ring-4 focus:outline-none focus:ring-primary-300">

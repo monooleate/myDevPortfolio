@@ -1,8 +1,7 @@
 # Developer Portfolio Site
 
-Welcome to my fully responsive developer portfolio site! This site is designed to showcase my skills, projects, and experience as a web developer and software engineer. 
-The repository template is my live and used personal portfolio site.  
-You can use it as template for similar purpose. 
+Welcome to my fully responsive developer portfolio site! This site is designed to showcase skills, projects, and experience as a web developer and/or software engineer.  
+You can use it as template. 
 Please contribute to make it better!
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/59b51dc8-93af-4dd1-bab9-828ca55c95fa/deploy-status)](https://app.netlify.com/sites/jmeszaros/deploys)
@@ -15,14 +14,17 @@ deployed by **Netlify**.
 
 ## Table of Contents
 
-1. [Configuration](#configuration)
-2. [About Me](#about-me)
-3. [Education](#education)
-4. [Experience](#experience)
-5. [Skills](#skills)
-6. [Projects](#projects)
-7. [Certifications](#certifications)
-8. [Contact](#contact)
+1. [Layout](#layout)
+2. [Configuration](#configuration)
+3. [About Me](#about-me)
+4. [Resume](#resume)
+5. [Projects](#projects)
+6. [Certifications](#certifications)
+7. [Contact](#contact)
+
+## Layout
+The template has three different layout.
+In tailwind config the basic xl breakpoint was modified to 1180px.
 
 ## Configuration
 
@@ -47,15 +49,19 @@ Lookout
 
 In this section, I will introduce myself and provide a brief background about my journey from a chemical engineer to a full-stack developer. I will highlight my passion for coding, problem-solving abilities, and my unique perspective in tackling technical challenges.
 
-## Education
+## Resume 
 
-In this section, I will list my educational background, including:
+This section contains general CV elements.
+
+### I. Education
+
+In this section, you can list educational background, including:
 
 - Degree(s) obtained
 - Institution(s) attended
 - Graduation year(s)
 
-## Experience
+## II. Experience
 
 Here, I will provide an overview of my professional experience. This will include:
 
@@ -64,9 +70,9 @@ Here, I will provide an overview of my professional experience. This will includ
 - Duration
 - Responsibilities and achievements
   
-## Skills
+## III. Skills
 
-Here, I will list the various technical skills I have acquired over the years. This will include:
+Here, you can list the various technical skills you have acquired over the years. This can include:
 
 - Front-end development: HTML, CSS, JavaScript, React
 - Back-end development: Node.js, Express.js, MongoDB, SQL
@@ -76,7 +82,7 @@ Here, I will list the various technical skills I have acquired over the years. T
 
 ## Projects
 
-This section will showcase the projects I have worked on. Each project will include:
+This section will showcase the projects you have worked on. Each project will include:
 
 - Project Title
 - Description
@@ -86,7 +92,7 @@ This section will showcase the projects I have worked on. Each project will incl
 
 ## Certifications
 
-Here, I will list any relevant certifications I have earned, such as:
+Here, you will list any relevant certifications have earned, such as:
 
 - Web Development Bootcamps
 - Online Courses (Coursera, Udemy, etc.)
@@ -98,11 +104,5 @@ In the base template the certificate is a modal which jump up when click on a bu
 ## Contact
 
 I provide my contact form to get in touch. 
-
-## Acknowledgments
-
-- Inspiration
-- Resources
-- References
 
 Thank you for visiting my portfolio site! Stay tuned as I continue to update and enhance it with my latest projects and achievements.

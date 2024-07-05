@@ -43,7 +43,7 @@ Lookout
    - You can modify the lineParticles option which has effect on the 'Intro' component.
 :Tailwind
    - There are color variables for different themes. Those variables can be changed to make the color set better. The basic modes are: **light** and **dark**.
-   - I don't use Tailwind's ':dark' feature instead I used variables which changes with themes. So the **dark** is a theme. With this method you can define various themes without touching the Tailwind classes.  
+   - Template does not use Tailwind's ':dark' feature instead it uses CSS variables which can be unique for every themes. So the **dark** is a theme. With this method you can define various themes without touching the Tailwind classes.  
 
 ## About Me
 

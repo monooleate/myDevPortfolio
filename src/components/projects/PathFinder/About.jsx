@@ -68,15 +68,12 @@ export default function About(){
                     <p>Stacks Stacks function according to the last-in-first-out (LIFO) principle. A helpful analogy is to think of a stack of books; one can only add or remove books at the very top. Similarly, one can think of a stack as a large pit or tall container wide enough for only one object where the objects stack up within, such as the diagram shown in Figure 6. The last object to be pushed, or the object at the top, is commonly referred to as the &ldquo;top&rdquo;, while the objects underneath are referred to as the &ldquo;stack&rdquo;.</p>
                     <p>Stacks also have two operations: push and pop. Pushing inserts objects to the top of the stack to become the new top, while popping removes and returns the top while the next object becomes the new top. Stacks also have a peeking feature, where it returns the object at the top without removing it from the stack.</p>
                     <p><b>Depth First Search</b> DFS, or Depth First Search, is arguably the simpler of the two algorithms. Although both algorithms are driven by iterative processes, the rules determining each iteration is simpler for DFS. The fundamental mechanism for DFS, although perhaps not explicit, is often a stack that will push and/or pop nodes for each iteration. Any DFS program that doesn&rsquo;t explicitly have a stack in use will still usually run by a similar principle.</p>
-                    <p><b>Breadth First Search</b> BFS, or Breadth First Search, works quite differently from DFS. The fundamental mechanisms for BFS are a queue and a dictionary named &ldquo;parents&rdquo;. For the sake of this algorithm, we will define a parent-child relationship between two nodes to be the following: If node A is selected and node B is enqueued into the queue via node A, then node A is the parent node and node B is the child node. In &ldquo;parents&rdquo;, both the keys and values will be singular nodes. The keys will be child nodes, and the values will be the parent node for the corresponding child node. Hence, if one looks up a node in &ldquo;parents&rdquo;, they will receive the parent node.</p>
+                    <p><b>Breadth First Search</b>git push BFS, or Breadth First Search, works quite differently from DFS. The fundamental mechanisms for BFS are a queue and a dictionary named &ldquo;parents&rdquo;. For the sake of this algorithm, we will define a parent-child relationship between two nodes to be the following: If node A is selected and node B is enqueued into the queue via node A, then node A is the parent node and node B is the child node. In &ldquo;parents&rdquo;, both the keys and values will be singular nodes. The keys will be child nodes, and the values will be the parent node for the corresponding child node. Hence, if one looks up a node in &ldquo;parents&rdquo;, they will receive the parent node.</p>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-12 ">
-                  a queue in line for the opening of a new shopping mall. Whoever enters the queue first gets to enter the
-                    mall first – the line operates on a first-come-first-serve principle. Similarly, it is helpful to think of the queue
-                    as a narrow tunnel wide enough for only one object where the objects line up within, such as the diagram
-                    shown in Figure 5. 
-                    </div>
+
+                  </div>
 
                   <div className="mt-4">
                     <button

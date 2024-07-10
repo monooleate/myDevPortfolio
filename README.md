@@ -47,7 +47,7 @@ Lookout
 
 ## About Me
 
-In this section, I will introduce myself and provide a brief background about my journey from a chemical engineer to a full-stack developer. I will highlight my passion for coding, problem-solving abilities, and my unique perspective in tackling technical challenges.
+In this section, you can introduce yourself and provide a brief background about your journey to a developer. You will highlight your passion for coding, problem-solving abilities, and unique perspective in tackling technical challenges.
 
 ## Resume 
 

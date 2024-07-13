@@ -61,7 +61,7 @@ In this section, you can list educational background, including:
 - Institution(s) attended
 - Graduation year(s)
 
-## II. Experience
+### II. Experience
 
 Here, I will provide an overview of my professional experience. This will include:
 
@@ -70,7 +70,7 @@ Here, I will provide an overview of my professional experience. This will includ
 - Duration
 - Responsibilities and achievements
   
-## III. Skills
+### III. Skills
 
 Here, you can list the various technical skills you have acquired over the years. This can include:
 

@@ -1,6 +1,6 @@
 # Developer Portfolio Site
 
-Welcome to my fully responsive developer portfolio site! This site is designed to showcase skills, projects, and experience as a web developer and/or software engineer.  
+This template is designed to showcase skills, projects, and experience as a web developer and/or software engineer.  
 You can use it as template. 
 Please contribute to make it better!
 

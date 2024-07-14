@@ -1,7 +1,7 @@
 # Developer Portfolio Site
 
 Welcome to my fully responsive developer portfolio site! This site is designed to showcase skills, projects, and experience as a web developer and/or software engineer.  
-You can use it as template. 
+You can use the main branch as template. 
 Please contribute to make it better!
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/59b51dc8-93af-4dd1-bab9-828ca55c95fa/deploy-status)](https://app.netlify.com/sites/jmeszaros/deploys)

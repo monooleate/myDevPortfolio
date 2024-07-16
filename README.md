@@ -4,8 +4,6 @@ This template is designed to showcase skills, projects, and experience as a web 
 You can use it as template. 
 Please contribute to make it better!
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/59b51dc8-93af-4dd1-bab9-828ca55c95fa/deploy-status)](https://app.netlify.com/sites/jmeszaros/deploys)
-
 This portfolio site is built using the following technologies:
 Site genereated by **Vite**,
 uses **React** library,

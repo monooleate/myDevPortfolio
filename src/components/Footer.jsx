@@ -1,3 +1,4 @@
+import { yourName  } from "../config/personalConfig";
 
 function Footer(){
     return(
@@ -5,7 +6,7 @@ function Footer(){
             <div className="">
                 
                 <p className=" text-uni-textIntro text-center">
-                    {new Date().getFullYear()} <a href="/">Janos Meszaros</a>.
+                    {new Date().getFullYear()} <a href="/">{yourName.name}</a>.
                 </p>
                 
             </div>

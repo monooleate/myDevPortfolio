@@ -9,7 +9,7 @@ export default function Portfolio(){
                 <div className="grid grid-cols-1 pb-8 text-center">
                     <h3 className="pb-4 text-4xl tracking-tight font-extrabold dark:text-gray-300 md:leading-normal leading-normal">Hobby Portfolio</h3>
                      
-                    <p className="text-uni-text max-w-xl mx-auto text-base">Engineer by training, developer by passion: learning through projects.</p>
+                    <p className="text-uni-text max-w-xl mx-auto text-base">Learning through projects.</p>
                     
                 </div>
 

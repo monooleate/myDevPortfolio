@@ -13,14 +13,14 @@ function Header({ appliedDark, adjustAppliedDark }) {
         xl:h-[400px] xl:m-auto xl:mr-0 xl:w-24 xl:min-w-10 xl:border-solid xl:border-[2px] xl:rounded'>
 
             <a
-                key='Janos'
+                key='any'
                 href='/'
                 className='bg-secondary absolute ml-14 top-[10%] 
                 md:static md:mx-auto md:mb-15 md:mt-5 
                 xl:mb-auto 
                 text-uni-text hover:bg-uni-palette block rounded-md font-medium text-lg '
             >   
-                Janos <br/>
+                 <br/>
                 <FontAwesomeIcon icon={faThumbsUp} />
             </a>
             <label htmlFor='isDark'>

@@ -10,11 +10,10 @@ export default function HeaderForLayout({ appliedDark, adjustAppliedDark }) {
         <header id='header' className='text-ellipsis border-spacing-1 fixed flex justify-center gap-5 top-0 w-[100%] h-16 z-50 bg-yellow-400 dark:bg-slate-700 text-uni-text overflow-x-hidden'>
                    
             <a
-                key='Janos'
+                key='Any'
                 href='/'
-                className='bg-secondary top-[10%] text-uni-text hover:bg-uni-palette rounded-md font-medium text-lg '
+                className='bg-secondary my-auto text-uni-text hover:bg-uni-palette rounded-md font-medium text-lg '
             >   
-                Janos <br/>
                 <FontAwesomeIcon icon={faThumbsUp} />
             </a>
 

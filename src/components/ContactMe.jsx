@@ -57,7 +57,7 @@ const ContactMe = () => {
                         <label htmlFor="email" className="block mb-2 text-sm font-medium text-uni-text">
                             Your email
                         </label>
-                        <input type="email" id="email" name="user_email" className="shadow-sm bg-gray-200 border border-gray-300 text-sm text-left rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 " placeholder="janos@meszaros.com" required>
+                        <input type="email" id="email" name="user_email" className="shadow-sm bg-gray-200 border border-gray-300 text-sm text-left rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 " placeholder="email@email.com" required>
                         </input>
                     </div>
                     <div>

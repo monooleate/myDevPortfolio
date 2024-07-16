@@ -1,48 +1,47 @@
+export const yourName = {
+    name: "Jane or John Doe",
+}
+
+
 export const educationDetails = [
   {
-    yearRange: "2024 - ",
-    title: "Self-Learner",
-    place: "ZeroToMastery, Internet",
-    desc: "I learn many staff",
-  },
-  {
-    yearRange: "2015 - 2016",
-    title: "Engineering Economist",
+    yearRange: "2014 - 2018",
+    title: "Computer Science",
     place: "University of Budapest",
-    desc: `Base my finance knowledge. Finance and Accounting Specialization Thesis: “Sensibility analysis of unit utilization changing on EBITDA”`,
+    desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
   },
   {
-    yearRange: "2007 - 2012",
-    title: "MSc in Chemical Engineering",
+    yearRange: "2012 - 2014",
+    title: "Bachelor Degree",
+    place: "University of Budapest",
+    desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+  },
+  {
+    yearRange: "2009 - 2012",
+    title: "Master Degree",
     place: "University of Veszprém",
-    desc: "Petroleum and Petrochemical Technology Specialization",
+    desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
   },
 ];
 
 export const experienceDetails = [
   {
-    yearRange: "2024 - ",
-    title: "Freelancing",
-    place: "Various",
-    desc: "Web and Software development",
+    yearRange: "2022 - ",
+    title: "Software Engineer",
+    place: "Themeforest",
+    desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
   },
   {
-    yearRange: "2020 - 2023",
-    title: "Plant manager",
-    place: "Various",
-    desc: "Managed chemical plants with focus on optimization and safe operations.",
+    yearRange: "2020 - 2022",
+    title: "Data Analyst",
+    place: "Dribbble",
+    desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
   },
   {
-    yearRange: "2015 - 2020",
-    title: "Technologist",
-    place: "MOL",
-    desc: "Technology coordination of 10 plants. Providing project management to implement, coordinate and supervise strategic projects.",
-  },
-  {
-    yearRange: "2013 - 2015",
-    title: "Lean Expert",
-    place: "MOL",
-    desc: "„Change agent” role and leaded teams at two refineries and at one petrochemical site.",
+    yearRange: "2018 - 2020",
+    title: "Full-Stack Developer",
+    place: "Adobe",
+    desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
   },
 ];
 
@@ -74,11 +73,11 @@ export const skills = [
 ];
 
 export const hireMeText = {
-    description: `With a robust engineering background, I bring a unique perspective to solving problems. Let's work together to bring your projects to life with precision and creativity.`,
+    description: `Let's work together to bring your projects to life.`,
 }
 
 export const aboutMeText = {
-    description: ` a chemical engineer turned full-stack and software developer with a passion for solving complex problems through innovative coding solutions.`
+    description: ` Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ac nisi at sapien malesuada lacinia quis in nibh. Nulla sed est lacinia odio posuere condimentum. Praesent non nunc id sem porttitor mollis quis eu felis. Vestibulum dui libero, gravida at dictum vitae, fermentum sed dui.`
     /* With a solid foundation in engineering principles and a keen analytical mind, I bring a unique perspective to the field of software development. */
 }
 
@@ -87,9 +86,9 @@ export const introSecDetails = {
   typeWritterHeadings: [
       "Software Engineer",
       "Web Developer",
-      "Chemical Engineer",
+      "Genious",
   ],
-  heading2: "located in Budapest, Hungary.",
+  heading2: "located in your dreams, Hungary.",
   btnText: "Download CV",
 };
 

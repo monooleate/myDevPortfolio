@@ -3,7 +3,7 @@ import React, { useEffect, useState, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faFileArrowDown, faCertificate } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faFileArrowDown, faCertificate, faUser } from '@fortawesome/free-solid-svg-icons';
 import { lineParticles, introBackgroundConfig, appliedConfig, } from "../config/dataConfig";
 import { introSecDetails } from "../config/personalConfig"
 import { loadFull } from "tsparticles";
@@ -48,9 +48,12 @@ export default function Intro({ openModal }){
                             {introSecDetails.heading1}
                         </h1> */}
                         <figure className="object-contain py-3 pt-5 transition-all duration-300 cursor-pointer filter grayscale-0 xl:my-5">
-                            <img className="rounded-full object-contain mx-auto max-w-[70%] max-h-[80vh]" src="/profile.png" alt="Janos Meszaros"></img>
+                            {/* <img className="rounded-full object-contain mx-auto max-w-[70%] max-h-[80vh]" src="/profile.png" alt="Janos Meszaros"></img> */}
+                            <svg className='rounded-full object-contain mx-auto max-w-[70%] max-h-[80vh] text-white'>
+                                    <FontAwesomeIcon icon={faUser} />
+                            </svg>
                         </figure>
-                        <h1 className="text-uni-textIntro font-semibold text-3xl">Janos Meszaros</h1>
+                        <h1 className="text-uni-textIntro font-semibold text-3xl">{introSecDetails.heading1}</h1>
                         <h2 className="text-uni-palette pb-5 text-xl xl:text-2xl">
                             <Typewriter
                             options={{

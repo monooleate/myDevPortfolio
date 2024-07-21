@@ -95,7 +95,17 @@ export const introSecDetails = {
 export const certificates = [
   {
   training: 'JavaScript: The Advanced Concepts',
-  completion: '28.06.2024',
-  location: '/certificates/advancedJavascript.jpg',
+  completion: 'dd.mm.2024',
+  location: '/certificates/certificate1.jpg',
+  },
+  {
+  training: 'WebDeveloper',
+  completion: 'dd.mm.2024',
+  location: '/certificates/certificate2.jpg',
+  },
+  {
+  training: 'TypeScript',
+  completion: 'dd.mm.2024',
+  location: '/certificates/certificate3.jpg',
   },
 ]

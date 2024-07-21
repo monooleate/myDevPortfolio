@@ -24,7 +24,6 @@ function Header({ appliedDark, adjustAppliedDark }) {
                 <FontAwesomeIcon icon={faThumbsUp} />
             </a>
             <label htmlFor='isDark'>
-                
                 <Toggle
                     className='pb-2 mt-5 m-auto md:mt-8 md:top-auto md:mb-12 xl:my-auto'
                     checked={appliedDark}

@@ -23,6 +23,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.24.0",
     "react-toggle": "^4.1.3",
+    "tailwind-merge": "^2.4.0",
     "tsparticles": "^3.4.0",
     "typewriter-effect": "^2.21.0"
   },

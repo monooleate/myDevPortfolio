@@ -99,4 +99,9 @@ export const certificates = [
   completion: '28.06.2024',
   location: '/certificates/advancedJavascript.jpg',
   },
+  {
+    training: 'Complete Web Developer in 2024: Zero to Mastery',
+    completion: '19.07.2024',
+    location: '/certificates/webDeveloper.jpg',
+  },
 ]

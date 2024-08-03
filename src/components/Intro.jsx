@@ -47,14 +47,14 @@ export default function Intro({ openModal }){
 {/*                         <h1 className='text-uni-textIntro font-bold text-4xl'>
                             {introSecDetails.heading1}
                         </h1> */}
-                        <figure className="object-contain py-3 pt-5 transition-all duration-300 cursor-pointer filter grayscale-0 xl:my-5">
+                        <figure className="object-contain py-3 pt-5 transition-all duration-300 cursor-pointer filter grayscale-0 xl:my-0 xl:pt-2">
                             {/* <img className="rounded-full object-contain mx-auto max-w-[70%] max-h-[80vh]" src="/profile.png" alt="Janos Meszaros"></img> */}
                             <svg className='rounded-full object-contain mx-auto max-w-[70%] max-h-[80vh] text-white'>
                                     <FontAwesomeIcon icon={faUser} />
                             </svg>
                         </figure>
                         <h1 className="text-uni-textIntro font-semibold text-3xl">{introSecDetails.heading1}</h1>
-                        <h2 className="text-uni-palette pb-5 text-xl xl:text-2xl">
+                        <h2 className="text-uni-palette pb-5 text-xl xl:text-2xl xl:pb-2">
                             <Typewriter
                             options={{
                                 strings: introSecDetails.typeWritterHeadings,

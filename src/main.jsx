@@ -5,8 +5,9 @@ import ReactDOM from 'react-dom/client'
 
 import MyDevPortfolio from './MyDevPortfolio.jsx'
 import ErrorPage from './components/ErrorPage';
-import LayoutForProjects from './components/projects/LayoutForProjects.jsx'
+import LayoutForProjects from './components/projects/LayoutForProjects'
 import MazeGrid from './components/projects/PathFinder/MazeGrid'
+import Weather from './components/projects/Weather/weather.tsx'
 import Portfolio from './components/Portfolio'
 import './index.css'
 
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
       {
         path:'/projects/pathfinder',
         element: <MazeGrid />
+      },
+
+      {
+        path:'/projects/weather',
+        element: <Weather />
       },
 
     ],

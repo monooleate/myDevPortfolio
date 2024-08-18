@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+     
+      "jsx": "react-jsx",
+      "target": "es2020",
+      "module": "node16",
+      "moduleResolution": "node",
+      "strict": true
+ 
+    },
+  }

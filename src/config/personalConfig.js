@@ -104,4 +104,9 @@ export const certificates = [
     completion: '19.07.2024',
     location: '/certificates/webDeveloper.jpg',
   },
+  {
+    training: 'TypeScript Bootcamp: Zero to Mastery',
+    completion: '21.08.2024',
+    location: '/certificates/typeScript.jpg',
+  },
 ]

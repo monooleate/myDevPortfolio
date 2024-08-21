@@ -5,7 +5,6 @@ import { fetchWeatherData } from "./weatherapi";
 import { useState } from 'react';
 import type { CurrentWeather } from "./weatherapi";
 import type { LocationInfo } from "./location";
-import errorMap from "zod/lib/locales/en";
 
 export default function Weather() { 
   const WEATHER_API_URL = "https://api.open-meteo.com/v1/forecast";
@@ -106,7 +105,7 @@ export default function Weather() {
 
   return (
     <>
-      <div className="w-full h-[80vh] flex">
+      <div className="w-full h-[100%] flex justify-center py-5 ">
         {currentLocation === undefined ? (
           <div
             className="m-auto max-w-md flex flex-col gap-5 items-center p-8 rounded-md sm:px-24 bg-gray-200 dark:bg-gray-900 dark:text-gray-100">

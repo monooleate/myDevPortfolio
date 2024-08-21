@@ -28,7 +28,7 @@ export default function Intro({ openModal }){
     
     return(
         <section id='section-intro' className='rounded-xl bg-uni-fill h-[95vh] min-h-[400px]
-        md:h-[100vh]
+        md:h-[97vh]
         xl:min-w-[400px] xl:w-[20vh] xl:max-w-[500px] xl:min-h-[400px] xl:h-[80vh] xl:max-h-[600px] xl:float-left '>
             <div id='hero-wrap' className="relative w-full h-full">
                 {appliedConfig.appliedIntro === introBackgroundConfig.particles &&

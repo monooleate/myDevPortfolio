@@ -131,21 +131,43 @@ export default function Weather() {
             </div>  
           </div>
         ) : (
-        <div
-          className="m-auto max-w-md flex flex-col gap-5 items-center p-8 rounded-md sm:px-24 bg-gray-200 dark:bg-gray-900 dark:text-gray-100">
+        <div className="m-auto max-w-xl flex flex-col gap-5 items-center p-8 rounded-md sm:px-24 bg-gray-200 dark:bg-gray-900 dark:text-gray-100">
           <div className="text-center flex flex-col gap-3">
             <h2 className="text-lg font-semibold border-bottom">{currentLocation?.display_name}</h2>
-            <p className="text-sm dark:text-gray-300">{new Date().toDateString()}</p>
+            <div className="mb-2 text-md ">
+              <div className="flex text-center flex-col">
+                <p>Latitude / Longitude</p>
+                <div className="font-semibold dark:text-white">
+                {currentLocation?.lat} &nbsp;
+                {currentLocation?.lon}
+                </div>
+              </div>
+            </div>
+            <p className="text-sm dark:text-gray-300">{new Date().toDateString()}</p>      
           </div>
           <div className="flex flex-col items-center">
             <img src={weatherCodeToImage(currentWeather?.weathercode)} className="dark:invert w-40"/>
             <p className="dark:text-gray-300 text-center">{ weatherCodes[currentWeather?.weathercode] }</p>
+            <p className="font-semibold text-3xl text-yellow-500 dark:text-white">{currentWeather?.temperature.value }{currentWeather?.temperature.unit }</p>
           </div>
           <div className="mb-2 text-3xl flex flex-row gap-2 justify-between">
-            <div className="font-semibold text-orange-600 dark:text-yellow-500">{currentWeather?.highTemp()}{ currentWeather?.temperature.unit }</div>
-            <div>/</div>
             <div className="font-semibold text-blue-800 dark:text-sky-300">{currentWeather?.lowTemp() }{currentWeather?.temperature.unit }</div>
+            <div>/</div>
+            <div className="font-semibold text-orange-600 dark:text-yellow-500">{currentWeather?.highTemp()}{ currentWeather?.temperature.unit }</div>
           </div>
+
+          <div className="mb-2 text-xl flex flex-row gap-2 justify-between">
+            <div className="flex flex-col">
+              <p>sunrise</p>
+              <div className="font-semibold dark:text-white">{currentWeather?.sunrise.substring(currentWeather?.sunrise.length-5) } </div>
+            </div>
+            <div><br/>/</div>
+            <div className="flex flex-col">
+              <p>sunset</p>
+              <div className="font-semibold dark:text-white">{currentWeather?.sunset.substring(currentWeather?.sunset.length-5) } </div>
+            </div>
+          </div>
+          
             <input type="text" name="location" placeholder="Location" value={searchLocation} onChange={e => setSearchLocation(e.target.value)} className="
                   h-10  border rounded p-2 text-center
                   border-gray-400 text-gray-900

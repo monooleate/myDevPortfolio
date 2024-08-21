@@ -46,7 +46,11 @@ export const currentWeatherApiResponseSchema = z.object({
   }),
   hourly: z.object({
     temperature_2m: z.array(z.number()),
-  })
+  }),
+  daily: z.object({
+    sunrise: z.array(z.string()),
+    sunset: z.array(z.string()),
+  }),
 });
 
 export type CurrentWeatherApiResponse = z.infer<typeof currentWeatherApiResponseSchema>;
@@ -67,6 +71,9 @@ export class CurrentWeather {
   is_day: boolean;
   time: string;
   hourlyTemp: number[];
+  sunrise: string;
+  sunset: string;
+
 
   constructor(apiResponse: CurrentWeatherApiResponse) {
     this.temperature = {
@@ -77,6 +84,8 @@ export class CurrentWeather {
     this.is_day = apiResponse.current_weather.is_day === 1;
     this.time = apiResponse.current_weather.time;
     this.hourlyTemp = apiResponse.hourly.temperature_2m;
+    this.sunrise = apiResponse.daily.sunrise[0];
+    this.sunset = apiResponse.daily.sunset[0];
   }
 
   lowTemp(): number {
@@ -105,6 +114,8 @@ export async function fetchWeatherData(
       latitude: lat,
       longitude: lon,
       hourly: "temperature_2m",
+      daily: ["sunrise", "sunset"],
+      timezone: "Europe/Berlin",
       temperature_unit: "celsius",
       current_weather: true,
       forecast_days: 1,

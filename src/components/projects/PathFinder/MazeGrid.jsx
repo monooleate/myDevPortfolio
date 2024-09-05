@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './MazeGrid.css';
 import About from './About';
+import SEO from '../../SEO'
 
 export default function MazeGrid() {
 
@@ -157,15 +158,20 @@ export default function MazeGrid() {
 
   return (
     <main>
+      <SEO  
+        title='PathFinding Algorithms in practice'
+        description='Visual demonstration of PathFinding algorithms'
+        type='website'
+      />
       <About />
       <div className='maze-grid'>
         <div className='inputs'>
           <div className='rownr'>
-            rowNr: <input className='border-2' type='number' placeholder={rowNr} size='10' maxlength="3" onChange={adjustRowNr}/> 
+            rowNr: <input className='border-2' type='number' placeholder={rowNr} size='10' maxLength="3" onChange={adjustRowNr}/> 
             <p className='error'>{errMessageRow}</p>
           </div>
           <div className='columnnr'>
-            columnNr: <input className='border-2' type='number' placeholder={columnNr} size='10' maxlength="3" onChange={adjustColumnNr}/> 
+            columnNr: <input className='border-2' type='number' placeholder={columnNr} size='10' maxLength="3" onChange={adjustColumnNr}/> 
             <p className='error'>{errMessageColumn}</p>
           </div>
           <div className="slidecontainer">

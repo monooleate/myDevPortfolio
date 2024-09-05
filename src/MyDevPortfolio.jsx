@@ -13,6 +13,7 @@ import Portfolio from './components/Portfolio.jsx'
 import PreLoader from './components/Preloader.jsx'
 import Resume from './components/Resume.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
+import SEO from './components/SEO'
 
 export default function MyDevPortfolio() {
 
@@ -64,6 +65,11 @@ export default function MyDevPortfolio() {
 
   return (
     <>
+      <SEO
+        title='Developer Portfolio of Janos Meszaros'
+        description='Software Developer Portfolio site designed to effectively display my projects and expertise.'
+        type='website'
+      />
       {isLoading && <PreLoader></PreLoader>}
       <div id='void' className='bg-gradient-to-tl from-uni-bg to-uni-palette/90'> 
         {/* <div id='frame' className='fixed h-full w-full border-gray-200 border-solid border-[15px] border-t-0 md:border-t-[15px] z-0'/> */}

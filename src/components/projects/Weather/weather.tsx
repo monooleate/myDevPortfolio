@@ -5,6 +5,7 @@ import { fetchWeatherData } from "./weatherapi";
 import { useState } from 'react';
 import type { CurrentWeather } from "./weatherapi";
 import type { LocationInfo } from "./location";
+import SEO from '../../SEO.jsx'
 
 export default function Weather() { 
   const WEATHER_API_URL = "https://api.open-meteo.com/v1/forecast";
@@ -105,6 +106,11 @@ export default function Weather() {
 
   return (
     <>
+      <SEO
+        title='Weather conditions for any location on earth'
+        description='Chech weather information at any location on Earth'
+        type='website'
+      />
       <div className="w-full h-[100%] flex justify-center py-5 ">
         {currentLocation === undefined ? (
           <div

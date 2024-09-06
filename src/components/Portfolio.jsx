@@ -1,15 +1,26 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FormattedMessage } from 'react-intl';
 
 export default function Portfolio(){
     return(
         <section id="portfolio" className="relative lg:px-5 pt-5 pb-8 bg-uni-odd" >
             <div className="container m-auto pt-10 ">
                 <div className="grid grid-cols-1 pb-8 text-center">
-                    <h3 className="pb-4 text-4xl tracking-tight font-extrabold dark:text-gray-300 md:leading-normal leading-normal">Hobby Portfolio</h3>
+                    <h3 className="pb-4 text-4xl tracking-tight font-extrabold dark:text-gray-300 md:leading-normal leading-normal">
+                        <FormattedMessage
+                            id = "portfolio"
+                            defaultMessage="Hobby Portfolio"
+                        />
+                    </h3>
                      
-                    <p className="text-uni-text max-w-xl mx-auto text-base">Engineer by training, developer by passion: learning through projects.</p>
+                    <p className="text-uni-text max-w-xl mx-auto text-base">
+                        <FormattedMessage
+                            id = "portfolioIntro"
+                            defaultMessage="Engineer by training, developer by passion: learning through projects."
+                        />
+                    </p>
                     
                 </div>
 
@@ -21,14 +32,24 @@ export default function Portfolio(){
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-airplay h-10 w-10 stroke-1 text-amber-500"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
 
                         <div className="mt-4 text-left">
-                            <p className="title h5 text-2xl font-medium dark:text-gray-300 hover:text-amber-500">myDevPortfolio
+                            <p className="title h5 text-2xl font-medium dark:text-gray-300 hover:text-amber-500">
+                                <FormattedMessage
+                                    id = "portfolio1"
+                                    defaultMessage="myDevPortfolio"
+                                />
                             {/* new window svg */}
                                 <svg className='inline-block mb-1 ml-1 w-[14px] h-[14px] cursor-pointer' viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" mirror-in-rtl="true">
                                     <path fill="#494c4e" d="M12.1.6a.944.944 0 0 0 .2 1.04l1.352 1.353L10.28 6.37a.956.956 0 0 0 1.35 1.35l3.382-3.38 1.352 1.352a.944.944 0 0 0 1.04.2.958.958 0 0 0 .596-.875V.96a.964.964 0 0 0-.96-.96h-4.057a.958.958 0 0 0-.883.6z"/>
                                     <path fill="#494c4e" d="M14 11v5a2.006 2.006 0 0 1-2 2H2a2.006 2.006 0 0 1-2-2V6a2.006 2.006 0 0 1 2-2h5a1 1 0 0 1 0 2H2v10h10v-5a1 1 0 0 1 2 0z"/>
                                 </svg>
                             </p>
-                            <p className="text-slate-400 mt-3 text-[15px]">Streamline your visibility online with my customizable devPortfolio template.</p>
+                            <p className="text-slate-400 mt-3 text-[15px]">
+                                <FormattedMessage
+                                    id = "portfolio1Intro"
+                                    defaultMessage="Streamline your visibility online with my customizable devPortfolio template."
+                                />
+                                
+                                </p>
                             <div className='flex gap-2 items-center my-2'>   
                                 <svg className='  ml-2 w-7 h-7 cursor-pointer'><title>GitHub</title><FontAwesomeIcon icon={faGithub} /></svg>
                                 <p className=" hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Fork it <svg className='inline-block ml-2 w-5 h-5 cursor-pointer'><FontAwesomeIcon icon={faArrowRight} /></svg></p>
@@ -43,13 +64,22 @@ export default function Portfolio(){
                     <a href="/projects/pathfinder" target="_blank" rel="noopener" className="px-6 py-8 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
                     <svg className="h-10 w-10 stroke-1 text-amber-500" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" stroke="currentColor" fill="none"><circle cx="34.52" cy="11.43" r="5.82"/><circle cx="53.63" cy="31.6" r="5.82"/><circle cx="34.52" cy="50.57" r="5.82"/><circle cx="15.16" cy="42.03" r="5.82"/><circle cx="15.16" cy="19.27" r="5.82"/><circle cx="34.51" cy="29.27" r="4.7"/><line x1="20.17" y1="16.3" x2="28.9" y2="12.93"/><line x1="38.6" y1="15.59" x2="49.48" y2="27.52"/><line x1="50.07" y1="36.2" x2="38.67" y2="46.49"/><line x1="18.36" y1="24.13" x2="30.91" y2="46.01"/><line x1="20.31" y1="44.74" x2="28.7" y2="48.63"/><line x1="17.34" y1="36.63" x2="31.37" y2="16.32"/><line x1="20.52" y1="21.55" x2="30.34" y2="27.1"/><line x1="39.22" y1="29.8" x2="47.81" y2="30.45"/><line x1="34.51" y1="33.98" x2="34.52" y2="44.74"/></svg>
                         <div className="mt-4 text-left">
-                            <p className="title h5 text-2xl font-medium dark:text-gray-300 hover:text-amber-500">Pathfinding algorithms
+                            <p className="title h5 text-2xl font-medium dark:text-gray-300 hover:text-amber-500">
+                                <FormattedMessage
+                                    id = "portfolio2"
+                                    defaultMessage="Pathfinding algorithms"
+                                />
                                 <svg className='inline-block mb-1 ml-1 w-[14px] h-[14px] cursor-pointer' viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" mirror-in-rtl="true">
                                     <path fill="#494c4e" d="M12.1.6a.944.944 0 0 0 .2 1.04l1.352 1.353L10.28 6.37a.956.956 0 0 0 1.35 1.35l3.382-3.38 1.352 1.352a.944.944 0 0 0 1.04.2.958.958 0 0 0 .596-.875V.96a.964.964 0 0 0-.96-.96h-4.057a.958.958 0 0 0-.883.6z"/>
                                     <path fill="#494c4e" d="M14 11v5a2.006 2.006 0 0 1-2 2H2a2.006 2.006 0 0 1-2-2V6a2.006 2.006 0 0 1 2-2h5a1 1 0 0 1 0 2H2v10h10v-5a1 1 0 0 1 2 0z"/>
                                 </svg>
                             </p>
-                            <p className="text-slate-400 mt-3 text-[15px]">Interactive pathfinding algorithms visualization. Learn and explore with ease!</p>
+                            <p className="text-slate-400 mt-3 text-[15px]">
+                                <FormattedMessage
+                                    id = "portfolio2Intro"
+                                    defaultMessage="Interactive pathfinding algorithms visualization. Learn and explore with ease!"
+                                />
+                            </p>
                             <p className="my-2 hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Learn by Play <svg className='inline-block ml-2 w-5 h-5 cursor-pointer'><FontAwesomeIcon icon={faArrowRight} /></svg></p>
                             <svg className='inline-block mt-2 ml-2 w-7 h-7 cursor-pointer' xmlns="http://www.w3.org/2000/svg" viewBox="-11.5 -10.23174 23 20.46348"><title>React</title><circle cx="0" cy="0" r="2.05" fill="#61dafb"/><g stroke="#61dafb" strokeWidth="1" fill="none"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg>
                             
@@ -60,16 +90,31 @@ export default function Portfolio(){
                     <div className="px-6 py-8 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
                         <svg className="h-10 w-10 stroke-1 text-amber-500" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" stroke="currentColor" fill="none"><circle cx="34.52" cy="11.43" r="5.82"/><circle cx="53.63" cy="31.6" r="5.82"/><circle cx="34.52" cy="50.57" r="5.82"/><circle cx="15.16" cy="42.03" r="5.82"/><circle cx="15.16" cy="19.27" r="5.82"/><circle cx="34.51" cy="29.27" r="4.7"/><line x1="20.17" y1="16.3" x2="28.9" y2="12.93"/><line x1="38.6" y1="15.59" x2="49.48" y2="27.52"/><line x1="50.07" y1="36.2" x2="38.67" y2="46.49"/><line x1="18.36" y1="24.13" x2="30.91" y2="46.01"/><line x1="20.31" y1="44.74" x2="28.7" y2="48.63"/><line x1="17.34" y1="36.63" x2="31.37" y2="16.32"/><line x1="20.52" y1="21.55" x2="30.34" y2="27.1"/><line x1="39.22" y1="29.8" x2="47.81" y2="30.45"/><line x1="34.51" y1="33.98" x2="34.52" y2="44.74"/></svg>
                         <div className="mt-4 text-left">
-                            <a href="/projects/weather" target="_blank" rel="noopener" className="title h5 text-2xl font-medium dark:text-gray-300 hover:text-amber-500 cursor-pointer">Weather Checker 
+                            <a href="/projects/weather" target="_blank" rel="noopener" className="title h5 text-2xl font-medium dark:text-gray-300 hover:text-amber-500 cursor-pointer">
+                                <FormattedMessage
+                                    id = "portfolio3"
+                                    defaultMessage="Weather Checker "
+                                />
+                                
                                 <svg className='inline-block mb-1 ml-1 w-[14px] h-[14px] cursor-pointer' viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" mirror-in-rtl="true">
                                     <path fill="#494c4e" d="M12.1.6a.944.944 0 0 0 .2 1.04l1.352 1.353L10.28 6.37a.956.956 0 0 0 1.35 1.35l3.382-3.38 1.352 1.352a.944.944 0 0 0 1.04.2.958.958 0 0 0 .596-.875V.96a.964.964 0 0 0-.96-.96h-4.057a.958.958 0 0 0-.883.6z"/>
                                     <path fill="#494c4e" d="M14 11v5a2.006 2.006 0 0 1-2 2H2a2.006 2.006 0 0 1-2-2V6a2.006 2.006 0 0 1 2-2h5a1 1 0 0 1 0 2H2v10h10v-5a1 1 0 0 1 2 0z"/>
                                 </svg>
                             </a>
-                            <p className="text-slate-400 mt-3 text-[15px]">Weather check by two API requests: <br/> 
+                            <p className="text-slate-400 mt-3 text-[15px]">
+                                <FormattedMessage
+                                    id = "portfolio3Intro"
+                                    defaultMessage="Weather check by two API requests."
+                                />
+                                
+                                <br/> 
                                 <a className='text-green-500' href="https://geocode.maps.co" target="_blank" rel="noopener">geocode.maps.co</a>&nbsp;;&nbsp;  
                                 <a className='text-purple-500' href="https://open-meteo.com" target="_blank" rel="noopener">open-meteo.com</a><br/> 
-                                Using Typescript for strict type scheck. Give it a try!</p>
+                                <FormattedMessage
+                                    id = "portfolio3Intro2"
+                                    defaultMessage="Using Typescript for strict type check."
+                                />
+                            </p>
                             <a href="/projects/weather" target="_blank" className="my-2 hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Check Wheather <svg className='inline-block ml-2 w-5 h-5 cursor-pointer'><FontAwesomeIcon icon={faArrowRight} /></svg></a><br/>
                             <svg fill="#ffffff" fillRule="evenodd" className='inline-block mt-2 ml-2 w-7 h-7' viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>typescript</title><rect x="2" y="2" width="28" height="28" rx="1.312" fill="#3178c6"/><path d="M18.245,23.759v3.068a6.492,6.492,0,0,0,1.764.575,11.56,11.56,0,0,0,2.146.192,9.968,9.968,0,0,0,2.088-.211,5.11,5.11,0,0,0,1.735-.7,3.542,3.542,0,0,0,1.181-1.266,4.469,4.469,0,0,0,.186-3.394,3.409,3.409,0,0,0-.717-1.117,5.236,5.236,0,0,0-1.123-.877,12.027,12.027,0,0,0-1.477-.734q-.6-.249-1.08-.484a5.5,5.5,0,0,1-.813-.479,2.089,2.089,0,0,1-.516-.518,1.091,1.091,0,0,1-.181-.618,1.039,1.039,0,0,1,.162-.571,1.4,1.4,0,0,1,.459-.436,2.439,2.439,0,0,1,.726-.283,4.211,4.211,0,0,1,.956-.1,5.942,5.942,0,0,1,.808.058,6.292,6.292,0,0,1,.856.177,5.994,5.994,0,0,1,.836.3,4.657,4.657,0,0,1,.751.422V13.9a7.509,7.509,0,0,0-1.525-.4,12.426,12.426,0,0,0-1.9-.129,8.767,8.767,0,0,0-2.064.235,5.239,5.239,0,0,0-1.716.733,3.655,3.655,0,0,0-1.171,1.271,3.731,3.731,0,0,0-.431,1.845,3.588,3.588,0,0,0,.789,2.34,6,6,0,0,0,2.395,1.639q.63.26,1.175.509a6.458,6.458,0,0,1,.942.517,2.463,2.463,0,0,1,.626.585,1.2,1.2,0,0,1,.23.719,1.1,1.1,0,0,1-.144.552,1.269,1.269,0,0,1-.435.441,2.381,2.381,0,0,1-.726.292,4.377,4.377,0,0,1-1.018.105,5.773,5.773,0,0,1-1.969-.35A5.874,5.874,0,0,1,18.245,23.759Zm-5.154-7.638h4V13.594H5.938v2.527H9.92V27.375h3.171Z"/></svg>
                         

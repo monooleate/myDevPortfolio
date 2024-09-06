@@ -2,20 +2,32 @@
 /* import resumeFile from "../documents/resume.pdf"; */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
-import { educationDetails, experienceDetails, skills } from '../config/personalConfig';
+import { educationDetailsEng, educationDetailsHun, experienceDetailsEng, experienceDetailsHun, skills } from '../config/personalConfig';
+import { FormattedMessage } from 'react-intl';
+import { useContext } from 'react';
+import { Context } from "./LanguageWrapper";
 
 const Resume = () => {
-
+  const context = useContext(Context);
+  let educationDetails, experienceDetails
+  context.locale.includes('hu') ? educationDetails = educationDetailsHun : educationDetails = educationDetailsEng
+  context.locale.includes('hu') ? experienceDetails = experienceDetailsHun : experienceDetails = experienceDetailsEng
   return (
     <section id="resume" className="pt-5 text-uni-text text-xl mx-4">
         <div className="text-center text-4xl tracking-tight font-extrabold pt-10 pb-8">
-            Resume
+          <FormattedMessage
+            id = "resumeResume"
+            defaultMessage="Resume"
+          />
         </div>
         <div className="flex flex-wrap sm:flex-nowrap gap-5">
           {/* My Education */}
           <div className="mx-5 md:w-1/2">
             <h2 className="text-2xl font-bold mb-8">
-              My Education
+              <FormattedMessage
+                id = "resumeEducation"
+                defaultMessage="Education"
+              />
             </h2>
             {educationDetails.length > 0 &&
               educationDetails.map((value, index) => (
@@ -45,7 +57,10 @@ const Resume = () => {
           <div className="mx-5 md:w-1/2">
             <h2
               className="text-2xl font-bold mb-8">
-              My Experience
+              <FormattedMessage
+                id = "resumeExperience"
+                defaultMessage="Experience"
+              />
             </h2>
             {experienceDetails.length > 0 &&
               experienceDetails.map((value, index) => (
@@ -73,7 +88,10 @@ const Resume = () => {
         </div>
         {/* My Skills */}
         <h2 className="text-2xl font-bold py-8">
-          My Competencies
+          <FormattedMessage
+            id = "resumeCompetencies"
+            defaultMessage="Competencies"
+          />
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-14">
           {skills.length > 0 &&
@@ -98,7 +116,10 @@ const Resume = () => {
             download
             className="flex justify-center items-center gap-2 text-uni-text bg-uni-palette rounded-md mt-8 w-36 text-base h-12 mx-auto"
             >
-            Download CV
+            <FormattedMessage
+                id = "introBtnText1"
+                defaultMessage="Download CV"
+            />
             <svg className='w-6 h-6 cursor-pointer'>
                 <FontAwesomeIcon icon={faFileArrowDown} />
             </svg>

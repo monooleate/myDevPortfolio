@@ -1,9 +1,9 @@
-export const educationDetails = [
+export const educationDetailsEng = [
   {
     yearRange: "2024 - ",
     title: "Self-Learner",
     place: "ZeroToMastery, Internet",
-    desc: "I learn many staff",
+    desc: "I am learning software engineering.",
   },
   {
     yearRange: "2015 - 2016",
@@ -19,7 +19,28 @@ export const educationDetails = [
   },
 ];
 
-export const experienceDetails = [
+export const educationDetailsHun = [
+  {
+    yearRange: "2024 - ",
+    title: "Computer Science",
+    place: "ZeroToMastery, Internet",
+    desc: "Software mérnök készségek elsajáttása önképzéssel",
+  },
+  {
+    yearRange: "2015 - 2016",
+    title: "Mérnök közgazdász BsC",
+    place: "Budapesti Gazdasági Főiskola",
+    desc: "Gazdasági tevékenységet folytató cégek pénzügyi hátterémek megértése volt a célom",
+  },
+  {
+    yearRange: "2007 - 2012",
+    title: "Vegyészmérnök MsC",
+    place: "Veszprémi egyetem",
+    desc: "Mol Ásványolaj- és Széntechnológiai Intézeti Tanszéken végeztem",
+  },
+];
+
+export const experienceDetailsEng = [
   {
     yearRange: "2024 - ",
     title: "Freelancing",
@@ -43,6 +64,33 @@ export const experienceDetails = [
     title: "Lean Expert",
     place: "MOL",
     desc: "„Change agent” role and leaded teams at two refineries and at one petrochemical site.",
+  },
+];
+
+export const experienceDetailsHun = [
+  {
+    yearRange: "2024 - ",
+    title: "Freelancing",
+    place: "Magyarország",
+    desc: "Web - és Software fejlesztés",
+  },
+  {
+    yearRange: "2020 - 2023",
+    title: "Termelés vezető",
+    place: "Szolnok",
+    desc: "Vegyi üzemeket irányítottam, különös figyelmet fordítva az optimalizálás és a biztonságos működésre",
+  },
+  {
+    yearRange: "2015 - 2020",
+    title: "Technológus",
+    place: "MOL",
+    desc: "10 üzem technológiai koordinációja. Projektmenedzsment biztosítása a stratégiai projektek megvalósításához, koordinálásához és felügyeletéhez",
+  },
+  {
+    yearRange: "2013 - 2015",
+    title: "Lean szakértő",
+    place: "MOL",
+    desc: "'Változásmenedzser' szerepben vezettem csapatokat két finomítóban és egy petrolkémiai telephelyen",
   },
 ];
 
@@ -73,24 +121,19 @@ export const skills = [
   },
 ];
 
-export const hireMeText = {
-    description: `With a robust engineering background, I bring a unique perspective to solving problems. Let's work together to bring your projects to life with precision and creativity.`,
-}
-
-export const aboutMeText = {
-    description: ` a chemical engineer turned full-stack and software developer with a passion for solving complex problems through innovative coding solutions.`
-    /* With a solid foundation in engineering principles and a keen analytical mind, I bring a unique perspective to the field of software development. */
-}
-
 export const introSecDetails = {
   heading1: "WELCOME TO MY WORLD",
-  typeWritterHeadings: [
+  typeWritterHeadingsEng: [
       "Software Engineer",
       "Web Developer",
       "Chemical Engineer",
   ],
+  typeWritterHeadingsHun: [
+    "Software mérnök",
+    "Webfejlesztő",
+    "Vegyészmérnök",
+],
   heading2: "located in Budapest, Hungary.",
-  btnText: "Download CV",
 };
 
 export const certificates = [

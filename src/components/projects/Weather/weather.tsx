@@ -1,10 +1,10 @@
 import axios from "axios";
 import { z } from "zod";
-import { fetchLocationData } from "./location";
-import { fetchWeatherData } from "./weatherapi";
+import { fetchLocationData } from "./location.ts";
+import { fetchWeatherData } from "./weatherapi.ts";
 import { useState } from 'react';
-import type { CurrentWeather } from "./weatherapi";
-import type { LocationInfo } from "./location";
+import type { CurrentWeather } from "./weatherapi.ts";
+import type { LocationInfo } from "./location.ts";
 import SEO from '../../SEO.jsx'
 
 export default function Weather() { 
@@ -110,6 +110,7 @@ export default function Weather() {
         title='Weather conditions for any location on earth'
         description='Chech weather information at any location on Earth'
         type='website'
+        keywords={['weather', 'forecast', 'portfolio project']}
       />
       <div className="w-full h-[100%] flex justify-center py-5 ">
         {currentLocation === undefined ? (

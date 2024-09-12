@@ -69,6 +69,7 @@ export default function MyDevPortfolio() {
         title='Developer Portfolio of Janos Meszaros'
         description='Software Developer Portfolio site designed to effectively display my projects and expertise.'
         type='website'
+        keywords={['portfolio', 'developer', 'engineer', 'software', 'engineer']}
       />
       {isLoading && <PreLoader></PreLoader>}
       <div id='void' className='bg-gradient-to-tl from-uni-bg to-uni-palette/90'> 

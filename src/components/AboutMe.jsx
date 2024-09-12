@@ -36,20 +36,22 @@ const AboutMe = () => {
                         defaultMessage="vagyok"
                     />},             
                     <Lottie className="mx-auto h-40 w-40" animationData={animation} />
-                    <FormattedMessage
-                        id = "aboutMeDesc"
-                        defaultMessage="Description of myself"
-                    />
+                    <h1>
+                        <FormattedMessage
+                            id = "aboutMeDesc"
+                            defaultMessage="Description of myself"
+                        />
+                    </h1>
                 </div>
                 <div className="my-5 mx-auto sm:my-auto md:w-1/4">
                     <dl className="text-base text-uni-text divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
                         <div className="flex flex-col pb-3">
-                            <dt className="mb-1 text-gray-500 dark:text-gray-400">
+                            <dt className="mb-1 text-gray-500 dark:text-gray-400">                                
                                 <FormattedMessage
                                     id = "aboutMeAge"
                                     defaultMessage="Age"
                                 />
-                            </dt>
+                             </dt>
                             <dd className=" font-semibold">36</dd>
                         </div>
                         <div className="flex flex-col py-3">

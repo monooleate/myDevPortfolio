@@ -162,6 +162,7 @@ export default function MazeGrid() {
         title='PathFinding Algorithms in practice'
         description='Visual demonstration of PathFinding algorithms'
         type='website'
+        keywords={['pathfinder', 'algorithm', 'portfolio project']}
       />
       <About />
       <div className='maze-grid'>

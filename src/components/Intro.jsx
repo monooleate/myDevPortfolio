@@ -113,7 +113,7 @@ export default function Intro({ openModal }){
                                 </a>
                             </div>
                         </div>
-                        <a href='#aboutme' className='pb-6 text-uni-palette mx-auto xl:hidden'>
+                        <a href='#aboutme' aria-label="Read more" className='pb-6 text-uni-palette mx-auto xl:hidden'>
                             <svg className='animate-bounce w-6 h-6 cursor-pointer'>
                                 <FontAwesomeIcon icon={faChevronDown} />
                             </svg>

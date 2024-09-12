@@ -139,17 +139,26 @@ export const introSecDetails = {
 export const certificates = [
   {
   training: 'JavaScript: The Advanced Concepts',
-  completion: '28.06.2024',
+  school: "Zero to Mastery",
+  completion: '2024-06-28',
   location: '/certificates/advancedJavascript.jpg',
   },
   {
     training: 'Complete Web Developer in 2024: Zero to Mastery',
-    completion: '19.07.2024',
+    school: "Zero to Mastery",
+    completion: '2024-07-19',
     location: '/certificates/webDeveloper.jpg',
   },
   {
     training: 'TypeScript Bootcamp: Zero to Mastery',
-    completion: '21.08.2024',
+    school: "Zero to Mastery",
+    completion: '2024-08-21',
     location: '/certificates/typeScript.jpg',
+  },
+  {
+    training: 'Deno: The complete Guide',
+    school: "Zero to Mastery",
+    completion: '2024-09-12',
+    location: '/certificates/deno.jpg',
   },
 ]

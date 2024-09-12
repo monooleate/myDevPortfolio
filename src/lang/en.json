@@ -32,5 +32,9 @@
     "portfolio2Intro": "Interactive pathfinding algorithms visualization. Learn and explore with ease!" ,
     "portfolio3": "Weather Checker" ,
     "portfolio3Intro": "Weather check by two API requests." ,
-    "portfolio3Intro2": "Using Typescript for strict type check."
+    "portfolio3Intro2": "Using Typescript for strict type check." ,
+    "modalCertCert": "Certificates" ,
+    "modalDate": "{ts, date, ::yyyyMMdd}" ,
+    "modalShow": "Show certificate" ,
+    "modalClose": "Close" 
 }

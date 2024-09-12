@@ -34,5 +34,9 @@
     "portfolio2Intro": "Útkereső algoritmusok vizualizációja. Tanulj és fedezz fel könnyedén!" ,
     "portfolio3": "Időjárás alkalmazás" ,
     "portfolio3Intro": "Időjárás lekérdezése API hívásokkal." ,
-    "portfolio3Intro2": "Typescript nyelvvel a szigorú típus ellenőrzésért!"
+    "portfolio3Intro2": "Typescript nyelvvel a szigorú típus ellenőrzésért!" ,
+    "modalCertCert": "Tanusítványok" ,
+    "modalDate": "{ts, date, ::yyyyMMdd}" ,
+    "modalShow": "Mutasd!" ,
+    "modalClose": "Bezár" 
 }

@@ -3,6 +3,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import { certificates } from '../config/personalConfig';
 import { twMerge } from 'tailwind-merge'
+import { FormattedMessage } from 'react-intl';
 
 export default function MyModal({ isOpen, closeModal, openModal }) {
 
@@ -62,7 +63,10 @@ export default function MyModal({ isOpen, closeModal, openModal }) {
                     as="h3"
                     className="text-lg font-medium leading-6 text-uni-text pb-5"
                   >
-                    Certificates
+                    <FormattedMessage
+                      id = "modalCertCert"
+                      defaultMessage="Certificates"
+                    />
                   </Dialog.Title>
 
                   <div className="flex flex-col gap-5 mx-5 ">
@@ -70,14 +74,26 @@ export default function MyModal({ isOpen, closeModal, openModal }) {
                       certificates.map((certificate, index) => (
                         <div key={index} className="flex flex-col">
                           <p className="font-semibold text-uni-text text-start mb-2 text-base">
-                            Course: {certificate.training}
+                            {certificate.training}
+                          </p>
+                          <p className="float-left text-uni-text pr-16">
+                            <FormattedMessage
+                              id = "modalDate"
+                              defaultMessage="{ts, date, ::yyyyMMdd}"
+                              values={{ts: Date.parse(certificate.completion)}}
+                            />
                           </p>
                           <div>
-                            <p className="float-left text-uni-text pr-16">Date: {certificate.completion}</p>
+                            <p className="float-left text-uni-text pr-16">{certificate.school}</p>
                             <label className="inline-flex items-center cursor-pointer">
                               <input type="checkbox" value="" className="sr-only peer" checked={certToggles[index]} onChange={() => adjustCertToggles(index)}/>
                               <div className="relative w-11 h-6 bg-blue-200 ring-2 ring-blue-500 peer-focus:outline-none peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-                              <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Show certificate</span>
+                              <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">                                
+                                <FormattedMessage
+                                  id = "modalShow"
+                                  defaultMessage="Show certificate"
+                                />
+                              </span>
                             </label>
                           </div>
                           <div className={twMerge("w-full h-full bg-gray-200 rounded-full dark:bg-gray-700", !certToggles[index] && 'hidden')}>
@@ -96,8 +112,11 @@ export default function MyModal({ isOpen, closeModal, openModal }) {
                       type="button"
                       className="inline-flex ml-[40%] rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={closeModal}
-                    >
-                      Close
+                    >                      
+                      <FormattedMessage
+                        id = "modalClose"
+                        defaultMessage="Close"
+                      />
                     </button>
                   </div>
                 </Dialog.Panel>

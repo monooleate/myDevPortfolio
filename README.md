@@ -18,7 +18,8 @@ deployed by **Netlify**.
 4. [Resume](#resume)
 5. [Projects](#projects)
 6. [Certifications](#certifications)
-7. [Contact](#contact)
+7. [SEO](#seo)
+8. [Contact](#contact)
 
 ## Layout
 The template has three different layout.
@@ -98,6 +99,13 @@ Here, you will list any relevant certifications have earned, such as:
 - Any other relevant certifications
 
 In the base template the certificate is a modal which jump up when click on a button in the Intro section.
+
+## SEO
+Using React Helmet for changing <header> depends on the given location. 
+Should be changed:
+- In SEO component the static description.
+- The url based on domain
+- for dedicated portfolio site simply add SEO component and configure accordingly of the nature of the portfolio
 
 ## Contact
 

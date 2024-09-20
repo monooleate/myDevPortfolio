@@ -3,8 +3,11 @@ import Toggle from "react-toggle";
 import "react-toggle/style.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import React, {useContext} from 'react';
+import { Context } from "./LanguageWrapper";
 
 function Header({ appliedDark, adjustAppliedDark }) {
+    const context = useContext(Context);
     return(
         <header id='header' className='text-ellipsis border-spacing-1
         fixed left-0 mx-auto top-0 w-[100%] h-16 px-2 z-50 bg-uni-fill text-uni-text overflow-x-hidden
@@ -23,16 +26,43 @@ function Header({ appliedDark, adjustAppliedDark }) {
                  <br/>
                 <FontAwesomeIcon icon={faThumbsUp} />
             </a>
-            <label htmlFor='isDark'>
-                
-                <Toggle
-                    className='pb-2 mt-5 m-auto md:mt-8 md:top-auto md:mb-12 xl:my-auto'
-                    checked={appliedDark}
-                    onChange={adjustAppliedDark}
-                    id='isDark'
-                    icons={{ unchecked: "🌙", checked: "🔆" }}
-                />
-            </label>
+            <div className='flex justify-center mt-5 flex-row gap-8 md:content-center md:flex-col md:gap-2 md:my-10'>
+                <label htmlFor='isDark'>      
+                    <Toggle
+                        className='pb-2 mt-5 m-auto md:mt-8 md:top-auto md:mb-12 xl:my-auto'
+                        checked={appliedDark}
+                        onChange={adjustAppliedDark}
+                        id='isDark'
+                        icons={{ unchecked: "🌙", checked: "🔆" }}
+                    />
+                </label>
+
+            {context.locale.includes('hu') ? 
+                    <div className=''>
+                        <select 
+                            id="language" 
+                            className=" bg-gray-200 border font-bold border-gray-300 appearance-none text-gray-900 text-sm text-center rounded-lg dark:border-s-gray-700 border-s-2 focus:ring-blue-500 focus:border-blue-500 w-12 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            value = {context.locale} 
+                            onChange={context.selectLanguage}>
+                                <option value='hu' defaultValue>HU</option>
+                                <option value='en'>EN</option>                                
+                        </select>
+                    </div>
+                :
+                    <div className=''>
+                        <select 
+                            id="language" 
+                            aria-label="language"
+                            className=" bg-gray-200 border font-bold border-gray-300 appearance-none text-gray-900 text-sm text-center rounded-lg dark:border-s-gray-700 border-s-2 focus:ring-blue-500 focus:border-blue-500 w-12 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            value = {context.locale} 
+                            onChange={context.selectLanguage}>
+                                <option value='en' defaultValue>EN</option>
+                                <option value='hu'>HU</option>
+                        </select>
+                    </div>
+                } 
+            </div>
+
             <Navlink />
             
         </header>

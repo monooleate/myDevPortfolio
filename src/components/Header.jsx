@@ -54,7 +54,6 @@ function Header({ appliedDark, adjustAppliedDark }) {
                     </div>
                 :
                     <div className=''>
-                        <label htmlFor="language">Lang</label>
                         <select 
                             id="language" 
                             aria-label="language"

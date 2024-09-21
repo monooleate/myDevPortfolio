@@ -2,7 +2,7 @@ import { FormattedMessage } from 'react-intl';
 
 export default function HireMe(){
     return(
-        <section className="py-10 w-full table relative bg-[url('../../assets/coding.json')] bg-no-repeat bg-center bg-cover">
+        <section className="py-10 w-full table relative bg-no-repeat bg-center bg-cover">
             <div className="absolute inset-0 bg-uni-even/70">
             </div>
             <div className="container relative mx-auto">

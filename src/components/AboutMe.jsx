@@ -1,5 +1,3 @@
-import Lottie from "lottie-react";
-import animation from "../../src/assets/coding.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FormattedMessage } from 'react-intl';
@@ -35,7 +33,11 @@ const AboutMe = () => {
                         id = "aboutMeIntro2"
                         defaultMessage="vagyok"
                     />},             
-                    <Lottie className="mx-auto h-40 w-40" animationData={animation} />
+
+                    <div className="mx-auto h-40 w-40">
+                        <img src="/programmer.svg"/>
+                    </div>
+                    
                     <h1>
                         <FormattedMessage
                             id = "aboutMeDesc"

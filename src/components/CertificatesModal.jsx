@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import { certificates } from '../config/personalConfig';
-import { twMerge } from 'tailwind-merge'
 import { FormattedMessage } from 'react-intl';
 
 export default function MyModal({ isOpen, closeModal, openModal }) {
@@ -96,7 +95,7 @@ export default function MyModal({ isOpen, closeModal, openModal }) {
                               </span>
                             </label>
                           </div>
-                          <div className={twMerge("w-full h-full bg-gray-200 rounded-full dark:bg-gray-700", !certToggles[index] && 'hidden')}>
+                          <div className={`w-full h-full bg-gray-200 rounded-full dark:bg-gray-700 ${!certToggles[index] ? 'hidden' : ''}`}>
                             <img 
                               className="mx-auto rounded-lg shadow-xl dark:shadow-gray-800" 
                               src={certificate.location}

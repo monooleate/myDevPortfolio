@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { createContext } from 'preact';
+import { useState, useEffect } from 'preact/hooks';
 import { IntlProvider } from 'react-intl';
 import Magyar from '../lang/hu.json';
 import English from '../lang/en.json';
 
-export const Context = React.createContext();
+export const Context = createContext();
 
 export default function LanguageWrapper(props) {
     const [locale, setLocale] = useState("en");

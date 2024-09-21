@@ -1,9 +1,8 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useContext } from 'preact/hooks';
+import { Fragment } from 'preact'
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment } from 'react'
 import emailjs from '@emailjs/browser';
 import { FormattedMessage } from 'react-intl';
-import { useContext } from 'react';
 import { Context } from "./LanguageWrapper";
 
 const ContactMe = () => {

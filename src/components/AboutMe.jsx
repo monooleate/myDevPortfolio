@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FormattedMessage } from 'react-intl';
-import { useContext } from 'react';
+import { useContext } from 'preact/hooks';
 import { Context } from "./LanguageWrapper";
 
 const AboutMe = () => {

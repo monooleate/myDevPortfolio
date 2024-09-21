@@ -2,7 +2,7 @@ import axios from "axios";
 import { z } from "zod";
 import { fetchLocationData } from "./location.ts";
 import { fetchWeatherData } from "./weatherapi.ts";
-import { useState } from 'react';
+import { useState } from 'preact/hooks';
 import type { CurrentWeather } from "./weatherapi.ts";
 import type { LocationInfo } from "./location.ts";
 import SEO from '../../SEO.jsx'

@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from 'preact/hooks';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,7 +8,7 @@ import { lineParticles, introBackgroundConfig, appliedConfig, } from "../config/
 import { introSecDetails } from "../config/personalConfig"
 import { loadFull } from "tsparticles";
 import { FormattedMessage } from 'react-intl';
-import { useContext } from 'react';
+import { useContext } from 'preact/hooks';
 import { Context } from "./LanguageWrapper";
 
 export default function Intro({ openModal }){

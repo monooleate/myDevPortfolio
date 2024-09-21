@@ -1,12 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import React, { lazy } from 'react'
-import ReactDOM from 'react-dom/client'
+import { render } from 'preact';
+import { Suspense, lazy } from 'preact/compat';
 
 import MyDevPortfolio from './MyDevPortfolio.jsx'
 import Portfolio from './components/Portfolio'
 import ErrorPage from './components/ErrorPage';
 import LanguageWrapper from "./components/LanguageWrapper.jsx";
+import PreLoader from './components/Preloader.jsx'
 import './index.css'
 
 const LayoutForProjects = lazy(() => import('./components/projects/LayoutForProjects'))
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/projects',
-    element: <LayoutForProjects />,
+    element: <Suspense fallback={<PreLoader />}><LayoutForProjects /></Suspense>,
     children: [
       {
         path:'/projects',
@@ -46,10 +47,9 @@ const router = createBrowserRouter([
 
 
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <LanguageWrapper>
-      <RouterProvider router={router} />
-    </LanguageWrapper>
-  </React.StrictMode>,
+render(
+  <LanguageWrapper>
+    <RouterProvider router={router} />
+  </LanguageWrapper>,
+  document.getElementById('root')
 )

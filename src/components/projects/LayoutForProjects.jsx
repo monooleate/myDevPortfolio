@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'preact/hooks';
 import { appliedConfig } from "../../config/dataConfig";
 
 import Header from './HeaderForLayout'

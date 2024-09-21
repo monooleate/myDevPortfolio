@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'preact/hooks';
 import './MazeGrid.css';
 import About from './About';
 import SEO from '../../SEO'

@@ -14,21 +14,16 @@ export default function Portfolio(){
                             defaultMessage="Hobby Portfolio"
                         />
                     </h3>
-                     
                     <p className="text-uni-text max-w-xl mx-auto text-base">
                         <FormattedMessage
                             id = "portfolioIntro"
                             defaultMessage="Engineer by training, developer by passion: learning through projects."
                         />
                     </p>
-                    
                 </div>
-
                 <div className="grid grid-cols-1 mt-6 mx-4 gap-[30px] 
-                                md:grid-cols-2
-">
-                    
-                    <a href="https://github.com/monooleate/myDevPortfolio" target="_blank" rel="noopener" className="px-6 py-8 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
+                                md:grid-cols-2">                
+                    <a href="https://github.com/monooleate/myDevPortfolio" aria-label="GitHub" target="_blank" rel="noopener" className="px-6 py-8 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-airplay h-10 w-10 stroke-1 text-amber-500"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
 
                         <div className="mt-4 text-left">
@@ -48,7 +43,6 @@ export default function Portfolio(){
                                     id = "portfolio1Intro"
                                     defaultMessage="Streamline your visibility online with my customizable devPortfolio template."
                                 />
-                                
                                 </p>
                             <div className='flex gap-2 items-center my-2'>   
                                 <svg className='  ml-2 w-7 h-7 cursor-pointer'><title>GitHub</title><FontAwesomeIcon icon={faGithub} /></svg>
@@ -61,7 +55,7 @@ export default function Portfolio(){
                         </div>
                     </a>
                     
-                    <a href="/projects/pathfinder" target="_blank" rel="noopener" className="px-6 py-8 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
+                    <a href="/projects/pathfinder" aria-label="PathFinder project" rel="noopener" className="px-6 py-8 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
                     <svg className="h-10 w-10 stroke-1 text-amber-500" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" stroke="currentColor" fill="none"><circle cx="34.52" cy="11.43" r="5.82"/><circle cx="53.63" cy="31.6" r="5.82"/><circle cx="34.52" cy="50.57" r="5.82"/><circle cx="15.16" cy="42.03" r="5.82"/><circle cx="15.16" cy="19.27" r="5.82"/><circle cx="34.51" cy="29.27" r="4.7"/><line x1="20.17" y1="16.3" x2="28.9" y2="12.93"/><line x1="38.6" y1="15.59" x2="49.48" y2="27.52"/><line x1="50.07" y1="36.2" x2="38.67" y2="46.49"/><line x1="18.36" y1="24.13" x2="30.91" y2="46.01"/><line x1="20.31" y1="44.74" x2="28.7" y2="48.63"/><line x1="17.34" y1="36.63" x2="31.37" y2="16.32"/><line x1="20.52" y1="21.55" x2="30.34" y2="27.1"/><line x1="39.22" y1="29.8" x2="47.81" y2="30.45"/><line x1="34.51" y1="33.98" x2="34.52" y2="44.74"/></svg>
                         <div className="mt-4 text-left">
                             <p className="title h5 text-2xl font-medium dark:text-gray-300 hover:text-amber-500">
@@ -90,7 +84,7 @@ export default function Portfolio(){
                     <div className="px-6 py-8 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
                         <svg className="h-10 w-10 stroke-1 text-amber-500" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" strokeWidth="2" stroke="currentColor" fill="none"><circle cx="34.52" cy="11.43" r="5.82"/><circle cx="53.63" cy="31.6" r="5.82"/><circle cx="34.52" cy="50.57" r="5.82"/><circle cx="15.16" cy="42.03" r="5.82"/><circle cx="15.16" cy="19.27" r="5.82"/><circle cx="34.51" cy="29.27" r="4.7"/><line x1="20.17" y1="16.3" x2="28.9" y2="12.93"/><line x1="38.6" y1="15.59" x2="49.48" y2="27.52"/><line x1="50.07" y1="36.2" x2="38.67" y2="46.49"/><line x1="18.36" y1="24.13" x2="30.91" y2="46.01"/><line x1="20.31" y1="44.74" x2="28.7" y2="48.63"/><line x1="17.34" y1="36.63" x2="31.37" y2="16.32"/><line x1="20.52" y1="21.55" x2="30.34" y2="27.1"/><line x1="39.22" y1="29.8" x2="47.81" y2="30.45"/><line x1="34.51" y1="33.98" x2="34.52" y2="44.74"/></svg>
                         <div className="mt-4 text-left">
-                            <a href="/projects/weather" target="_blank" rel="noopener" className="title h5 text-2xl font-medium dark:text-gray-300 hover:text-amber-500 cursor-pointer">
+                            <a href="/projects/weather" aria-label="Weather project" rel="noopener" className="title h5 text-2xl font-medium dark:text-gray-300 hover:text-amber-500 cursor-pointer">
                                 <FormattedMessage
                                     id = "portfolio3"
                                     defaultMessage="Weather Checker "
@@ -115,90 +109,12 @@ export default function Portfolio(){
                                     defaultMessage="Using Typescript for strict type check."
                                 />
                             </p>
-                            <a href="/projects/weather" target="_blank" className="my-2 hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Check Wheather <svg className='inline-block ml-2 w-5 h-5 cursor-pointer'><FontAwesomeIcon icon={faArrowRight} /></svg></a><br/>
+                            <a href="/projects/weather" aria-label="Weather project" className="my-2 hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Check Wheather <svg className='inline-block ml-2 w-5 h-5 cursor-pointer'><FontAwesomeIcon icon={faArrowRight} /></svg></a><br/>
                             <svg fill="#ffffff" fillRule="evenodd" className='inline-block mt-2 ml-2 w-7 h-7' viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>typescript</title><rect x="2" y="2" width="28" height="28" rx="1.312" fill="#3178c6"/><path d="M18.245,23.759v3.068a6.492,6.492,0,0,0,1.764.575,11.56,11.56,0,0,0,2.146.192,9.968,9.968,0,0,0,2.088-.211,5.11,5.11,0,0,0,1.735-.7,3.542,3.542,0,0,0,1.181-1.266,4.469,4.469,0,0,0,.186-3.394,3.409,3.409,0,0,0-.717-1.117,5.236,5.236,0,0,0-1.123-.877,12.027,12.027,0,0,0-1.477-.734q-.6-.249-1.08-.484a5.5,5.5,0,0,1-.813-.479,2.089,2.089,0,0,1-.516-.518,1.091,1.091,0,0,1-.181-.618,1.039,1.039,0,0,1,.162-.571,1.4,1.4,0,0,1,.459-.436,2.439,2.439,0,0,1,.726-.283,4.211,4.211,0,0,1,.956-.1,5.942,5.942,0,0,1,.808.058,6.292,6.292,0,0,1,.856.177,5.994,5.994,0,0,1,.836.3,4.657,4.657,0,0,1,.751.422V13.9a7.509,7.509,0,0,0-1.525-.4,12.426,12.426,0,0,0-1.9-.129,8.767,8.767,0,0,0-2.064.235,5.239,5.239,0,0,0-1.716.733,3.655,3.655,0,0,0-1.171,1.271,3.731,3.731,0,0,0-.431,1.845,3.588,3.588,0,0,0,.789,2.34,6,6,0,0,0,2.395,1.639q.63.26,1.175.509a6.458,6.458,0,0,1,.942.517,2.463,2.463,0,0,1,.626.585,1.2,1.2,0,0,1,.23.719,1.1,1.1,0,0,1-.144.552,1.269,1.269,0,0,1-.435.441,2.381,2.381,0,0,1-.726.292,4.377,4.377,0,0,1-1.018.105,5.773,5.773,0,0,1-1.969-.35A5.874,5.874,0,0,1,18.245,23.759Zm-5.154-7.638h4V13.594H5.938v2.527H9.92V27.375h3.171Z"/></svg>
-                        
-                            </div>
-                    </div>
-                   
-
-                    
-{/*                     <div className="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-aperture h-10 w-10 stroke-1 text-amber-500"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-
-                        <div className="mt-7">
-                            <a href="" className="title h5 text-[17px] font-medium dark:text-gray-300 hover:text-amber-500">Ios App Designer</a>
-                            <p className="text-slate-400 mt-3 text-[15px]">The phrasal sequence of the is now so that many campaign and benefit</p>
-                            
-                            <div className="mt-5">
-                                <a href="" className="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Read More <i className="uil uil-arrow-right"></i></a>
-                            </div>
                         </div>
-                    </div>
-                    
-
-                    
-                    <div className="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-camera h-10 w-10 stroke-1 text-amber-500"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-
-                        <div className="mt-7">
-                            <a href="" className="title h5 text-[17px] font-medium dark:text-gray-300 hover:text-amber-500">Photography</a>
-                            <p className="text-slate-400 mt-3 text-[15px]">The phrasal sequence of the is now so that many campaign and benefit</p>
-                            
-                            <div className="mt-5">
-                                <a href="" className="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Read More <i className="uil uil-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-                    
-                    <div className="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-compass h-10 w-10 stroke-1 text-amber-500"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
-
-                        <div className=" mt-7">
-                            <a href="" className="title h5 text-[17px] font-medium dark:text-gray-300 hover:text-amber-500">Graphic Designer</a>
-                            <p className="text-slate-400 mt-3 text-[15px]">The phrasal sequence of the is now so that many campaign and benefit</p>
-                            
-                            <div className="mt-5">
-                                <a href="" className="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Read More <i className="uil uil-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-                    
-                    <div className="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-settings h-10 w-10 stroke-1 text-amber-500"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-
-                        <div className="mt-7">
-                            <a href="" className="title h5 text-[17px] font-medium dark:text-gray-300 hover:text-amber-500">Web Security</a>
-                            <p className="text-slate-400 mt-3 text-[15px]">The phrasal sequence of the is now so that many campaign and benefit</p>
-                            
-                            <div className="mt-5">
-                                <a href="" className="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Read More <i className="uil uil-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-                    
-                    <div className="px-6 py-10 shadow shadow-gray-200 hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-watch h-10 w-10 stroke-1 text-amber-500"><circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path></svg>
-
-                        <div className="mt-7">
-                            <a href="" className="title h5 text-[17px] font-medium dark:text-gray-300 hover:text-amber-500">24 / 7</a>
-                            <p className="text-slate-400 mt-3 text-[15px]">Just-in-time and 24/7 availability are crucial for ensuring seamless operations and meeting customer demands in real-time</p>
-                            
-                            <div className="mt-5">
-                                <a href="" className="hover:text-amber-500 dark:hover:text-amber-500 after:bg-amber-500 dark:text-white transition duration-500">Read More <i className="uil uil-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div> */}
-                    
+                    </div>                   
                 </div>
             </div>
         </section>
-
     )
 }

@@ -1,6 +1,4 @@
-import Lottie from "lottie-react";
-import animation from "../../src/assets/coding.json";
-import { aboutMeText, yourName  } from "../config/personalConfig";
+import { aboutMeText, yourName } from "../config/personalConfig";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
@@ -17,7 +15,11 @@ const AboutMe = () => {
                 <div className="mx-5 md:w-3/5">
                     Hello! I’m 
                     <b className="font-bold"> {yourName.name}</b>
-                    <Lottie className="mx-auto h-40 w-40" animationData={animation} />
+
+                    <div className="mx-auto h-40 w-40">
+                        <img alt="Programmer sits" src="/programmer.svg"/>
+                    </div>
+
                     {aboutMeText.description}
                 </div>
                 <div className="my-5 mx-auto sm:my-auto md:w-1/4">

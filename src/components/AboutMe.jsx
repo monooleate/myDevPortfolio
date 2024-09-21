@@ -35,7 +35,7 @@ const AboutMe = () => {
                     />},             
 
                     <div className="mx-auto h-40 w-40">
-                        <img src="/programmer.svg"/>
+                        <img alt="Programmer sits" src="/programmer.svg"/>
                     </div>
                     
                     <h1>

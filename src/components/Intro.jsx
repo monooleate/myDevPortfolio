@@ -86,7 +86,7 @@ export default function Intro({ openModal }){
                         </p> */}
                         <div className="flex gap-8 mx-auto pb-4 text-uni-text">
                             <a
-                                /* href='' */
+                                href='#aboutme'
                                 className="flex justify-center items-center gap-2 bg-uni-palette rounded-md w-36 mx-auto"
                                 >
                                 <FormattedMessage
@@ -100,6 +100,7 @@ export default function Intro({ openModal }){
 
                             <div className="flex items-center justify-center">
                                 <a
+                                href='#aboutme'
                                 onClick={openModal}
                                 className="text-uni-text flex justify-center gap-2 rounded-md bg-uni-palette px-4 py-2 w-36 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
                                 >

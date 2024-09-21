@@ -46,7 +46,7 @@ export default function MyDevPortfolio() {
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {
       setisLoading(false);
-    }, 500);
+    }, 100);
     return () => {
       clearTimeout(loadingTimeout);
     };
@@ -66,10 +66,10 @@ export default function MyDevPortfolio() {
   return (
     <>
       <SEO
-        title='Developer Portfolio of Janos Meszaros'
-        description='Software Developer Portfolio site designed to effectively display my projects and expertise.'
+        title='Software Developer Portfolio of Janos Meszaros | Projects & Expertise'
+        description='Professional Software Developer Portfolio showcasing my projects, technical skills, and expertise in web development, programming, and software engineering.'
         type='website'
-        keywords={['portfolio', 'developer', 'engineer', 'software', 'engineer']}
+        keywords={['Full-Stack Developer', 'Web Developer Portfolio', 'Software Engineer', 'Janos Meszaros', 'Programming Projects', 'Technical Skills', 'Web Development', 'Software Engineering', 'Frontend Development', 'Backend Development']}
       />
       {isLoading && <PreLoader></PreLoader>}
       <div id='void' className='bg-gradient-to-tl from-uni-bg to-uni-palette/90'> 

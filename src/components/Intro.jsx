@@ -49,18 +49,15 @@ export default function Intro({ openModal }){
 
                 <div id='hero-content' className="relative h-full">
                     <div className=" bg- flex flex-col h-full justify-center items-center ">
-{/*                         <h1 className='text-uni-textIntro font-bold text-4xl'>
-                            {introSecDetails.heading1}
-                        </h1> */}
                         <figure className="object-contain py-3 pt-5 transition-all duration-300 cursor-pointer filter grayscale-0 xl:py-0 xl:pt-3">
                             <img className="rounded-full object-contain mx-auto max-w-[70%] max-h-[80vh]" src="/profile.png" alt="Janos Meszaros"></img>
                         </figure>
-                        <h1 className="text-uni-textIntro font-semibold text-3xl">
+                        <p className="text-uni-textIntro font-semibold text-3xl">
                             <FormattedMessage
                                 id = "myName"
                                 defaultMessage="Janos Meszaros"
                             />
-                        </h1>
+                        </p>
                         <h2 className="text-uni-palette pb-5 text-xl xl:text-2xl xl:pb-2">
                             {context.locale.includes('hu') 
                             ? 

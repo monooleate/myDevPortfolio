@@ -12,7 +12,7 @@ export default function SEO({title, description, type, keywords}) {
             <title>{title}</title>
             <meta name="title" content={`${metaTitle}`}></meta>
             <meta name='description' content={description} />
-            <meta name="keywords" content={keywords.map(String).join(',')}/>
+            <meta name="keywords" content={keywords.map(String).join(', ')}/>
             { /* End standard metadata tags */ }
             { /* Facebook tags */ }
             <meta property="og:type" content={type} />

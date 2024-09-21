@@ -46,7 +46,7 @@ export default function MyDevPortfolio() {
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {
       setisLoading(false);
-    }, 100);
+    }, 400);
     return () => {
       clearTimeout(loadingTimeout);
     };

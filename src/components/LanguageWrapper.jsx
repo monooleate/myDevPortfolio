@@ -15,11 +15,10 @@ export default function LanguageWrapper(props) {
         let lang;
         if (local.includes("en")) {
             lang = English;
-            setLocale(local)
             setMessages(lang)
         } else {
             lang = Magyar;
-            setLocale(local)
+            setLocale("hu")
             setMessages(lang)
         }
     }, [])

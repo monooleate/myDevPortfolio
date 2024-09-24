@@ -6,8 +6,6 @@ export default function SEO({title, description, type, keywords}) {
     let metaTitle = title === 'Developer Portfolio of Janos Meszaros' ? 'myDevPortfolio' : location.pathname.split('/').length === 3 ? location.pathname.split('/')[2] : location.pathname.split('/')[1]
     return (
         <Helmet>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
             <title>{title}</title>
             <meta name="title" content={`${metaTitle}`}></meta>

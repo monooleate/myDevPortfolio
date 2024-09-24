@@ -50,7 +50,7 @@ export default function Intro({ openModal }){
                 <div id='hero-content' className="relative h-full">
                     <div className=" bg- flex flex-col h-full justify-center items-center ">
                         <figure className="object-contain py-3 pt-5 transition-all duration-300 cursor-pointer filter grayscale-0 xl:py-0 xl:pt-3">
-                            <img className="rounded-full object-contain mx-auto max-w-[70%] max-h-[80vh]" src="/profile.png" alt="Janos Meszaros"></img>
+                            <img className="rounded-full object-contain mx-auto max-w-[70%] max-h-[80vh]" src="/profile.webp" alt="Janos Meszaros"></img>
                         </figure>
                         <p className="text-uni-textIntro font-semibold text-3xl">
                             <FormattedMessage

@@ -48,8 +48,8 @@ function Header({ appliedDark, adjustAppliedDark }) {
                             className=" bg-gray-200 border font-bold border-gray-300 appearance-none text-gray-900 text-sm text-center rounded-lg dark:border-s-gray-700 border-s-2 focus:ring-blue-500 focus:border-blue-500 w-12 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             value = {context.locale} 
                             onChange={context.selectLanguage}>
-                                <option value='hu' defaultValue>HU</option>
-                                <option value='en'>EN</option>                                
+                                <option label='HU' value='hu' defaultValue>HU</option>
+                                <option label='EN' value='en'>EN</option>                                
                         </select>
                     </div>
                 :
@@ -60,8 +60,8 @@ function Header({ appliedDark, adjustAppliedDark }) {
                             className=" bg-gray-200 border font-bold border-gray-300 appearance-none text-gray-900 text-sm text-center rounded-lg dark:border-s-gray-700 border-s-2 focus:ring-blue-500 focus:border-blue-500 w-12 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             value = {context.locale} 
                             onChange={context.selectLanguage}>
-                                <option value='en' defaultValue>EN</option>
-                                <option value='hu'>HU</option>
+                                <option label='HU' value='en' defaultValue>EN</option>
+                                <option label='EN' value='hu'>HU</option>
                         </select>
                     </div>
                 } 

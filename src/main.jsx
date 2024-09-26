@@ -3,13 +3,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { render } from 'preact';
 import { Suspense, lazy } from 'preact/compat';
 
-import MyDevPortfolio from './MyDevPortfolio.jsx'
-import Portfolio from './components/Portfolio'
 import ErrorPage from './components/ErrorPage';
 import LanguageWrapper from "./components/LanguageWrapper.jsx";
 import PreLoader from './components/Preloader.jsx'
 import './index.css'
 
+const MyDevPortfolio = lazy(() => import('./MyDevPortfolio.jsx'))
+const Portfolio = lazy(() => import('./components/Portfolio'))
 const LayoutForProjects = lazy(() => import('./components/projects/LayoutForProjects'))
 const MazeGrid = lazy(() => import('./components/projects/PathFinder/MazeGrid'))
 const Weather = lazy(() => import('./components/projects/Weather/weather.tsx'))
@@ -17,7 +17,7 @@ const Weather = lazy(() => import('./components/projects/Weather/weather.tsx'))
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <MyDevPortfolio />,
+    element: <Suspense fallback={<PreLoader />}><MyDevPortfolio /></Suspense>,
     errorElement: <ErrorPage />
   },
   {
@@ -44,8 +44,6 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage/>
   },
 ]);
-
-
 
 render(
   <LanguageWrapper>

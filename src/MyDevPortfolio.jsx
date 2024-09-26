@@ -10,7 +10,6 @@ import Header from './components/Header.jsx'
 import HireMe from './components/HireMe.jsx'
 import Intro from './components/Intro.jsx'
 import Portfolio from './components/Portfolio.jsx'
-import PreLoader from './components/Preloader.jsx'
 import Resume from './components/Resume.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import SEO from './components/SEO'
@@ -41,17 +40,6 @@ export default function MyDevPortfolio() {
     }
   }, [appliedDark])
 
-  //PreLoader
-  const [isLoading, setisLoading] = useState(true);
-  useEffect(() => {
-    const loadingTimeout = setTimeout(() => {
-      setisLoading(false);
-    }, 400);
-    return () => {
-      clearTimeout(loadingTimeout);
-    };
-  }, []);
-
   //OpenModal
   let [isOpen, setIsOpen] = useState(false)
 
@@ -71,7 +59,7 @@ export default function MyDevPortfolio() {
         type='website'
         keywords={['Full-Stack Developer', 'Web Developer Portfolio', 'Software Engineer', 'Janos Meszaros', 'Programming Projects', 'Technical Skills', 'Web Development', 'Software Engineering', 'Frontend Development', 'Backend Development']}
       />
-      {isLoading && <PreLoader></PreLoader>}
+      
       <div id='void' className='bg-gradient-to-tl from-uni-bg to-uni-palette/90'> 
         {/* <div id='frame' className='fixed h-full w-full border-gray-200 border-solid border-[15px] border-t-0 md:border-t-[15px] z-0'/> */}
         <div id='main-wrapper' className=' m-auto max-w-[700px] md:flex md:gap-2 md:max-w-[1250px] md:min-w-[500px] xl:h-[100vh] xl:m-auto xl:min-h-[600px]' >

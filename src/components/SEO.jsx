@@ -1,16 +1,13 @@
 import { Helmet } from 'react-helmet'
-import { useLocation } from 'react-router-dom';
 
-export default function SEO({title, description, type, keywords}) {
-    let location = useLocation();
-    let metaTitle = title === 'Developer Portfolio of Janos Meszaros' ? 'myDevPortfolio' : location.pathname.split('/').length === 3 ? location.pathname.split('/')[2] : location.pathname.split('/')[1]
+export default function SEO({title, description, type, keywords, metaTitle}) {
     return (
         <Helmet>
             <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
             <title>{title}</title>
             <meta name="title" content={`${metaTitle}`}></meta>
             <meta name='description' content={description} />
-            <meta name="keywords" content={keywords.map(String).join(', ')}/>
+            <meta name="keywords" content={keywords}/>
             { /* End standard metadata tags */ }
             { /* Facebook tags */ }
             <meta property="og:type" content={type} />

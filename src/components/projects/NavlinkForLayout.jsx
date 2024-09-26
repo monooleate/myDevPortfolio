@@ -8,10 +8,10 @@ import {
   import { faUser, faPaperPlane, faX, faBars } from '@fortawesome/free-solid-svg-icons';
   
   const navigation = [
-    { name: 'Home', href: '/', current: false, icon: faUser},
-/*     { name: 'Resume', href: '#resume', current: false, icon: faListAlt},
+/*    { name: 'Home', href: '/', current: false, icon: faUser},
+    { name: 'Resume', href: '#resume', current: false, icon: faListAlt},
     { name: 'Projects', href: '#portfolio', current: false, icon: faHandsHoldingCircle}, */
-    { name: 'Contact', href: '/#contact', current: false, icon: faPaperPlane},
+    { name: 'Contact', href: '/hu/#contact', current: false, icon: faPaperPlane},
   ]
   
   function classNames(...classes) {
@@ -24,7 +24,7 @@ import {
           <Disclosure as="nav" >
           {({ open }) => (
               <> 
-                  <div className="absolute top-[30%] right-0 pr-14 sm:pr-24 flex items-center md:hidden">
+                  <div className="absolute top-[30%] flex items-center md:hidden">
                       {/* Mobile menu button*/}
                       <DisclosureButton className="rounded-md mx-2 lg:mx-8 text-uni-text hover:bg-uni-palette focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                       <span className="sr-only">Open main menu</span>
@@ -55,10 +55,8 @@ import {
           )}
           </Disclosure>
   
-  
-          
-          <div className="hidden md:flex md:items-center">
-              <div className="flex space-x-4 items-center mx-auto">
+          <div className="hidden md:flex md:items-center md:ml-[-56px]">
+              <div className="flex space-x-4 items-center">
                   {navigation.map((item) => (
                   <a
                       key={item.name}

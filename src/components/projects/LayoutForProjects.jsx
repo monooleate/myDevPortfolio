@@ -1,9 +1,14 @@
 import { Outlet } from "react-router-dom";
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState, useContext } from 'preact/hooks';
 import { appliedConfig } from "../../config/dataConfig";
+import { Context } from "../../components/LanguageWrapper.jsx";
+import { useParams } from 'react-router-dom';
 
 import Header from './HeaderForLayout'
 import Footer from './FooterForLayout'
+
+import Magyar from '../../lang/hu.json';
+import English from '../../lang/en.json';
 
 export default function Layout_Project(){
     //isDark Adjustment
@@ -29,6 +34,20 @@ export default function Layout_Project(){
       document.getElementById("root").classList.remove('dark')
     }
   }, [appliedDark])
+
+    //Language selector
+    const context = useContext(Context);
+    const { lang } = useParams()
+    useEffect(() => {
+        if (lang === ("en")) {
+            context.setLocale('en')
+            context.setMessages(English)
+        }
+        else {
+            context.setLocale("hu")
+            context.setMessages(Magyar)
+        }
+    }, [lang])
 
     return (
         <>

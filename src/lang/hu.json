@@ -38,5 +38,17 @@
     "modalCertCert": "Tanusítványok" ,
     "modalDate": "{ts, date, ::yyyyMMdd}" ,
     "modalShow": "Mutasd!" ,
-    "modalClose": "Bezár" 
+    "modalClose": "Bezár" ,
+    "SEO_Title": "Mészáros János szoftverfejlesztő portfóliója - Projektek és Tapasztalat" ,
+    "SEO_Desc": "Profi szoftverfejlesztő portfólió, amely bemutatja projektjeimet, technikai készségeimet és szaktudásomat a webfejlesztés, programozás és szoftverfejlesztés területén." ,
+    "SEO_Type": "weboldal" ,
+    "SEO_Keywords": "Full-Stack fejlesztő, Webfejlesztő portfólió, Szoftverfejlesztő, Mészáros János, Programozási projektek, Technikai készségek, Webfejlesztés, Szoftverfejlesztés, Frontend fejlesztés, Backend fejlesztés" ,
+    "Weather_Title": "Időjárási viszonyok a Föld bármely pontján" ,
+    "Weather_Desc": "Tekintse meg az időjárási információkat a Föld bármely pontján" ,
+    "Weather_Type": "weboldal" ,
+    "Weather_Keywords": "időjárás, előrejelzés, portfólió projekt" ,
+    "Path_Title" : "Útvonalkereső algoritmusok a gyakorlatban" ,
+    "Path_Desc" : "Útvonalkereső algoritmusok vizuális bemutatása" ,
+    "Path_Type" : "weboldal" ,
+    "Path_Keywords" : "útvonalkereső, algoritmus, portfólió projekt"
 }

@@ -1,6 +1,7 @@
-import { useState } from 'preact/hooks';
+import { useState, useContext } from 'preact/hooks';
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
+import { Context } from "../../../components/LanguageWrapper.jsx";
 
 export default function About(){
     //OpenModal
@@ -13,7 +14,7 @@ export default function About(){
     function openModal() {
         setIsOpen(true)
     }
-
+    const context = useContext(Context);
     return(
         <>
       <div className="flex items-center justify-center py-5">
@@ -53,37 +54,107 @@ export default function About(){
               > 
 
                 <Dialog.Panel className="w-full max-w-3xl transform overflow-hidden rounded-2xl bg-gray-200 p-6 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title
+                <Dialog.Title
                     as="h3"
                     className="mb-5 text-lg font-medium leading-6 text-uni-text"
                   >
                     Path-Finding Algorithms
                   </Dialog.Title>
+                
+                {context.locale.includes('en') ?                
+                <div className="mx-12 ">
+                  <h1>BFS and DFS Algorithms</h1>
+                  <br />
+                  <h2>Breadth-First Search (BFS)</h2>
+                  <br />
+                  <p><strong>BFS</strong> is an algorithm used to traverse or search through graph or tree data structures. It explores all the nodes at the present depth level before moving on to nodes at the next depth level. It uses a <strong>queue</strong> to keep track of the nodes to visit, ensuring that the algorithm visits the closest nodes first.</p>
+                  <ul>
+                      <li><strong>Characteristics:</strong>
+                          <ul>
+                              <li>Visits nodes level by level.</li>
+                              <li>Uses a queue for storing nodes.</li>
+                              <li>Guarantees finding the shortest path in an unweighted graph.</li>
+                          </ul>
+                      </li>
+                      <li><strong>Use Cases:</strong>
+                          <ul>
+                              <li>Finding the shortest path in unweighted graphs.</li>
+                              <li>Traversing graphs or trees where each node should be visited systematically.</li>
+                          </ul>
+                      </li>
+                  </ul>
+                  <br />
+                  <h2>Depth-First Search (DFS)</h2>
+                  <br />
+                  <p><strong>DFS</strong> is an algorithm that explores as far as possible along each branch before backtracking, diving deep into one path before exploring others. It uses a <strong>stack</strong> (or recursion) to keep track of the nodes to visit, ensuring that it explores the depth of the graph before breadth.</p>
+                  <ul>
+                      <li><strong>Characteristics:</strong>
+                          <ul>
+                              <li>Goes deep into the graph/tree first.</li>
+                              <li>Uses a stack (or recursion) for traversal.</li>
+                              <li>May not find the shortest path.</li>
+                          </ul>
+                      </li>
+                      <li><strong>Use Cases:</strong>
+                          <ul>
+                              <li>Solving problems that require exhaustive search (e.g., puzzles, mazes).</li>
+                              <li>Traversing large trees or graphs where depth exploration is prioritized.</li>
+                          </ul>
+                      </li>
+                  </ul>
+                </div>
+                :
+                <div className="mx-12 ">
+                  <h1>BFS és DFS algoritmusok</h1>
+                  <br />
+                  <h2>Szélességi keresés (BFS)</h2>
+                  <br />
+                  <p><strong>BFS</strong> egy algoritmus, amelyet gráfok vagy fák bejárására vagy keresésére használnak. A jelenlegi mélységi szint összes csomópontját vizsgálja meg, mielőtt továbblépne a következő szintre. Ehhez <strong>sor</strong>-t használ a meglátogatandó csomópontok követésére, így biztosítva, hogy a legközelebbi csomópontokat vizsgálja meg először.</p>
+                  <ul>
+                      <li><strong>Jellemzők:</strong>
+                          <ul>
+                              <li>A csomópontokat szintről szintre járja be.</li>
+                              <li>Sort használ a csomópontok tárolására.</li>
+                              <li>Garantáltan megtalálja a legrövidebb utat egy súlyozatlan gráfban.</li>
+                          </ul>
+                      </li>
+                      <li><strong>Felhasználási esetek:</strong>
+                          <ul>
+                              <li>Legrövidebb út megtalálása súlyozatlan gráfokban.</li>
+                              <li>Gráfok vagy fák bejárása, ahol az összes csomópontot rendszerezve kell meglátogatni.</li>
+                          </ul>
+                      </li>
+                  </ul>
+                  <br />
+                  <h2>Mélységi keresés (DFS)</h2>
+                  <br />
+                  <p><strong>DFS</strong> egy algoritmus, amely minden ágon a lehető legmélyebbre megy, mielőtt visszalépne, egy utat teljesen bejárva, mielőtt más ágakat vizsgálna meg. A csomópontok nyomon követésére <strong>verem</strong>-et (vagy rekurziót) használ, így először a gráf mélységét járja be.</p>
+                  <ul>
+                      <li><strong>Jellemzők:</strong>
+                          <ul>
+                              <li>Először a gráf vagy fa mélységét járja be.</li>
+                              <li>Verem (vagy rekurzió) használatával halad.</li>
+                              <li>Nem garantált, hogy a legrövidebb utat találja meg.</li>
+                          </ul>
+                      </li>
+                      <li><strong>Felhasználási esetek:</strong>
+                          <ul>
+                              <li>Olyan problémák megoldása, amelyek teljes keresést igényelnek (pl. rejtvények, labirintusok).</li>
+                              <li>Nagy méretű fák vagy gráfok bejárása, ahol a mélységi felfedezés elsődleges.</li>
+                          </ul>
+                      </li>
+                  </ul>
+                </div>}
 
-                  <div className="mx-12 ">
-                    <p className='font-bold'>Queues and Stacks</p>
-                    <p>Many algorithms and programs utilize data structures that allow for the algorithm to run more efficiently. DFS and BFS use two of the most commonly used data structures &ndash; queues and stacks. Both are structured containers for objects and each have two operations available for the insertion and removal of objects of the data structure.</p>
-                    <p><b>Queues</b> Queues function according to the first-in-first-out (FIFO) principle. To put it into perspective, one can imagine a queue in line for the opening of a new shopping mall. Whoever enters the queue first gets to enter the mall first &ndash; the line operates on a first-come-first-serve principle. Similarly, it is helpful to think of the queue as a narrow tunnel wide enough for only one object where the objects line up within, such as the diagram shown</p>
-                    <p><b>Queues</b> have two operations: enqueue and dequeue. Enqueuing inserts objects to the back of the queue, while dequeuing removes and returns the object at the front. Another operation commonly used is peeking, where the queue returns the object at the front without removing it from the queue.</p>
-                    <p>Stacks Stacks function according to the last-in-first-out (LIFO) principle. A helpful analogy is to think of a stack of books; one can only add or remove books at the very top. Similarly, one can think of a stack as a large pit or tall container wide enough for only one object where the objects stack up within, such as the diagram shown in Figure 6. The last object to be pushed, or the object at the top, is commonly referred to as the &ldquo;top&rdquo;, while the objects underneath are referred to as the &ldquo;stack&rdquo;.</p>
-                    <p>Stacks also have two operations: push and pop. Pushing inserts objects to the top of the stack to become the new top, while popping removes and returns the top while the next object becomes the new top. Stacks also have a peeking feature, where it returns the object at the top without removing it from the stack.</p>
-                    <p><b>Depth First Search</b> DFS, or Depth First Search, is arguably the simpler of the two algorithms. Although both algorithms are driven by iterative processes, the rules determining each iteration is simpler for DFS. The fundamental mechanism for DFS, although perhaps not explicit, is often a stack that will push and/or pop nodes for each iteration. Any DFS program that doesn&rsquo;t explicitly have a stack in use will still usually run by a similar principle.</p>
-                    <p><b>Breadth First Search</b> BFS, or Breadth First Search, works quite differently from DFS. The fundamental mechanisms for BFS are a queue and a dictionary named &ldquo;parents&rdquo;. For the sake of this algorithm, we will define a parent-child relationship between two nodes to be the following: If node A is selected and node B is enqueued into the queue via node A, then node A is the parent node and node B is the child node. In &ldquo;parents&rdquo;, both the keys and values will be singular nodes. The keys will be child nodes, and the values will be the parent node for the corresponding child node. Hence, if one looks up a node in &ldquo;parents&rdquo;, they will receive the parent node.</p>
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-12 ">
-
-                  </div>
-
-                  <div className="mt-4">
-                    <button
-                      type="button"
-                      className="inline-flex ml-[40%] rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      onClick={closeModal}
-                    >
-                      Close
-                    </button>
-                  </div>
+                <div className="mt-4">
+                  <button
+                    type="button"
+                    className="inline-flex ml-[40%] rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                    onClick={closeModal}
+                  >
+                    Close
+                  </button>
+                </div>
                 </Dialog.Panel>
               </Transition.Child>
             </div>

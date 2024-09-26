@@ -1,40 +1,18 @@
 import { createContext } from 'preact';
-import { useState, useEffect } from 'preact/hooks';
+import { useState } from 'preact/hooks';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { IntlProvider } from 'react-intl';
-import Magyar from '../lang/hu.json';
+
 import English from '../lang/en.json';
 
 export const Context = createContext();
 
 export default function LanguageWrapper(props) {
     const [locale, setLocale] = useState("en");
-    const [messages, setMessages] = useState("English");
-    
-    useEffect(() => {
-        const local = navigator.language;
-        let lang;
-        if (local.includes("en")) {
-            lang = English;
-            setMessages(lang)
-        } else {
-            lang = Magyar;
-            setLocale("hu")
-            setMessages(lang)
-        }
-    }, [])
-
-   function selectLanguage(e) {
-       const newLocale = e.target.value;
-       setLocale(newLocale);
-       if (newLocale.includes("en")) {
-        setMessages(English);
-       } else {
-        setMessages(Magyar);
-       }
-   }
+    const [messages, setMessages] = useState(English);
 
    return (
-       <Context.Provider value = {{locale, selectLanguage}}>
+       <Context.Provider value = {{locale, setLocale, setMessages }}>
            <IntlProvider messages={messages} locale={locale}>
                {props.children}
            </IntlProvider>

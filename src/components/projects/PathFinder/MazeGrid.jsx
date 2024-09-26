@@ -2,6 +2,7 @@ import { useState } from 'preact/hooks';
 import './MazeGrid.css';
 import About from './About';
 import SEO from '../../SEO'
+import { useIntl } from 'react-intl';
 
 export default function MazeGrid() {
 
@@ -155,14 +156,15 @@ export default function MazeGrid() {
     step()
     return false
   }
-
+  const intl = useIntl();
   return (
     <main>
-      <SEO  
-        title='PathFinding Algorithms in practice'
-        description='Visual demonstration of PathFinding algorithms'
-        type='website'
-        keywords={['pathfinder', 'algorithm', 'portfolio project']}
+      <SEO
+        title={intl.formatMessage({id:"Path_Title", defaultMessage:"PathFinding Algorithms in practice"})}
+        description={intl.formatMessage({id:"Path_Desc", defaultMessage:"Visual demonstration of PathFinding algorithms"})}
+        type={intl.formatMessage({id:"Path_Type", defaultMessage:"website"})}
+        keywords={intl.formatMessage({id:"Path_Keywords", defaultMessage:"pathfinder', 'algorithm', 'portfolio project"})}
+        metaTitle="pathFinder"
       />
       <About />
       <div className='maze-grid'>

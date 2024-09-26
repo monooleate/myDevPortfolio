@@ -6,6 +6,7 @@ import { useState } from 'preact/hooks';
 import type { CurrentWeather } from "./weatherapi.ts";
 import type { LocationInfo } from "./location.ts";
 import SEO from '../../SEO.jsx'
+import { useIntl } from 'react-intl';
 
 export default function Weather() { 
   const WEATHER_API_URL = "https://api.open-meteo.com/v1/forecast";
@@ -103,14 +104,15 @@ export default function Weather() {
       setCurrentLocation(undefined)
     }
   };
-
+  const intl = useIntl();
   return (
     <>
       <SEO
-        title='Weather conditions for any location on earth'
-        description='Chech weather information at any location on Earth'
-        type='website'
-        keywords={['weather', 'forecast', 'portfolio project']}
+        title={intl.formatMessage({id:"Weather_Title", defaultMessage:"Weather conditions for any location on earth"})}
+        description={intl.formatMessage({id:"Weather_Desc", defaultMessage:"Chech weather information at any location on Earth"})}
+        type={intl.formatMessage({id:"Weather_Type", defaultMessage:"website"})}
+        keywords={intl.formatMessage({id:"Weather_Keywords", defaultMessage:"weather, forecast, portfolio project"})}
+        metaTitle="weather-app"
       />
       <div className="w-full h-[100%] flex justify-center py-5 ">
         {currentLocation === undefined ? (
@@ -124,7 +126,7 @@ export default function Weather() {
               )}
               <h2 className="text-xl font-semibold border-bottom">Enter a location to get started</h2>
             </div>
-            <div>
+            <div className="">
               <input type="text" name="location" placeholder="Location" value={searchLocation} onChange={e => setSearchLocation(e.target.value)} className="
                 h-10  border rounded p-2 text-center
                 border-gray-400 text-gray-900

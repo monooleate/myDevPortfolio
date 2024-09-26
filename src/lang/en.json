@@ -36,5 +36,17 @@
     "modalCertCert": "Certificates" ,
     "modalDate": "{ts, date, ::yyyyMMdd}" ,
     "modalShow": "Show certificate" ,
-    "modalClose": "Close" 
+    "modalClose": "Close" ,
+    "SEO_Title" : "Software Developer Portfolio of Janos Meszaros - Projects and Expertise" ,
+    "SEO_Desc" : "Professional Software Developer Portfolio showcasing my projects, technical skills, and expertise in web development, programming, and software engineering." ,
+    "SEO_Type" : "website" ,
+    "SEO_Keywords" : "Full-Stack Developer, Web Developer Portfolio, Software Engineer, Janos Meszaros, Programming Projects, Technical Skills, Web Development, Software Engineering, Frontend Development, Backend Development" ,
+    "Weather_Title" : "Weather conditions for any location on earth" ,
+    "Weather_Desc" : "Chech weather information at any location on Earth" ,
+    "Weather_Type" : "website" ,
+    "Weather_Keywords" : "weather, forecast, portfolio project" ,
+    "Path_Title" : "PathFinding Algorithms in practice" ,
+    "Path_Desc" : "Visual demonstration of PathFinding algorithms" ,
+    "Path_Type" : "website" ,
+    "Path_Keywords" : "pathfinder', 'algorithm', 'portfolio project"
 }

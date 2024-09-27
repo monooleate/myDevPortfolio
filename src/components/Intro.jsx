@@ -81,6 +81,7 @@ export default function Intro({ openModal }){
                         <div className="flex gap-8 mx-auto pb-4 text-uni-text">
                             <a
                                 href='/Janos_Meszaros_Resume_27_09_2024_Software.pdf'
+                                download
                                 className="flex justify-center items-center gap-2 bg-uni-palette rounded-md w-36 mx-auto"
                                 aria-label="CV"
                                 >

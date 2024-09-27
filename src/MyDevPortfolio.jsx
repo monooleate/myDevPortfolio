@@ -1,5 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect, useContext } from 'preact/hooks';
+import { useParams } from 'react-router-dom';
 import { appliedConfig } from "./config/dataConfig.js";
+import { Context } from "./components/LanguageWrapper.jsx";
 
 import './MyDevPortfolio.css'
 import AboutMe from './components/AboutMe.jsx'
@@ -10,10 +12,12 @@ import Header from './components/Header.jsx'
 import HireMe from './components/HireMe.jsx'
 import Intro from './components/Intro.jsx'
 import Portfolio from './components/Portfolio.jsx'
-import PreLoader from './components/Preloader.jsx'
 import Resume from './components/Resume.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import SEO from './components/SEO'
+
+import Magyar from './lang/hu.json';
+import English from './lang/en.json';
 
 export default function MyDevPortfolio() {
 
@@ -41,16 +45,19 @@ export default function MyDevPortfolio() {
     }
   }, [appliedDark])
 
-  //PreLoader
-  const [isLoading, setisLoading] = useState(true);
+  //Language selector
+  const context = useContext(Context);
+  const { lang } = useParams()
   useEffect(() => {
-    const loadingTimeout = setTimeout(() => {
-      setisLoading(false);
-    }, 500);
-    return () => {
-      clearTimeout(loadingTimeout);
-    };
-  }, []);
+      if (lang === ("en")) {
+          context.setLocale('en')
+          context.setMessages(English)
+      }
+      else {
+          context.setLocale("hu")
+          context.setMessages(Magyar)
+      }
+  }, [lang])
 
   //OpenModal
   let [isOpen, setIsOpen] = useState(false)
@@ -71,7 +78,6 @@ export default function MyDevPortfolio() {
         type='website'
         keywords={['portfolio', 'developer', 'software']}
       />
-      {isLoading && <PreLoader></PreLoader>}
       <div id='void' className='bg-gradient-to-tl from-uni-bg to-uni-palette/90'> 
         {/* <div id='frame' className='fixed h-full w-full border-gray-200 border-solid border-[15px] border-t-0 md:border-t-[15px] z-0'/> */}
         <div id='main-wrapper' className=' m-auto max-w-[700px] md:flex md:gap-2 md:max-w-[1250px] md:min-w-[500px] xl:h-[100vh] xl:m-auto xl:min-h-[600px]' >

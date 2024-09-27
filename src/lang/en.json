@@ -12,7 +12,7 @@
     "resumeResume": "Resume" ,
     "resumeEducation": "Education" , 
     "resumeExperience": "Experience" , 
-    "resumeCompetencies": "Cmpetencies" ,
+    "resumeCompetencies": "Competencies" ,
     "hireMeMain": "I Am Available For Freelancer Projects." ,
     "hireMeText": "With a robust engineering background, I bring a unique perspective to solving problems. Let's work together to bring your projects to life with precision and creativity." ,
     "hireMe": "Hire Me" ,
@@ -42,11 +42,11 @@
     "SEO_Type" : "website" ,
     "SEO_Keywords" : "Full-Stack Developer, Web Developer Portfolio, Software Engineer, Janos Meszaros, Programming Projects, Technical Skills, Web Development, Software Engineering, Frontend Development, Backend Development" ,
     "Weather_Title" : "Weather conditions for any location on earth" ,
-    "Weather_Desc" : "Chech weather information at any location on Earth" ,
+    "Weather_Desc" : "Check weather information at any location on Earth" ,
     "Weather_Type" : "website" ,
     "Weather_Keywords" : "weather, forecast, portfolio project" ,
     "Path_Title" : "PathFinding Algorithms in practice" ,
     "Path_Desc" : "Visual demonstration of PathFinding algorithms" ,
     "Path_Type" : "website" ,
-    "Path_Keywords" : "pathfinder', 'algorithm', 'portfolio project"
+    "Path_Keywords" : "pathfinder, algorithm, portfolio project"
 }

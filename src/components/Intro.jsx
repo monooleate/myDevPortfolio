@@ -78,12 +78,9 @@ export default function Intro({ openModal }){
                             />
                             }
                         </h2>
-{/*                         <p className="text-2xl text-uni-textIntro">
-                            {introSecDetails.heading2}
-                        </p> */}
                         <div className="flex gap-8 mx-auto pb-4 text-uni-text">
                             <a
-                                href='#aboutme'
+                                href='/Janos_Meszaros_Resume_27_09_2024_Software.pdf'
                                 className="flex justify-center items-center gap-2 bg-uni-palette rounded-md w-36 mx-auto"
                                 aria-label="CV"
                                 >

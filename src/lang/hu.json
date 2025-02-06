@@ -35,6 +35,8 @@
     "portfolio3": "Időjárás alkalmazás" ,
     "portfolio3Intro": "Időjárás lekérdezése API hívásokkal." ,
     "portfolio3Intro2": "Typescript nyelvvel a szigorú típus ellenőrzésért!" ,
+    "portfolio4": "MatekMegoldasok.hu" ,
+    "portfolio4Intro": "Gyors és érthető matematikai magyarázatok, kalkulátorok és példák egy helyen." ,
     "modalCertCert": "Tanúsítványok" ,
     "modalDate": "{ts, date, ::yyyyMMdd}" ,
     "modalShow": "Mutasd!" ,

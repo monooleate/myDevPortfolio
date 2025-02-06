@@ -33,6 +33,8 @@
     "portfolio3": "Weather Checker" ,
     "portfolio3Intro": "Weather check by two API requests." ,
     "portfolio3Intro2": "Using Typescript for strict type check." ,
+    "portfolio4": "MatekMegoldasok.hu" ,
+    "portfolio4Intro": "Fast and clear mathematical explanations, calculators, and examples in one place." ,
     "modalCertCert": "Certificates" ,
     "modalDate": "{ts, date, ::yyyyMMdd}" ,
     "modalShow": "Show certificate" ,

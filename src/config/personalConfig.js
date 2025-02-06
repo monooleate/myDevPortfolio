@@ -161,4 +161,10 @@ export const certificates = [
     completion: '2024-09-12',
     location: '/certificates/deno.jpg',
   },
+  {
+    training: 'SEO Bootcamp: Learn Search Engine Optimization',
+    school: "Zero to Mastery",
+    completion: '2025-02-06',
+    location: '/certificates/seo.jpg',
+  },
 ]

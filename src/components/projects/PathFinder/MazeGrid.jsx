@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { FormattedMessage, useIntl } from 'react-intl';
 import './MazeGrid.css';
 import About from './About';
 
 export default function MazeGrid() {
+  const intl = useIntl();
 
   const [rowNr, setRowNr] = useState(10);
   const [columnNr, setColumnNr] = useState(10);
@@ -19,10 +21,10 @@ export default function MazeGrid() {
         setRowNr(number)
         setErrMessageRow('')
       } else {
-        setErrMessageRow('Wrong number! Applied: '+ rowNr)
+        setErrMessageRow(intl.formatMessage({ id: 'mazeWrongNumber', defaultMessage: 'Wrong number! Applied: ' }) + rowNr)
       }
     } else {
-      setErrMessageRow('Missing number! Applied: '+ rowNr)
+      setErrMessageRow(intl.formatMessage({ id: 'mazeMissingNumber', defaultMessage: 'Missing number! Applied: ' }) + rowNr)
     }
   }
 
@@ -33,10 +35,10 @@ export default function MazeGrid() {
         setColumnNr(number)
         setErrMessageColumn('')
       } else {
-        setErrMessageColumn('Wrong number! Applied: '+ columnNr)
+        setErrMessageColumn(intl.formatMessage({ id: 'mazeWrongNumber', defaultMessage: 'Wrong number! Applied: ' }) + columnNr)
       }
     } else {
-      setErrMessageColumn('Missing number! Applied: '+ columnNr)
+      setErrMessageColumn(intl.formatMessage({ id: 'mazeMissingNumber', defaultMessage: 'Missing number! Applied: ' }) + columnNr)
     }
   }
 
@@ -161,23 +163,23 @@ export default function MazeGrid() {
       <div className='maze-grid'>
         <div className='inputs'>
           <div className='rownr'>
-            rowNr: <input className='border-2' type='number' placeholder={rowNr} size='10' maxlength="3" onChange={adjustRowNr}/> 
+            <FormattedMessage id="mazeRowNr" defaultMessage="Rows" />: <input className='border-2' type='number' placeholder={rowNr} size='10' maxlength="3" onChange={adjustRowNr}/>
             <p className='error'>{errMessageRow}</p>
           </div>
           <div className='columnnr'>
-            columnNr: <input className='border-2' type='number' placeholder={columnNr} size='10' maxlength="3" onChange={adjustColumnNr}/> 
+            <FormattedMessage id="mazeColumnNr" defaultMessage="Columns" />: <input className='border-2' type='number' placeholder={columnNr} size='10' maxlength="3" onChange={adjustColumnNr}/>
             <p className='error'>{errMessageColumn}</p>
           </div>
           <div className="slidecontainer">
-            Speed of search: <input type="range" onChange={adjustSpeed} min="0" max="200" step="25" className="slider" id="myRange"/>
+            <FormattedMessage id="mazeSpeed" defaultMessage="Speed of search" />: <input type="range" onChange={adjustSpeed} min="0" max="200" step="25" className="slider" id="myRange"/>
             <p className='error'>{`${Math.round(speed)} ms`}</p>
           </div>
         </div>
         <div className='buttons-maze'>
           <div className='buttons'>
-            <button className='maze-button' onClick={adjustMaze}>Refresh Maze</button>
-            <button className='maze-button' onClick={()=>bfs([1,0], rowNr, columnNr)}>Breadth-First Search</button>
-            <button className='maze-button' onClick={()=>dfs([1,0], rowNr, columnNr)}>Depth-First Search</button>
+            <button className='maze-button' onClick={adjustMaze}><FormattedMessage id="mazeRefresh" defaultMessage="Refresh Maze" /></button>
+            <button className='maze-button' onClick={()=>bfs([1,0], rowNr, columnNr)}><FormattedMessage id="mazeBfs" defaultMessage="Breadth-First Search" /></button>
+            <button className='maze-button' onClick={()=>dfs([1,0], rowNr, columnNr)}><FormattedMessage id="mazeDfs" defaultMessage="Depth-First Search" /></button>
           </div>
           </div>
           <div className='maze'>

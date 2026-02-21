@@ -1,125 +1,143 @@
-
-
-.inputs{
-  display: flex;
-  
-}
-
-.rownr{
+.maze-grid {
   display: flex;
   flex-direction: column;
-  padding: 0px 10px 0px;
-  width: 120px;
+  align-items: center;
+  min-height: 84vh;
+  padding: 1rem;
+  color: var(--color-text);
 }
 
-input {
-  text-align: center;
-}
-
-p.error {
-  margin: 0px; 
-  font-size: 12px;
-}
-
-.columnnr{
+.inputs {
   display: flex;
-  flex-direction: column;
-  padding: 0px 10px 0px;
-  width: 120px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
+.rownr,
+.columnnr,
 .slidecontainer {
   display: flex;
   flex-direction: column;
-  padding: 0px 10px 0px;
-}
-
-.maze-grid{
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  height: 100%;
-  min-height: 84vh;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
-.maze{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2px;
-  border: 2px solid black;
-  margin-bottom: 20px;
-}
-
-.buttons-maze{
-  position: relative;
-  padding-bottom: 20px;
-}
-
-.buttons{
-  display: flex;
-  justify-content: center;
-}
-
-.maze-button{
-  background-color: blue;
-  color: white;
-  margin: 10px;
-  margin-bottom: 0px;
-  cursor: pointer;
-  font-size: 16px;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
+.rownr input,
+.columnnr input {
+  width: 80px;
   text-align: center;
+  padding: 0.375rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e1;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.dark .rownr input,
+.dark .columnnr input {
+  background: #1e293b;
+  border-color: #475569;
+  color: #e2e8f0;
+}
+
+p.error {
+  margin: 0.25rem 0 0;
+  font-size: 0.75rem;
+  color: #ef4444;
+}
+
+.slidecontainer input[type="range"] {
+  width: 150px;
+  margin-top: 0.25rem;
+  accent-color: #6366f1;
+}
+
+.buttons-maze {
+  padding-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.maze-button {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s;
+}
+
+.maze-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
 }
 
 .maze-button:active {
-  background-color: red;
+  transform: scale(0.95);
 }
 
-.cell{
-  width: 30px;
-  height: 30px;
-  border: 1px solid white;
-  padding: 0px;
+.maze {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  border: 2px solid #334155;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  overflow: auto;
+  max-width: 90vw;
+}
+
+.cell {
+  width: clamp(12px, 3vw, 30px);
+  height: clamp(12px, 3vw, 30px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cell.wall {
-  background-color: black;
+  background-color: #0f172a;
+}
+
+.dark .cell.wall {
+  background-color: #1e293b;
 }
 
 .cell.path {
-  background-color: rgb(235, 235, 235);
+  background-color: #e2e8f0;
+}
+
+.dark .cell.path {
+  background-color: #334155;
 }
 
 .cell.start {
-  background-color: green;
+  background-color: #22c55e;
 }
 
 .cell.end {
-  background-color: red;
+  background-color: #ef4444;
 }
 
-.cell.visited-bfs{
-  background-color: pink;
+.cell.visited-bfs {
+  background-color: #c084fc;
 }
 
-.cell.visited-dfs{
-  background-color: yellow;
+.cell.visited-dfs {
+  background-color: #fbbf24;
 }
 
 .row {
   display: flex;
-  flex-direction: row;
-  margin: 0px;
   flex-wrap: nowrap;
 }
-
-
-
-
-
-
-

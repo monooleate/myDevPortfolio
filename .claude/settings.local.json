@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:gigawood.hu)",
+      "WebFetch(domain:elviratuzep.hu)",
+      "WebFetch(domain:seotudas.hu)",
+      "WebFetch(domain:lemnimpregnat.ro)",
+      "WebFetch(domain:kamy.cc)",
+      "Bash(test:*)",
+      "Bash(npm run build:*)",
+      "Bash(curl:*)",
+      "Bash(python3:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(for f in advancedJavascript.jpg webDeveloper.jpg typeScript.jpg deno.jpg seo.jpg)",
+      "Bash(do curl -sLO \"https://raw.githubusercontent.com/monooleate/myDevPortfolio/JMeszaros-devPortfolio/public/certificates/$f\")",
+      "Bash(done)",
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)"
+    ]
+  }
+}

@@ -1,21 +1,18 @@
 import Navlink from './Navlink'
-import Toggle from "react-toggle";
-import "react-toggle/style.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FormattedMessage } from 'react-intl';
 import { Context } from "./LanguageWrapper";
 import { useNavigate, useLocation } from 'react-router-dom';
-
 import Magyar from '../lang/hu.json';
 import English from '../lang/en.json';
-
-import { useContext } from 'preact/hooks';
+import { useContext } from 'react';
 
 function Header({ appliedDark, adjustAppliedDark }) {
     const context = useContext(Context);
-    const navigate = useNavigate(); // Use `useNavigate` for navigation
-    const location = useLocation(); // Use `useLocation` to access the current path
+    const navigate = useNavigate();
+    const location = useLocation();
 
     function selectLanguage(e) {
         const newLocale = e.target.value;
@@ -25,80 +22,136 @@ function Header({ appliedDark, adjustAppliedDark }) {
         } else {
             context.setMessages(Magyar);
         }
-
-        // Modify the URL to include the new language
         const currentPath = location.pathname;
         if (currentPath.includes("/en")) {
-        navigate(currentPath.replace("/en", `/${newLocale}`));
+            navigate(currentPath.replace("/en", `/${newLocale}`));
         } else if (currentPath.includes("/hu")) {
-        navigate(currentPath.replace("/hu", `/${newLocale}`));
+            navigate(currentPath.replace("/hu", `/${newLocale}`));
         } else {
-        navigate(`/${newLocale}${currentPath}`); // Add language to the path if it's not present
+            navigate(`/${newLocale}${currentPath}`);
         }
-   }
+    }
 
-    return(
-        <header id='header' className='text-ellipsis border-spacing-1
-        fixed left-0 mx-auto top-0 w-[100%] h-16 px-2 z-50 bg-uni-fill text-uni-text overflow-x-hidden
-        sm:px-10
-        md:flex md:sticky md:flex-col md:justify-start md:border-r-uni-border md:border-r-2 md:left-auto md:px-0 md:top-5 md:w-24 md:min-w-24 md:min-h-[450px] md:h-[60vh] md:z-10 md:overflow-hidden
-        xl:h-[400px] xl:m-auto xl:mr-0 xl:w-24 xl:min-w-10 xl:border-solid xl:border-[2px] xl:rounded'>
-
+    return (
+        <header
+            id="header"
+            className="
+                fixed left-0 top-0 w-full h-16 px-4 z-50
+                bg-uni-fill/80 backdrop-blur-xl border-b border-uni-border
+                text-uni-text
+                flex items-center justify-between
+                sm:px-10
+                md:sticky md:flex md:flex-col md:justify-start md:items-center
+                md:w-24 md:min-w-24 md:h-[60vh] md:min-h-[450px]
+                md:px-0 md:top-5 md:z-10
+                md:bg-uni-fill md:backdrop-blur-none
+                md:border-r md:border-b-0 md:border-uni-border md:rounded-xl
+                md:overflow-hidden md:left-auto
+                xl:h-[400px] xl:m-auto xl:mr-0 xl:w-24 xl:min-w-10
+                xl:border xl:border-uni-border xl:rounded-xl
+            "
+        >
+            {/* --- Nickname link + icon --- */}
             <a
-                key='any'
-                href='/'
-                className='bg-secondary absolute ml-14 top-[10%] 
-                md:static md:mx-auto md:mb-15 md:mt-5 
-                xl:mb-auto 
-                text-uni-text hover:bg-uni-palette block rounded-md font-medium text-lg '
-            >   
-                 <br/>
-                <FontAwesomeIcon icon={faThumbsUp} />
+                href="/"
+                className="
+                    flex items-center gap-1.5
+                    text-uni-text hover:text-uni-palette
+                    font-medium text-lg
+                    transition-colors duration-300
+                    shrink-0
+                    md:flex-col md:gap-0.5 md:mt-5 md:mb-4
+                    xl:mb-3
+                "
+                aria-label="Home"
+            >
+                <span className="leading-tight">
+                    <FormattedMessage id="myNickName" defaultMessage="Janos" />
+                </span>
+                <FontAwesomeIcon
+                    icon={faThumbsUp}
+                    className="text-xs text-uni-palette md:text-sm"
+                />
             </a>
-            <div className='flex justify-center mt-5 flex-row gap-8 md:content-center md:flex-col md:gap-2 md:my-10'>
-                <label htmlFor='isDark'>      
-                    <Toggle
-                        className='pb-2 mt-5 m-auto md:mt-8 md:top-auto md:mb-12 xl:my-auto'
-                        checked={appliedDark}
-                        onChange={adjustAppliedDark}
-                        id='isDark'
-                        icons={{ unchecked: "🌙", checked: "🔆" }}
-                    />
-                </label>
 
-                {context.locale.includes('hu') ?
-                    <div className=''>
-                        {/* <label htmlFor='lang'>lang</label> */}
-                        <select 
-                            id="lang"
-                            aria-label="lang"
-                            className=" bg-gray-200 border font-bold border-gray-300 appearance-none text-gray-900 text-sm text-center rounded-lg dark:border-s-gray-700 border-s-2 focus:ring-blue-500 focus:border-blue-500 w-12 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            value = {context.locale} 
-                            onChange={selectLanguage}>
-                                <option label='HU' value='hu' selected>HU</option>
-                                <option label='EN' value='en'>EN</option>                                
-                        </select>
-                    </div>
-                :
-                    <div className=''>
-                        {/* <label htmlFor='lang'>lang</label> */}
-                        <select 
-                            id="lang" 
-                            aria-label="lang"
-                            className=" bg-gray-200 border font-bold border-gray-300 appearance-none text-gray-900 text-sm text-center rounded-lg dark:border-s-gray-700 border-s-2 focus:ring-blue-500 focus:border-blue-500 w-12 p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            value = {context.locale} 
-                            onChange={selectLanguage}>
-                                <option label='EN' value='en' selected>EN</option>
-                                <option label='HU' value='hu'>HU</option>
-                        </select>
-                    </div>
-                } 
+            {/* --- Controls: dark mode toggle + language selector --- */}
+            <div
+                className="
+                    flex items-center gap-3
+                    md:flex-col md:gap-4 md:my-6
+                    xl:my-4
+                "
+            >
+                {/* Custom dark mode toggle (pill-shaped) */}
+                <button
+                    onClick={adjustAppliedDark}
+                    className="
+                        relative w-12 h-7 rounded-full
+                        bg-uni-border/60 hover:bg-uni-border
+                        transition-colors duration-300
+                        flex items-center shrink-0
+                        focus:outline-none focus:ring-2 focus:ring-uni-palette focus:ring-offset-1
+                    "
+                    aria-label="Toggle dark mode"
+                >
+                    {/* Sliding circle indicator */}
+                    <span
+                        className={`
+                            absolute top-0.5 w-6 h-6 rounded-full
+                            bg-uni-fill shadow-md
+                            flex items-center justify-center
+                            text-xs leading-none
+                            transition-all duration-300 ease-in-out
+                            ${appliedDark ? 'left-[22px]' : 'left-0.5'}
+                        `}
+                    >
+                        {appliedDark ? '🔆' : '🌙'}
+                    </span>
+                </button>
+
+                {/* Language selector */}
+                <select
+                    id="lang"
+                    aria-label="Language"
+                    className="
+                        bg-uni-card border border-uni-border
+                        font-semibold appearance-none
+                        text-uni-text text-sm text-center
+                        rounded-lg
+                        focus:ring-2 focus:ring-uni-palette focus:border-uni-palette
+                        w-14 p-1.5
+                        transition-all duration-300
+                        cursor-pointer
+                    "
+                    value={context.locale.includes('hu') ? 'hu' : 'en'}
+                    onChange={selectLanguage}
+                >
+                    <option value="en">EN</option>
+                    <option value="hu">HU</option>
+                </select>
             </div>
 
+            {/* --- GitHub link (visible on md+ sidebar only) --- */}
+            <a
+                href="https://github.com/monooleate"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile"
+                className="
+                    hidden md:flex items-center justify-center
+                    text-uni-text hover:text-uni-palette
+                    transition-colors duration-300
+                    text-xl mb-4
+                    xl:mb-3
+                "
+            >
+                <FontAwesomeIcon icon={faGithub} />
+            </a>
+
+            {/* --- Navigation --- */}
             <Navlink />
-            
         </header>
-    )
+    );
 }
 
 export default Header

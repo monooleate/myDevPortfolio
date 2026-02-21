@@ -1,79 +1,63 @@
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faPaperPlane, faX, faBars } from '@fortawesome/free-solid-svg-icons';
+import { useParams } from 'react-router-dom';
 
-import {
-    Disclosure,
-    DisclosureButton,
-    DisclosurePanel,
-  } from '@headlessui/react'
-  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-  import { faUser, faPaperPlane, faX, faBars } from '@fortawesome/free-solid-svg-icons';
-  
+export default function NavlinkForLayout() {
+  const { lang } = useParams();
+  const currentLang = lang || 'en';
+
   const navigation = [
-    { name: 'Home', href: '/', current: false, icon: faUser},
-/*     { name: 'Resume', href: '#resume', current: false, icon: faListAlt},
-    { name: 'Projects', href: '#portfolio', current: false, icon: faHandsHoldingCircle}, */
-    { name: 'Contact', href: '/#contact', current: false, icon: faPaperPlane},
-  ]
-  
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-  }
-  
-  export default function Navlink_Project() {
-    return (
-      <>
-          <Disclosure as="nav" >
-          {({ open }) => (
-              <> 
-                  <div className="absolute top-[30%] right-0 pr-14 sm:pr-24 flex items-center md:hidden">
-                      {/* Mobile menu button*/}
-                      <DisclosureButton className="rounded-md mx-2 lg:mx-8 text-uni-text hover:bg-uni-palette focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                      <span className="sr-only">Open main menu</span>
-                      {open ? (
-                        <FontAwesomeIcon icon={faX} className="block h-6 w-6" aria-hidden="true" />
-                        ) : (
-                        <FontAwesomeIcon icon={faBars} className="block h-6 w-6" aria-hidden="true"/>
-                      )}
-                      </DisclosureButton>
-                  </div>
-  
-                  <DisclosurePanel>
-                      <div className="fixed bg-uni-fill text-uni-text w-[400px] m-auto inset-x-0 top-16 space-y-1 py-3">
-                      {navigation.map((item) => (
-                          <DisclosureButton
-                              key={item.name}
-                              as="a"
-                              href={item.href}
-                              className='w-20 m-auto hover:bg-uni-palette block rounded-md py-2 text-base font-medium'
-                              aria-current={item.current ? 'page' : undefined}
-                              >
-                              {item.name}
-                          </DisclosureButton>
-                      ))}
-                      </div>
-                  </DisclosurePanel>
-              </>
-          )}
-          </Disclosure>
-  
-  
-          
-          <div className="hidden md:flex md:items-center">
-              <div className="flex space-x-4 items-center mx-auto">
-                  {navigation.map((item) => (
-                  <a
-                      key={item.name}
-                      aria-label={item.name}
-                      href={item.href}
-                      className='bg-uni-fill text-uni-text hover:text-uni-palette block rounded-md p-1 px-2 text-lg'
+    { name: 'Home', href: `/${currentLang}`, icon: faHome },
+    { name: 'Contact', href: `/${currentLang}#contact`, icon: faPaperPlane },
+  ];
+
+  return (
+    <>
+      <Disclosure as="nav">
+        {({ open }) => (
+          <>
+            <div className="absolute top-[30%] right-0 pr-6 flex items-center md:hidden">
+              <DisclosureButton className="rounded-lg p-2 text-uni-text hover:bg-uni-palette/10 focus:outline-none focus:ring-2 focus:ring-uni-palette transition-colors duration-300">
+                <span className="sr-only">Open menu</span>
+                {open ? (
+                  <FontAwesomeIcon icon={faX} className="h-5 w-5" />
+                ) : (
+                  <FontAwesomeIcon icon={faBars} className="h-5 w-5" />
+                )}
+              </DisclosureButton>
+            </div>
+
+            <DisclosurePanel>
+              <div className="fixed bg-uni-fill/90 backdrop-blur-xl border-b border-uni-border text-uni-text w-full inset-x-0 top-16 py-4 px-4 z-50">
+                {navigation.map((item) => (
+                  <DisclosureButton
+                    key={item.name}
+                    as="a"
+                    href={item.href}
+                    className='flex items-center gap-3 px-4 py-3 hover:bg-uni-palette/10 rounded-xl text-base font-medium transition-colors duration-300'
                   >
-                      {item.name}
-                  </a>
-                  ))}
+                    <FontAwesomeIcon icon={item.icon} className="w-4 h-4 text-uni-palette" />
+                    {item.name}
+                  </DisclosureButton>
+                ))}
               </div>
-          </div>
-      </>
-    )
-  }
-  
- 
-  
+            </DisclosurePanel>
+          </>
+        )}
+      </Disclosure>
+
+      <div className="hidden md:flex md:items-center gap-4">
+        {navigation.map((item) => (
+          <a
+            key={item.name}
+            href={item.href}
+            className='text-uni-text hover:text-uni-palette rounded-lg px-3 py-1.5 text-sm font-medium transition-colors duration-300'
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </>
+  )
+}

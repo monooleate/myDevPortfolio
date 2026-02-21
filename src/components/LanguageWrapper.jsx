@@ -34,7 +34,7 @@ export default function LanguageWrapper(props) {
    }
 
    return (
-       <Context.Provider value = {{locale, selectLanguage}}>
+       <Context.Provider value = {{locale, setLocale, messages, setMessages, selectLanguage}}>
            <IntlProvider messages={messages} locale={locale}>
                {props.children}
            </IntlProvider>

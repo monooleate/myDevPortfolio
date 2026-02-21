@@ -2,5 +2,7 @@
   text-align: center;
 }
 
-
-
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}

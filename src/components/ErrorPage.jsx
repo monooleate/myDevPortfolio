@@ -4,19 +4,26 @@ export default function ErrorPage() {
   const error = useRouteError();
 
   return (
-    <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-screen-xl py-32">
-            <div className="mx-auto max-w-screen-sm text-center">
-                <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600 dark:text-primary-500">404</h1>
-                <p className="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">Sorry, an unexpected error has occurred.</p>
-                <p className="lead">
-                    <i>{error.statusText || error.message}</i>
-                </p>
-                <p className="my-4 text-lg font-bold text-gray-500 dark:text-gray-400">You'll find lots to explore on the home page. </p>
-                <a href="/" className="inline-flex bg-yellow-200 text-black hover:bg-green-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4">Back to Homepage</a>
-            </div>   
+    <section className="min-h-screen bg-uni-bg flex items-center justify-center">
+      <div className="max-w-md mx-auto text-center px-4">
+        <div className="mb-8">
+          <span className="text-8xl sm:text-9xl font-black gradient-text">404</span>
         </div>
+        <h1 className="mb-4 text-2xl font-bold text-uni-text">
+          Sorry, an unexpected error has occurred.
+        </h1>
+        {error && (
+          <p className="text-uni-muted text-sm mb-4 italic">
+            {error.statusText || error.message}
+          </p>
+        )}
+        <p className="mb-8 text-uni-muted">
+          You'll find lots to explore on the home page.
+        </p>
+        <a href="/" className="btn-primary">
+          Back to Homepage
+        </a>
+      </div>
     </section>
   );
 }
-

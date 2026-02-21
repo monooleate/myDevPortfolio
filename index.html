@@ -3,13 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>János Mészáros | Software Developer Portfolio</title>
+    <meta name="description" content="Full-stack developer portfolio of János Mészáros. Explore projects, skills, and professional experience in web development." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#3B82F6" />
+    <meta property="og:image" content="https://jmeszaros.dev/profile.webp" />
+    <meta property="og:title" content="János Mészáros | Software Developer Portfolio" />
+    <meta property="og:description" content="Full-stack developer portfolio. Explore projects, skills, and professional experience." />
     <link rel="alternate" href="https://jmeszaros.dev/en" hreflang="en" />
     <link rel="alternate" href="https://jmeszaros.dev/hu" hreflang="hu" />
-    <!-- Google tag (gtag.js) -->
-    
+    <link rel="alternate" href="https://jmeszaros.dev/" hreflang="x-default" />
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Immediately apply dark mode before React loads to prevent white flash
+      (function() {
+        var d = localStorage.getItem('darkMode');
+        var isDark = d === 'true' || (!d && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+          document.body.style.backgroundColor = '#020617';
+        } else {
+          document.body.style.backgroundColor = '#f8fafc';
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

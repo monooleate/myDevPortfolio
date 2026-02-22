@@ -17,7 +17,10 @@
       "Bash(done)",
       "Bash(grep:*)",
       "Bash(ls:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(npm install)",
+      "Bash(npm ls:*)",
+      "Bash(npm view:*)"
     ]
   }
 }

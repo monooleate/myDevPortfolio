@@ -2,7 +2,7 @@ import { useEffect, useState, useMemo, useContext } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faFileArrowDown, faCertificate } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faFileArrowDown, faCertificate, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { lineParticles, introBackgroundConfig, appliedConfig } from "../config/dataConfig";
 import { introSecDetails } from "../config/personalConfig"
@@ -105,6 +105,15 @@ export default function Intro({ openModal }) {
                             >
                                 GitHub
                                 <FontAwesomeIcon icon={faGithub} />
+                            </a>
+
+                            <a
+                                href="#contact"
+                                className="btn-secondary cursor-pointer text-sm"
+                                aria-label="Contact"
+                            >
+                                <FormattedMessage id="navContact" defaultMessage="Contact" />
+                                <FontAwesomeIcon icon={faPaperPlane} />
                             </a>
                         </div>
 

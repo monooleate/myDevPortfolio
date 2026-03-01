@@ -66,6 +66,17 @@ export default function MyDevPortfolio() {
     const el = document.getElementById('content');
     if (!el) return;
     contentRef.current = el;
+
+    // Handle #hash navigation (e.g. from project pages linking to #contact)
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.getElementById(hash.slice(1));
+      if (target) {
+        setTimeout(() => target.scrollIntoView({ behavior: 'smooth' }), 300);
+        return; // Skip scroll restoration when navigating to a hash
+      }
+    }
+
     const saved = sessionStorage.getItem('scrollPos');
     if (saved) el.scrollTop = parseInt(saved);
     const onScroll = () => sessionStorage.setItem('scrollPos', String(el.scrollTop));

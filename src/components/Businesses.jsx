@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUpRightFromSquare, faSearch, faTree, faShoppingCart, faGlobe, faStar, faCalculator } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faSearch, faTree, faShoppingCart, faGlobe, faStar, faCalculator, faRightLeft, faWrench } from '@fortawesome/free-solid-svg-icons';
 import { FormattedMessage } from 'react-intl';
 
 const businesses = [
@@ -50,6 +50,22 @@ const businesses = [
         url: 'https://matekmegoldasok.hu',
         icon: faCalculator,
         color: 'from-cyan-500 to-blue-600',
+    },
+    {
+        id: 7,
+        titleKey: 'business7Title',
+        descKey: 'business7Desc',
+        url: 'https://konvertalo.hu',
+        icon: faRightLeft,
+        color: 'from-teal-500 to-emerald-600',
+    },
+    {
+        id: 8,
+        titleKey: 'business8Title',
+        descKey: 'business8Desc',
+        url: 'https://instrumenteonline.ro',
+        icon: faWrench,
+        color: 'from-orange-500 to-red-600',
     },
 ];
 

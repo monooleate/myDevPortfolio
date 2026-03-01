@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUpRightFromSquare, faSearch, faTree, faShoppingCart, faGlobe, faStar, faCalculator, faFileExport, faRepeat } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faSearch, faTree, faShoppingCart, faGlobe, faStar, faCalculator, faFileExport, faRepeat, faHouse } from '@fortawesome/free-solid-svg-icons';
 import { FormattedMessage } from 'react-intl';
 
 const businesses = [
@@ -66,6 +66,14 @@ const businesses = [
         url: 'https://instrumenteonline.ro',
         icon: faRepeat,
         color: 'from-orange-500 to-red-600',
+    },
+    {
+        id: 9,
+        titleKey: 'business9Title',
+        descKey: 'business9Desc',
+        url: 'https://hazepitesikalauz.hu',
+        icon: faHouse,
+        color: 'from-yellow-500 to-amber-600',
     },
 ];
 

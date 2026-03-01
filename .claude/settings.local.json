@@ -20,7 +20,8 @@
       "Bash(find:*)",
       "Bash(npm install)",
       "Bash(npm ls:*)",
-      "Bash(npm view:*)"
+      "Bash(npm view:*)",
+      "WebFetch(domain:hazepitesikalauz.hu)"
     ]
   }
 }

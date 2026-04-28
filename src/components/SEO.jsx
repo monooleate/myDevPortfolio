@@ -7,7 +7,17 @@ export default function SEO({ title, description, type = 'website', keywords = [
     const currentLang = lang || paramLang || 'en';
     const altLang = currentLang === 'en' ? 'hu' : 'en';
     const baseUrl = 'https://jmeszaros.dev';
-    const currentUrl = `${baseUrl}${location.pathname}`;
+
+    // Normalize pathname: strip trailing slash (except for root) so canonical
+    // always matches a single, deduplicated URL form. This prevents the GSC
+    // "Duplicate without user-selected canonical" issue between /en and /en/.
+    const rawPath = location.pathname || '/';
+    const normalizedPath =
+        rawPath !== '/' && rawPath.endsWith('/')
+            ? rawPath.replace(/\/+$/, '')
+            : rawPath;
+
+    const currentUrl = `${baseUrl}${normalizedPath}`;
     const altUrl = currentUrl.replace(`/${currentLang}`, `/${altLang}`);
 
     const structuredData = {

@@ -5,7 +5,6 @@ import { Context } from "./components/LanguageWrapper.jsx";
 
 import './MyDevPortfolio.css'
 import AboutMe from './components/AboutMe.jsx'
-import Businesses from './components/Businesses.jsx'
 import CertificatesModal from './components/CertificatesModal.jsx'
 import ContactMe from './components/ContactMe.jsx'
 import Footer from './components/Footer.jsx'
@@ -115,7 +114,6 @@ export default function MyDevPortfolio() {
               <Resume />
               <HireMe />
               <Portfolio />
-              <Businesses />
               <ContactMe />
               <Footer />
               <CertificatesModal isOpen={isOpen} closeModal={closeModal} openModal={openModal} />

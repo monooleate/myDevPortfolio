@@ -21,7 +21,8 @@
       "Bash(npm install)",
       "Bash(npm ls:*)",
       "Bash(npm view:*)",
-      "WebFetch(domain:hazepitesikalauz.hu)"
+      "WebFetch(domain:hazepitesikalauz.hu)",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }

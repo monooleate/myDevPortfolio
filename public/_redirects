@@ -1,1 +1,32 @@
-/* /index.html 200
+# --- Canonical host: force apex (no www) and HTTPS ---
+# Netlify normally handles this when the primary domain is set to
+# https://jmeszaros.dev in Site settings → Domain management. Keeping an
+# explicit rule guarantees the redirect even if a deploy preview / branch
+# domain is mis-aliased.
+https://www.jmeszaros.dev/*    https://jmeszaros.dev/:splat    301!
+http://www.jmeszaros.dev/*     https://jmeszaros.dev/:splat    301!
+http://jmeszaros.dev/*         https://jmeszaros.dev/:splat    301!
+
+# --- Strip trailing slash on indexed paths ---
+# Fixes GSC "Duplicate without user-selected canonical" between /en and /en/
+/en/                           /en                              301!
+/hu/                           /hu                              301!
+/en/projects/                  /en/projects                     301!
+/hu/projects/                  /hu/projects                     301!
+/en/projects/pathfinder/       /en/projects/pathfinder          301!
+/hu/projects/pathfinder/       /hu/projects/pathfinder          301!
+/en/projects/weather/          /en/projects/weather             301!
+/hu/projects/weather/          /hu/projects/weather             301!
+/en/projects/markdown/         /en/projects/markdown            301!
+/hu/projects/markdown/         /hu/projects/markdown            301!
+/en/projects/colors/           /en/projects/colors              301!
+/hu/projects/colors/           /hu/projects/colors              301!
+/en/projects/calculator/       /en/projects/calculator          301!
+/hu/projects/calculator/       /hu/projects/calculator          301!
+/en/projects/pomodoro/         /en/projects/pomodoro            301!
+/hu/projects/pomodoro/         /hu/projects/pomodoro            301!
+/en/projects/molecular/        /en/projects/molecular           301!
+/hu/projects/molecular/        /hu/projects/molecular           301!
+
+# --- SPA fallback (must remain last) ---
+/*                             /index.html                      200

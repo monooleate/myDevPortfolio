@@ -1,5 +1,6 @@
-import { Outlet, useParams } from "react-router-dom";
+import { Outlet, useParams, useLocation } from "react-router-dom";
 import { useEffect, useState, useContext } from 'react';
+import { useIntl } from 'react-intl';
 import { appliedConfig } from "../../config/dataConfig";
 import { Context } from "../LanguageWrapper";
 import Magyar from '../../lang/hu.json';
@@ -8,6 +9,37 @@ import English from '../../lang/en.json';
 import Header from './HeaderForLayout'
 import Footer from './FooterForLayout'
 import CertificatesModal from '../CertificatesModal'
+import SEO from '../SEO'
+
+// Maps the project URL slug to existing i18n keys for title + description.
+// Adding a new project? Add an entry here so the page gets a unique
+// <title> + canonical (otherwise Google will see duplicate metadata).
+const PROJECT_SEO = {
+  pathfinder: { titleKey: 'mazeTitle',    descKey: 'mazeBfsDesc' },
+  weather:    { titleKey: 'weatherTitle', descKey: 'weatherIntro' },
+  markdown:   { titleKey: 'mdTitle',      descKey: 'mdSubtitle' },
+  colors:     { titleKey: 'colorTitle',   descKey: 'colorSubtitle' },
+  calculator: { titleKey: 'calcTitle',    descKey: 'calcSubtitle' },
+  pomodoro:   { titleKey: 'pomoTitle',    descKey: 'pomoSubtitle' },
+  molecular:  { titleKey: 'molTitle',     descKey: 'molPlaceholder' },
+};
+
+function ProjectsSEO({ lang }) {
+  const intl = useIntl();
+  const location = useLocation();
+  // last non-empty segment, e.g. '/en/projects/weather' -> 'weather'
+  const slug = location.pathname.split('/').filter(Boolean).pop();
+  const cfg = PROJECT_SEO[slug];
+
+  const title = cfg
+    ? `${intl.formatMessage({ id: cfg.titleKey })} | ${intl.formatMessage({ id: 'myName' })}`
+    : `${intl.formatMessage({ id: 'navProjects', defaultMessage: 'Projects' })} | ${intl.formatMessage({ id: 'myName' })}`;
+  const description = cfg
+    ? intl.formatMessage({ id: cfg.descKey })
+    : intl.formatMessage({ id: 'portfolioIntro' });
+
+  return <SEO title={title} description={description} lang={lang} />;
+}
 
 export default function Layout_Project() {
   const context = useContext(Context);
@@ -54,6 +86,7 @@ export default function Layout_Project() {
 
   return (
     <>
+      <ProjectsSEO lang={lang} />
       <Header appliedDark={appliedDark} adjustAppliedDark={adjustAppliedDark} openModal={openModal} />
       <div className="relative top-16 min-h-[88vh] bg-uni-bg">
         <Outlet />

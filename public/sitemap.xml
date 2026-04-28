@@ -1,130 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ====== Landing pages ====== -->
   <url>
     <loc>https://jmeszaros.dev/en</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en"/>
   </url>
+
   <url>
     <loc>https://jmeszaros.dev/hu</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en"/>
   </url>
-  <url>
-    <loc>https://jmeszaros.dev/en/projects</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects"/>
-    <lastmod>2026-02-21</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://jmeszaros.dev/hu/projects</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects"/>
-    <lastmod>2026-02-21</lastmod>
-    <priority>0.8</priority>
-  </url>
+
+  <!-- ====== Project sub-pages (lab demos with their own canonical) ====== -->
   <url>
     <loc>https://jmeszaros.dev/en/projects/pathfinder</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/pathfinder"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/pathfinder"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/pathfinder"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/pathfinder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/pathfinder"/>
   </url>
   <url>
     <loc>https://jmeszaros.dev/hu/projects/pathfinder</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/pathfinder"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/pathfinder"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/pathfinder"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/pathfinder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/pathfinder"/>
   </url>
+
   <url>
     <loc>https://jmeszaros.dev/en/projects/weather</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/weather"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/weather"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/weather"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/weather"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/weather"/>
   </url>
   <url>
     <loc>https://jmeszaros.dev/hu/projects/weather</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/weather"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/weather"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/weather"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/weather"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/weather"/>
   </url>
+
   <url>
     <loc>https://jmeszaros.dev/en/projects/markdown</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/markdown"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/markdown"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/markdown"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/markdown"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/markdown"/>
   </url>
   <url>
     <loc>https://jmeszaros.dev/hu/projects/markdown</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/markdown"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/markdown"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/markdown"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/markdown"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/markdown"/>
   </url>
+
   <url>
     <loc>https://jmeszaros.dev/en/projects/colors</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/colors"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/colors"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/colors"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/colors"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/colors"/>
   </url>
   <url>
     <loc>https://jmeszaros.dev/hu/projects/colors</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/colors"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/colors"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/colors"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/colors"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/colors"/>
   </url>
+
   <url>
     <loc>https://jmeszaros.dev/en/projects/calculator</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/calculator"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/calculator"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/calculator"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/calculator"/>
   </url>
   <url>
     <loc>https://jmeszaros.dev/hu/projects/calculator</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/calculator"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/calculator"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/calculator"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/calculator"/>
   </url>
+
   <url>
     <loc>https://jmeszaros.dev/en/projects/pomodoro</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/pomodoro"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/pomodoro"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/pomodoro"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/pomodoro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/pomodoro"/>
   </url>
   <url>
     <loc>https://jmeszaros.dev/hu/projects/pomodoro</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/pomodoro"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/pomodoro"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/pomodoro"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/pomodoro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/pomodoro"/>
   </url>
+
   <url>
     <loc>https://jmeszaros.dev/en/projects/molecular</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/molecular"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/molecular"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/molecular"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/molecular"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/molecular"/>
   </url>
   <url>
     <loc>https://jmeszaros.dev/hu/projects/molecular</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmeszaros.dev/en/projects/molecular"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://jmeszaros.dev/hu/projects/molecular"/>
-    <lastmod>2026-02-21</lastmod>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://jmeszaros.dev/en/projects/molecular"/>
+    <xhtml:link rel="alternate" hreflang="hu"        href="https://jmeszaros.dev/hu/projects/molecular"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jmeszaros.dev/en/projects/molecular"/>
   </url>
+
 </urlset>

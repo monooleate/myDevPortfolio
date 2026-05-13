@@ -23,7 +23,7 @@ function BookCard({ book, isHu }) {
                 hover:-translate-y-1
             "
         >
-            {/* Decorative gradient halo */}
+            {/* Decorative gradient halo on hover */}
             <div
                 aria-hidden="true"
                 className={`
@@ -33,125 +33,106 @@ function BookCard({ book, isHu }) {
                 `}
             />
 
-            <div className="relative flex flex-col sm:flex-row">
-                {/* Book spine / cover preview */}
-                <div className="relative shrink-0 sm:w-32 md:w-36">
+            {/* Slim gradient accent strip on the left edge */}
+            <div
+                aria-hidden="true"
+                className={`
+                    absolute left-0 top-0 bottom-0 w-1
+                    bg-gradient-to-b ${book.spine}
+                    transition-all duration-500
+                    group-hover:w-1.5
+                `}
+            />
+
+            <div className="relative p-6 md:p-8">
+                {/* Top row: book emblem + tag */}
+                <div className="flex items-center justify-between gap-3 mb-4">
                     <div className={`
-                        relative h-40 sm:h-full min-h-[180px]
-                        bg-gradient-to-br ${book.spine}
                         flex items-center justify-center
-                        overflow-hidden
+                        w-10 h-10 rounded-xl
+                        bg-gradient-to-br ${book.color}
+                        shadow-md
+                        transition-transform duration-500
+                        group-hover:scale-105 group-hover:-rotate-6
                     `}>
-                        {/* Spine "pages" effect */}
-                        <div className="absolute right-0 top-0 bottom-0 w-1.5 bg-white/30" />
-                        <div className="absolute right-1.5 top-0 bottom-0 w-0.5 bg-black/20" />
-
-                        {/* Subtle shimmer */}
-                        <div
-                            aria-hidden="true"
-                            className="
-                                pointer-events-none absolute inset-0
-                                bg-gradient-to-br from-white/20 via-transparent to-transparent
-                            "
-                        />
-
-                        <FontAwesomeIcon
-                            icon={faBookOpen}
-                            className="
-                                relative text-white text-4xl drop-shadow-lg
-                                transition-transform duration-500
-                                group-hover:scale-110 group-hover:rotate-6
-                            "
-                        />
-
-                        {/* Year badge */}
-                        <span className="
-                            absolute bottom-3 left-3
-                            text-[10px] font-bold tracking-wider
-                            text-white/90 bg-black/30 backdrop-blur-sm
-                            px-2 py-0.5 rounded-full
-                        ">
-                            {book.year}
-                        </span>
+                        <FontAwesomeIcon icon={faBookOpen} className="text-white text-sm" />
                     </div>
-                </div>
 
-                {/* Content */}
-                <div className="flex-1 p-6 md:p-7">
-                    {/* Tag */}
                     <span className="
                         inline-flex items-center
-                        text-[11px] font-medium tracking-wide uppercase
-                        px-2.5 py-1 rounded-full mb-3
+                        text-[10px] font-semibold tracking-widest uppercase
+                        px-2.5 py-1 rounded-full
                         bg-uni-palette/10 text-uni-palette
                         ring-1 ring-uni-palette/20
                     ">
                         {tag}
                     </span>
+                </div>
 
-                    {/* Title */}
-                    <h3 className="
-                        text-lg md:text-xl font-bold leading-snug
-                        text-uni-text group-hover:text-uni-palette
-                        transition-colors duration-300
+                {/* Title */}
+                <h3 className="
+                    text-lg md:text-xl font-bold leading-snug
+                    text-uni-text group-hover:text-uni-palette
+                    transition-colors duration-300
+                ">
+                    {book.title}
+                </h3>
+
+                {/* Author */}
+                <p className="text-sm italic text-uni-muted mt-1">
+                    {book.author}
+                </p>
+
+                {/* Pull quote */}
+                <blockquote className={`
+                    relative mt-5 pl-5
+                    text-sm text-uni-text/90 italic leading-relaxed
+                    before:content-[''] before:absolute before:left-0 before:top-1 before:bottom-1
+                    before:w-[2px] before:rounded-full
+                    before:bg-gradient-to-b ${book.spine}
+                `}>
+                    <FontAwesomeIcon
+                        icon={faQuoteLeft}
+                        className="absolute -left-1 -top-2 text-uni-palette/30 text-xs bg-uni-card px-1"
+                    />
+                    {isHu ? '„' : '“'}{quote}{isHu ? '”' : '”'}
+                </blockquote>
+
+                {/* Why it mattered */}
+                <div className="mt-5">
+                    <h4 className="
+                        text-xs font-semibold uppercase tracking-wider
+                        text-uni-palette mb-2
                     ">
-                        {book.title}
-                    </h3>
-
-                    {/* Author */}
-                    <p className="text-sm italic text-uni-muted mt-1">
-                        {book.author}
+                        <FormattedMessage id="booksWhy" defaultMessage="Why it mattered" />
+                    </h4>
+                    <p className="text-sm text-uni-muted leading-relaxed">
+                        {why}
                     </p>
+                </div>
 
-                    {/* Pull quote */}
-                    <blockquote className="
-                        relative mt-4 pl-5
-                        border-l-2 border-uni-palette/40
-                        text-sm text-uni-text/90 italic leading-relaxed
-                    ">
-                        <FontAwesomeIcon
-                            icon={faQuoteLeft}
-                            className="absolute -left-2 -top-1 text-uni-palette/30 text-xs bg-uni-card px-1"
-                        />
-                        “{quote}”
-                    </blockquote>
-
-                    {/* Why it mattered */}
+                {/* Key takeaways */}
+                {takeaways && takeaways.length > 0 && (
                     <div className="mt-5">
                         <h4 className="
                             text-xs font-semibold uppercase tracking-wider
                             text-uni-palette mb-2
                         ">
-                            <FormattedMessage id="booksWhy" defaultMessage="Why it mattered" />
+                            <FormattedMessage id="booksTakeaways" defaultMessage="Key takeaways" />
                         </h4>
-                        <p className="text-sm text-uni-muted leading-relaxed">
-                            {why}
-                        </p>
+                        <ul className="space-y-1.5">
+                            {takeaways.map((t, i) => (
+                                <li key={i} className="flex items-start gap-2 text-sm text-uni-text/90">
+                                    <FontAwesomeIcon
+                                        icon={faCheck}
+                                        className="text-uni-palette text-xs mt-1 shrink-0"
+                                    />
+                                    <span>{t}</span>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
-
-                    {/* Key takeaways */}
-                    {takeaways && takeaways.length > 0 && (
-                        <div className="mt-5">
-                            <h4 className="
-                                text-xs font-semibold uppercase tracking-wider
-                                text-uni-palette mb-2
-                            ">
-                                <FormattedMessage id="booksTakeaways" defaultMessage="Key takeaways" />
-                            </h4>
-                            <ul className="space-y-1.5">
-                                {takeaways.map((t, i) => (
-                                    <li key={i} className="flex items-start gap-2 text-sm text-uni-text/90">
-                                        <FontAwesomeIcon
-                                            icon={faCheck}
-                                            className="text-uni-palette text-xs mt-1 shrink-0"
-                                        />
-                                        <span>{t}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    )}
-                </div>
+                )}
             </div>
         </article>
     );
@@ -189,7 +170,7 @@ export default function Books() {
                 </div>
 
                 {/* Bookshelf */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 gap-6">
                     {booksData.map((book) => (
                         <BookCard key={book.id} book={book} isHu={isHu} />
                     ))}

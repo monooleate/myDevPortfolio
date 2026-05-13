@@ -2,14 +2,15 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faPaperPlane, faX, faBars } from '@fortawesome/free-solid-svg-icons';
 import { useParams } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
 
 export default function NavlinkForLayout() {
   const { lang } = useParams();
   const currentLang = lang || 'en';
 
   const navigation = [
-    { name: 'Home', href: `/${currentLang}`, icon: faHome },
-    { name: 'Contact', href: `/${currentLang}#contact`, icon: faPaperPlane },
+    { id: 'navHome', defaultName: 'Home', href: `/${currentLang}`, icon: faHome },
+    { id: 'navContact', defaultName: 'Contact', href: `/${currentLang}#contact`, icon: faPaperPlane },
   ];
 
   return (
@@ -32,13 +33,13 @@ export default function NavlinkForLayout() {
               <div className="fixed bg-uni-fill/90 backdrop-blur-xl border-b border-uni-border text-uni-text w-full inset-x-0 top-16 py-4 px-4 z-50">
                 {navigation.map((item) => (
                   <DisclosureButton
-                    key={item.name}
+                    key={item.id}
                     as="a"
                     href={item.href}
                     className='flex items-center gap-3 px-4 py-3 hover:bg-uni-palette/10 rounded-xl text-base font-medium transition-colors duration-300'
                   >
                     <FontAwesomeIcon icon={item.icon} className="w-4 h-4 text-uni-palette" />
-                    {item.name}
+                    <FormattedMessage id={item.id} defaultMessage={item.defaultName} />
                   </DisclosureButton>
                 ))}
               </div>
@@ -50,11 +51,11 @@ export default function NavlinkForLayout() {
       <div className="hidden md:flex md:items-center gap-4">
         {navigation.map((item) => (
           <a
-            key={item.name}
+            key={item.id}
             href={item.href}
             className='text-uni-text hover:text-uni-palette rounded-lg px-3 py-1.5 text-sm font-medium transition-colors duration-300'
           >
-            {item.name}
+            <FormattedMessage id={item.id} defaultMessage={item.defaultName} />
           </a>
         ))}
       </div>

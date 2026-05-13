@@ -107,7 +107,7 @@ export default function MyDevPortfolio() {
       <div id='void' className='min-h-screen bg-uni-bg'>
         <div id='main-wrapper' className='m-auto max-w-[700px] md:flex md:gap-2 md:max-w-[1250px] md:min-w-[500px] xl:h-[100vh] xl:m-auto xl:min-h-[600px]'>
           <Header appliedDark={appliedDark} adjustAppliedDark={adjustAppliedDark} />
-          <main id='main' className='mt-16 md:mt-0 md:pt-5 xl:my-auto xl:flex xl:pt-0'>
+          <main id='main' className='mt-16 md:max-xl:mt-0 md:max-xl:pt-5 xl:my-auto xl:flex xl:pt-0'>
             <Intro openModal={openModal}/>
             <section id='content' className='bg-uni-fill text-uni-text
             xl:relative xl:inline-block xl:float-left xl:rounded-xl xl:min-w-[400px] xl:top-[10px] xl:left-[-5px] xl:max-w-[1200px] xl:min-h-[250px] xl:h-[75vh] xl:max-h-[580px] xl:overflow-y-auto xl:overflow-x-hidden'>

@@ -41,15 +41,13 @@ function Header({ appliedDark, adjustAppliedDark }) {
                 text-uni-text
                 flex items-center justify-between
                 sm:px-10
-                md:flex md:flex-col md:justify-start md:items-center
-                md:w-24 md:min-w-24 md:px-0 md:z-10
+                md:sticky md:flex md:flex-col md:justify-start md:items-center
+                md:w-24 md:min-w-24 md:h-[60vh] md:min-h-[450px]
+                md:px-0 md:top-5 md:z-10
                 md:bg-uni-fill md:backdrop-blur-none
                 md:border-r md:border-b-0 md:border-uni-border md:rounded-xl
-                md:overflow-hidden
-                md:max-xl:sticky md:max-xl:top-5 md:max-xl:left-auto
-                md:max-xl:h-[60vh] md:max-xl:min-h-[450px]
-                xl:fixed xl:left-[max(16px,calc(50%-625px))] xl:top-1/2 xl:-translate-y-1/2
-                xl:h-[400px] xl:w-24 xl:min-w-10
+                md:overflow-hidden md:left-auto
+                xl:h-[400px] xl:m-auto xl:mr-0 xl:w-24 xl:min-w-10
                 xl:border xl:border-uni-border xl:rounded-xl
             "
         >

@@ -35,9 +35,9 @@ function BookCard({ book, isHu }) {
 
             <div className="relative flex flex-col sm:flex-row">
                 {/* Book spine / cover preview */}
-                <div className="relative shrink-0 sm:w-32 md:w-36">
+                <div className="relative shrink-0 sm:w-40 md:w-48">
                     <div className={`
-                        relative h-40 sm:h-full min-h-[180px]
+                        relative h-44 sm:h-full min-h-[220px]
                         bg-gradient-to-br ${book.spine}
                         flex items-center justify-center
                         overflow-hidden
@@ -189,7 +189,7 @@ export default function Books() {
                 </div>
 
                 {/* Bookshelf */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 gap-6">
                     {booksData.map((book) => (
                         <BookCard key={book.id} book={book} isHu={isHu} />
                     ))}

@@ -112,7 +112,7 @@ function BookCard({ book, isHu }) {
                         icon={faQuoteLeft}
                         className="absolute -left-1 -top-2 text-uni-palette/30 text-xs bg-uni-card px-1"
                     />
-                    “{quote}”
+                    {isHu ? '„' : '“'}{quote}{isHu ? '”' : '”'}
                 </blockquote>
 
                 {/* Why it mattered */}

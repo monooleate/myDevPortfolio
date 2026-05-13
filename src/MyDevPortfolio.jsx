@@ -122,6 +122,8 @@ export default function MyDevPortfolio() {
               <ScrollToTop />
             </section>
           </main>
+          {/* Right-side spacer to optically center main content against the left sidebar (xl only) */}
+          <div aria-hidden="true" className="hidden xl:block xl:w-24 xl:min-w-10 xl:shrink-0" />
         </div>
       </div>
     </>

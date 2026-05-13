@@ -44,23 +44,6 @@ function BookCard({ book, isHu }) {
                 `}
             />
 
-            {/* Watermark year — large, faded, top-right */}
-            <div
-                aria-hidden="true"
-                className={`
-                    pointer-events-none absolute -top-2 -right-1
-                    text-7xl md:text-8xl font-black leading-none
-                    bg-gradient-to-br ${book.color}
-                    bg-clip-text text-transparent
-                    opacity-[0.07] dark:opacity-[0.10]
-                    select-none
-                    transition-opacity duration-500
-                    group-hover:opacity-[0.14]
-                `}
-            >
-                {book.year}
-            </div>
-
             <div className="relative p-6 md:p-8">
                 {/* Top row: book emblem + tag */}
                 <div className="flex items-center justify-between gap-3 mb-4">

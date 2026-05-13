@@ -5,6 +5,7 @@ import { Context } from "./components/LanguageWrapper.jsx";
 
 import './MyDevPortfolio.css'
 import AboutMe from './components/AboutMe.jsx'
+import Books from './components/Books.jsx'
 import CertificatesModal from './components/CertificatesModal.jsx'
 import ContactMe from './components/ContactMe.jsx'
 import Footer from './components/Footer.jsx'
@@ -112,6 +113,7 @@ export default function MyDevPortfolio() {
             xl:relative xl:inline-block xl:float-left xl:rounded-xl xl:min-w-[400px] xl:top-[10px] xl:left-[-5px] xl:max-w-[1200px] xl:min-h-[250px] xl:h-[75vh] xl:max-h-[580px] xl:overflow-y-auto xl:overflow-x-hidden'>
               <AboutMe />
               <Resume />
+              <Books />
               <HireMe />
               <Portfolio />
               <ContactMe />

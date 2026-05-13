@@ -1,0 +1,50 @@
+[
+    {
+        "id": "inspired",
+        "title": "Inspired: How To Create Tech Products Customers Love",
+        "author": "Marty Cagan",
+        "year": 2017,
+        "color": "from-blue-500 to-indigo-600",
+        "spine": "from-blue-600 via-indigo-600 to-blue-800",
+        "tagEn": "Product",
+        "tagHu": "Termékfejlesztés",
+        "quoteEn": "The best teams discover what to build; they don't just ship features.",
+        "quoteHu": "A legjobb csapatok felfedezik, hogy mit kell építeni — nem csak funkciókat szállítanak.",
+        "whyEn": "This book reshaped how I think about software development. Cagan made it clear that writing code is the easy part — the hard part is figuring out what's actually worth building. It taught me to ask 'why' before 'how', to validate problems before designing solutions, and to treat product discovery as a core engineering skill, not someone else's job.",
+        "whyHu": "Ez a könyv alapjaiban változtatta meg, ahogy a szoftverfejlesztésre tekintek. Cagan világossá tette, hogy a kód megírása a könnyebb rész — a nehéz rész kitalálni, hogy mit érdemes egyáltalán megépíteni. Megtanított arra, hogy a 'miért'-et kérdezzem a 'hogyan' előtt, hogy érvényes problémákat keressek a megoldások tervezése előtt, és hogy a termékfelfedezést saját mérnöki feladatomnak tekintsem.",
+        "takeawaysEn": [
+            "Product discovery is a continuous practice, not a phase",
+            "Empowered product teams solve problems, not just execute features",
+            "Outcomes over outputs — ship value, not tickets"
+        ],
+        "takeawaysHu": [
+            "A termékfelfedezés folyamatos gyakorlat, nem egy fázis",
+            "A felhatalmazott csapatok problémákat oldanak meg, nem csak feladatokat hajtanak végre",
+            "Eredmények a kibocsátás helyett — értéket szállíts, ne ticketeket"
+        ]
+    },
+    {
+        "id": "lean-startup",
+        "title": "The Lean Startup",
+        "author": "Eric Ries",
+        "year": 2011,
+        "color": "from-emerald-500 to-teal-600",
+        "spine": "from-emerald-600 via-teal-600 to-emerald-800",
+        "tagEn": "Methodology",
+        "tagHu": "Módszertan",
+        "quoteEn": "The only way to win is to learn faster than anyone else.",
+        "quoteHu": "Az egyetlen módja a győzelemnek, ha gyorsabban tanulsz, mint bárki más.",
+        "whyEn": "Reading this gave me a vocabulary for things I had felt but couldn't name: MVP, validated learning, the build-measure-learn loop. It rewired my instinct to over-engineer and instead ship something small, watch how real users behave, and iterate from evidence. Almost every side-project I've launched since has been shaped by this mindset — start ugly, learn fast, improve relentlessly.",
+        "whyHu": "Ez a könyv szavakat adott olyan dolgokra, amelyeket addig csak éreztem, de nem tudtam megnevezni: MVP, validált tanulás, a 'build-measure-learn' ciklus. Átállította azt a reflexemet, hogy túlmérnökölt megoldásokat építsek, és helyette arra ösztönzött, hogy kicsiben szállítsak, figyeljem a valós felhasználói viselkedést, és bizonyíték alapján iteráljak. Szinte minden mellékprojektemet ez a szemlélet formálta — indulj csúnyán, tanulj gyorsan, fejleszd kíméletlenül.",
+        "takeawaysEn": [
+            "Ship the smallest thing that produces real learning",
+            "Vanity metrics lie — measure what changes decisions",
+            "Pivot or persevere, but always based on data"
+        ],
+        "takeawaysHu": [
+            "A legkisebb dolgot szállítsd, ami valós tanulást hoz",
+            "A hiú metrikák hazudnak — azt mérd, ami döntést befolyásol",
+            "Pivotálj vagy tarts ki, de mindig adat alapján"
+        ]
+    }
+]

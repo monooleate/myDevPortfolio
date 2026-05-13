@@ -1,11 +1,12 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faListAlt, faHandsHoldingCircle, faPaperPlane, faX, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faListAlt, faHandsHoldingCircle, faPaperPlane, faX, faBars, faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import { FormattedMessage } from 'react-intl';
 
 const navigation = [
     { id: 'navAbout', defaultName: 'About', href: '#aboutme', icon: faUser },
     { id: 'navResume', defaultName: 'Resume', href: '#resume', icon: faListAlt },
+    { id: 'navBooks', defaultName: 'Books', href: '#books', icon: faBookOpen },
     { id: 'navProjects', defaultName: 'Projects', href: '#portfolio', icon: faHandsHoldingCircle },
     { id: 'navContact', defaultName: 'Contact', href: '#contact', icon: faPaperPlane },
 ];

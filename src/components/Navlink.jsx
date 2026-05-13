@@ -72,7 +72,7 @@ function Navlink() {
             </Disclosure>
 
             {/* ========== Tablet: Icon navigation in sidebar ========== */}
-            <div className="hidden md:block xl:hidden">
+            <div className="hidden md:max-xl:block">
                 <div className="flex flex-col space-y-1 items-center mx-auto">
                     {navigation.map((item) => (
                         <a

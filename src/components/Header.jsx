@@ -1,7 +1,6 @@
 import Navlink from './Navlink'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FormattedMessage } from 'react-intl';
 import { Context } from "./LanguageWrapper";
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -130,23 +129,6 @@ function Header({ appliedDark, adjustAppliedDark }) {
                     <option value="hu">HU</option>
                 </select>
             </div>
-
-            {/* --- GitHub link (visible on md+ sidebar only) --- */}
-            <a
-                href="https://github.com/monooleate"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub profile"
-                className="
-                    hidden md:flex items-center justify-center
-                    text-uni-text hover:text-uni-palette
-                    transition-colors duration-300
-                    text-xl mb-4
-                    xl:mb-3
-                "
-            >
-                <FontAwesomeIcon icon={faGithub} />
-            </a>
 
             {/* --- Navigation --- */}
             <Navlink />

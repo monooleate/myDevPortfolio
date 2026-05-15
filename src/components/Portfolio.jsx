@@ -140,47 +140,7 @@ const projects = [
         icon: faSnowflake,
         color: 'from-sky-500 to-cyan-600',
     },
-    {
-        id: 'elviratuzep',
-        category: 'website',
-        titleKey: 'business2Title',
-        descKey: 'business2Desc',
-        href: 'https://elviratuzep.hu',
-        techStack: ['E-commerce', 'Lumber'],
-        icon: faTree,
-        color: 'from-amber-500 to-orange-600',
-    },
-    {
-        id: 'gigawood',
-        category: 'website',
-        titleKey: 'business3Title',
-        descKey: 'business3Desc',
-        href: 'https://gigawood.hu',
-        techStack: ['E-commerce', 'Garden'],
-        icon: faShoppingCart,
-        color: 'from-blue-500 to-indigo-600',
-    },
-    {
-        id: 'lemnimpregnat',
-        category: 'website',
-        titleKey: 'business4Title',
-        descKey: 'business4Desc',
-        href: 'https://lemnimpregnat.ro',
-        techStack: ['E-commerce', 'RO'],
-        icon: faGlobe,
-        color: 'from-purple-500 to-violet-600',
-    },
-    {
-        id: 'kamy',
-        category: 'website',
-        titleKey: 'business5Title',
-        descKey: 'business5Desc',
-        href: 'https://kamy.cc',
-        techStack: ['Brand', 'Creative'],
-        icon: faStar,
-        color: 'from-rose-500 to-pink-600',
-    },
-
+    
     /* ---------- Lab / Hobby ---------- */
     {
         id: 'lab-mydev',
